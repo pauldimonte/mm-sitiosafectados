@@ -23,8 +23,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🟢 Total de sitios afectados: <span id="contador">118</span> |
-    🕒 Última actualización: 2025-05-19 04:51:09
+    🟢 Total de sitios afectados: <span id="contador">119</span> |
+    🕒 Última actualización: 2025-05-19 04:52:14
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -41,6 +41,18 @@
 
     var marcadores = [];
 
+
+    var icon_A14_S191 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
+        iconSize: [30, 30]
+    });
+    var marker_A14_S191 = L.marker([-28.537481, -57.175056], {
+        icon: icon_A14_S191,
+        title: "A14-S191 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A14-S191 - ENVIRONMENT");
+    marker_A14_S191.addTo(map);
+    marcadores.push(marker_A14_S191);
 
     var icon_SPU454 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
