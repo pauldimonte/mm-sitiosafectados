@@ -24,8 +24,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">76</span> |
-    🕒 Última actualización: 2025-05-20 11:23:50
+    🔴 Total de sitios afectados: <span id="contador">77</span> |
+    🕒 Última actualización: 2025-05-20 11:24:54
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -43,11 +43,23 @@
     var marcadores = [];
 
 
+    var icon_A11_S877 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/3914/3914779.png',
+        iconSize: [30, 30]
+    });
+    var marker_A11_S877 = L.marker([-27.834803, -64.279928], {
+        icon: icon_A11_S877,
+        title: "A11-S877 - CORTEFO",
+        categoria: "CORTEFO"
+    }).bindTooltip("A11-S877 - CORTEFO");
+    marker_A11_S877.addTo(map);
+    marcadores.push(marker_A11_S877);
+
     var icon_OPU1062 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
     });
-    var marker_OPU1062 = L.marker([-34.681562, -58.609085], {
+    var marker_OPU1062 = L.marker([-34.68101030417, -58.61068591792], {
         icon: icon_OPU1062,
         title: "OPU1062 - OTHERREASON",
         categoria: "OTHERREASON"
@@ -59,7 +71,7 @@
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
     });
-    var marker_OPU1059 = L.marker([-34.679419, -58.603008], {
+    var marker_OPU1059 = L.marker([-34.67941114772, -58.60336173964], {
         icon: icon_OPU1059,
         title: "OPU1059 - OTHERREASON",
         categoria: "OTHERREASON"
