@@ -24,8 +24,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">58</span> |
-    🕒 Última actualización: 2025-05-20 20:23:25
+    🔴 Total de sitios afectados: <span id="contador">60</span> |
+    🕒 Última actualización: 2025-05-20 20:24:29
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -42,6 +42,30 @@
 
     var marcadores = [];
 
+
+    var icon_A04_S200 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
+        iconSize: [30, 30]
+    });
+    var marker_A04_S200 = L.marker([-33.24291500234, -60.43980699853], {
+        icon: icon_A04_S200,
+        title: "A04-S200 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A04-S200 - ENVIRONMENT");
+    marker_A04_S200.addTo(map);
+    marcadores.push(marker_A04_S200);
+
+    var icon_A11_E018 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
+        iconSize: [30, 30]
+    });
+    var marker_A11_E018 = L.marker([-27.7986904306, -64.29925933784], {
+        icon: icon_A11_E018,
+        title: "A11-E018 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("A11-E018 - HARDWARE");
+    marker_A11_E018.addTo(map);
+    marcadores.push(marker_A11_E018);
 
     var icon_A19_S202 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
