@@ -24,8 +24,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">73</span> |
-    🕒 Última actualización: 2025-05-20 04:47:52
+    🔴 Total de sitios afectados: <span id="contador">74</span> |
+    🕒 Última actualización: 2025-05-20 04:48:55
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -42,6 +42,18 @@
 
     var marcadores = [];
 
+
+    var icon_A19_S149 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
+        iconSize: [30, 30]
+    });
+    var marker_A19_S149 = L.marker([-26.425714, -54.636942], {
+        icon: icon_A19_S149,
+        title: "A19-S149 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A19-S149 - OTHERREASON");
+    marker_A19_S149.addTo(map);
+    marcadores.push(marker_A19_S149);
 
     var icon_A16_S212 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
@@ -67,18 +79,6 @@
     marker_A12_S055.addTo(map);
     marcadores.push(marker_A12_S055);
 
-    var icon_A12_S050 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
-        iconSize: [30, 30]
-    });
-    var marker_A12_S050 = L.marker([-29.05205000286, -63.95514001337], {
-        icon: icon_A12_S050,
-        title: "A12-S050 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("A12-S050 - OTHERREASON");
-    marker_A12_S050.addTo(map);
-    marcadores.push(marker_A12_S050);
-
     var icon_A11_S413 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
@@ -102,6 +102,18 @@
     }).bindTooltip("A12-S029 - ENVIRONMENT");
     marker_A12_S029.addTo(map);
     marcadores.push(marker_A12_S029);
+
+    var icon_A12_S050 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
+        iconSize: [30, 30]
+    });
+    var marker_A12_S050 = L.marker([-29.05205000286, -63.95514001337], {
+        icon: icon_A12_S050,
+        title: "A12-S050 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A12-S050 - OTHERREASON");
+    marker_A12_S050.addTo(map);
+    marcadores.push(marker_A12_S050);
 
     var icon_A23_S061 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
@@ -223,18 +235,6 @@
     marker_A19_S097.addTo(map);
     marcadores.push(marker_A19_S097);
 
-    var icon_SPU1215 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
-        iconSize: [30, 30]
-    });
-    var marker_SPU1215 = L.marker([-34.84375542146, -58.36053731588], {
-        icon: icon_SPU1215,
-        title: "SPU1215 - HARDWARE",
-        categoria: "HARDWARE"
-    }).bindTooltip("SPU1215 - HARDWARE");
-    marker_SPU1215.addTo(map);
-    marcadores.push(marker_SPU1215);
-
     var icon_A27_U126 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
@@ -246,6 +246,18 @@
     }).bindTooltip("A27-U126 - OTHERREASON");
     marker_A27_U126.addTo(map);
     marcadores.push(marker_A27_U126);
+
+    var icon_SPU1215 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
+        iconSize: [30, 30]
+    });
+    var marker_SPU1215 = L.marker([-34.84375542146, -58.36053731588], {
+        icon: icon_SPU1215,
+        title: "SPU1215 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("SPU1215 - HARDWARE");
+    marker_SPU1215.addTo(map);
+    marcadores.push(marker_SPU1215);
 
     var icon_CPU187 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
@@ -283,6 +295,18 @@
     marker_NPU893.addTo(map);
     marcadores.push(marker_NPU893);
 
+    var icon_NPU905 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
+        iconSize: [30, 30]
+    });
+    var marker_NPU905 = L.marker([-34.45437521929, -58.5430737407], {
+        icon: icon_NPU905,
+        title: "NPU905 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("NPU905 - HARDWARE");
+    marker_NPU905.addTo(map);
+    marcadores.push(marker_NPU905);
+
     var icon_NPU936 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
         iconSize: [30, 30]
@@ -306,18 +330,6 @@
     }).bindTooltip("NPU904 - HARDWARE");
     marker_NPU904.addTo(map);
     marcadores.push(marker_NPU904);
-
-    var icon_NPU905 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
-        iconSize: [30, 30]
-    });
-    var marker_NPU905 = L.marker([-34.45437521929, -58.5430737407], {
-        icon: icon_NPU905,
-        title: "NPU905 - HARDWARE",
-        categoria: "HARDWARE"
-    }).bindTooltip("NPU905 - HARDWARE");
-    marker_NPU905.addTo(map);
-    marcadores.push(marker_NPU905);
 
     var icon_SPU082 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
@@ -523,17 +535,17 @@
     marker_A17_S159.addTo(map);
     marcadores.push(marker_A17_S159);
 
-    var icon_OPU286 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
+    var icon_A14_S002 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
         iconSize: [30, 30]
     });
-    var marker_OPU286 = L.marker([-34.58603406055, -58.87866608725], {
-        icon: icon_OPU286,
-        title: "OPU286 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("OPU286 - OTHERREASON");
-    marker_OPU286.addTo(map);
-    marcadores.push(marker_OPU286);
+    var marker_A14_S002 = L.marker([-29.79031695224, -58.05698587975], {
+        icon: icon_A14_S002,
+        title: "A14-S002 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("A14-S002 - HARDWARE");
+    marker_A14_S002.addTo(map);
+    marcadores.push(marker_A14_S002);
 
     var icon_NPU157 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
@@ -547,17 +559,17 @@
     marker_NPU157.addTo(map);
     marcadores.push(marker_NPU157);
 
-    var icon_A14_S002 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
+    var icon_OPU286 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
     });
-    var marker_A14_S002 = L.marker([-29.79031695224, -58.05698587975], {
-        icon: icon_A14_S002,
-        title: "A14-S002 - HARDWARE",
-        categoria: "HARDWARE"
-    }).bindTooltip("A14-S002 - HARDWARE");
-    marker_A14_S002.addTo(map);
-    marcadores.push(marker_A14_S002);
+    var marker_OPU286 = L.marker([-34.58603406055, -58.87866608725], {
+        icon: icon_OPU286,
+        title: "OPU286 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("OPU286 - OTHERREASON");
+    marker_OPU286.addTo(map);
+    marcadores.push(marker_OPU286);
 
     var icon_A17_S045 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
