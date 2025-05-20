@@ -23,8 +23,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">70</span> |
-    🕒 Última actualización: 2025-05-20 02:00:30
+    🔴 Total de sitios afectados: <span id="contador">71</span> |
+    🕒 Última actualización: 2025-05-20 02:01:34
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -42,11 +42,23 @@
     var marcadores = [];
 
 
+    var icon_CI_093 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
+        iconSize: [30, 30]
+    });
+    var marker_CI_093 = L.marker([-34.61811328778, -58.38195360582], {
+        icon: icon_CI_093,
+        title: "CI_093 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("CI_093 - OTHERREASON");
+    marker_CI_093.addTo(map);
+    marcadores.push(marker_CI_093);
+
     var icon_CPU441 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
         iconSize: [30, 30]
     });
-    var marker_CPU441 = L.marker([-34.629449, -58.404811], {
+    var marker_CPU441 = L.marker([-34.62935949713, -58.4050653173], {
         icon: icon_CPU441,
         title: "CPU441 - ENVIRONMENT",
         categoria: "ENVIRONMENT"
