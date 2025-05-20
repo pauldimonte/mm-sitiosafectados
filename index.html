@@ -24,8 +24,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">83</span> |
-    🕒 Última actualización: 2025-05-20 08:32:44
+    🔴 Total de sitios afectados: <span id="contador">84</span> |
+    🕒 Última actualización: 2025-05-20 08:33:47
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -42,6 +42,18 @@
 
     var marcadores = [];
 
+
+    var icon_A33_O010 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
+        iconSize: [30, 30]
+    });
+    var marker_A33_O010 = L.marker([-32.898563, -68.851951], {
+        icon: icon_A33_O010,
+        title: "A33-O010 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A33-O010 - OTHERREASON");
+    marker_A33_O010.addTo(map);
+    marcadores.push(marker_A33_O010);
 
     var icon_A07_S350 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
@@ -391,18 +403,6 @@
     marker_CPU187.addTo(map);
     marcadores.push(marker_CPU187);
 
-    var icon_NPU905 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
-        iconSize: [30, 30]
-    });
-    var marker_NPU905 = L.marker([-34.45437521929, -58.5430737407], {
-        icon: icon_NPU905,
-        title: "NPU905 - HARDWARE",
-        categoria: "HARDWARE"
-    }).bindTooltip("NPU905 - HARDWARE");
-    marker_NPU905.addTo(map);
-    marcadores.push(marker_NPU905);
-
     var icon_NPU904 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
         iconSize: [30, 30]
@@ -438,6 +438,18 @@
     }).bindTooltip("NPU936 - HARDWARE");
     marker_NPU936.addTo(map);
     marcadores.push(marker_NPU936);
+
+    var icon_NPU905 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
+        iconSize: [30, 30]
+    });
+    var marker_NPU905 = L.marker([-34.45437521929, -58.5430737407], {
+        icon: icon_NPU905,
+        title: "NPU905 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("NPU905 - HARDWARE");
+    marker_NPU905.addTo(map);
+    marcadores.push(marker_NPU905);
 
     var icon_SPU082 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
@@ -643,6 +655,18 @@
     marker_A17_S159.addTo(map);
     marcadores.push(marker_A17_S159);
 
+    var icon_OPU286 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
+        iconSize: [30, 30]
+    });
+    var marker_OPU286 = L.marker([-34.58603406055, -58.87866608725], {
+        icon: icon_OPU286,
+        title: "OPU286 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("OPU286 - OTHERREASON");
+    marker_OPU286.addTo(map);
+    marcadores.push(marker_OPU286);
+
     var icon_NPU157 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
@@ -666,18 +690,6 @@
     }).bindTooltip("A14-S002 - HARDWARE");
     marker_A14_S002.addTo(map);
     marcadores.push(marker_A14_S002);
-
-    var icon_OPU286 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
-        iconSize: [30, 30]
-    });
-    var marker_OPU286 = L.marker([-34.58603406055, -58.87866608725], {
-        icon: icon_OPU286,
-        title: "OPU286 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("OPU286 - OTHERREASON");
-    marker_OPU286.addTo(map);
-    marcadores.push(marker_OPU286);
 
     var icon_A17_S045 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
