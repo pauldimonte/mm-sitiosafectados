@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">60</span> |
-    🕒 Última actualización: 2025-05-21 12:33:18
+    🕒 Última actualización: 2025-05-21 12:34:48
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -84,12 +84,25 @@
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_OPU573 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_OPU573 = L.marker([-34.5618, -58.66562], {
+        icon: icon_OPU573,
+        title: "OPU573 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("OPU573 - HARDWARE");
+    marker_OPU573.addTo(map);
+    marcadores.push(marker_OPU573);
+
     var icon_SPU435 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_SPU435 = L.marker([-34.826729, -58.215394], {
+    var marker_SPU435 = L.marker([-34.82653099474, -58.21519919637], {
         icon: icon_SPU435,
         title: "SPU435 - OTHERREASON",
         categoria: "OTHERREASON"
@@ -239,19 +252,6 @@
     }).bindTooltip("NPU096 - ENVIRONMENT");
     marker_NPU096.addTo(map);
     marcadores.push(marker_NPU096);
-
-    var icon_A07_S172 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A07_S172 = L.marker([-31.63985143553, -60.70448898021], {
-        icon: icon_A07_S172,
-        title: "A07-S172 - HARDWARE",
-        categoria: "HARDWARE"
-    }).bindTooltip("A07-S172 - HARDWARE");
-    marker_A07_S172.addTo(map);
-    marcadores.push(marker_A07_S172);
 
     var icon_CPU492 = L.divIcon({
         className: '',
