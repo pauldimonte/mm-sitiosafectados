@@ -32,8 +32,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">52</span> |
-    🕒 Última actualización: 2025-05-21 13:56:37
+    🔴 Total de sitios afectados: <span id="contador">54</span> |
+    🕒 Última actualización: 2025-05-21 13:58:04
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -84,8 +84,34 @@
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
-    var icon_A19_S126 = L.divIcon({
+    var icon_A40_B045 = L.divIcon({
         className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A40_B045 = L.marker([-38.562364, -58.692088], {
+        icon: icon_A40_B045,
+        title: "A40-B045 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A40-B045 - OTHERREASON");
+    marker_A40_B045.addTo(map);
+    marcadores.push(marker_A40_B045);
+
+    var icon_A40_B299 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A40_B299 = L.marker([-38.582879, -58.729487], {
+        icon: icon_A40_B299,
+        title: "A40-B299 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A40-B299 - OTHERREASON");
+    marker_A40_B299.addTo(map);
+    marcadores.push(marker_A40_B299);
+
+    var icon_A19_S126 = L.divIcon({
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
