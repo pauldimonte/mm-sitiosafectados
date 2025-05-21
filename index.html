@@ -32,8 +32,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">52</span> |
-    🕒 Última actualización: 2025-05-21 14:02:30
+    🔴 Total de sitios afectados: <span id="contador">54</span> |
+    🕒 Última actualización: 2025-05-21 14:03:55
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -83,6 +83,32 @@
     }
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A13_S011 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A13_S011 = L.marker([-28.49909400302, -59.61214399826], {
+        icon: icon_A13_S011,
+        title: "A13-S011 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A13-S011 - ENVIRONMENT");
+    marker_A13_S011.addTo(map);
+    marcadores.push(marker_A13_S011);
+
+    var icon_A04_S743 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A04_S743 = L.marker([-32.93571804925, -60.65141471231], {
+        icon: icon_A04_S743,
+        title: "A04-S743 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A04-S743 - OTHERREASON");
+    marker_A04_S743.addTo(map);
+    marcadores.push(marker_A04_S743);
 
     var icon_A19_S126 = L.divIcon({
         className: '',
