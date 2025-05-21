@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">63</span> |
-    🕒 Última actualización: 2025-05-21 08:34:30
+    🕒 Última actualización: 2025-05-21 08:35:59
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -175,19 +175,6 @@
     marker_OPU639.addTo(map);
     marcadores.push(marker_OPU639);
 
-    var icon_A18_S219 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A18_S219 = L.marker([-27.59614256512, -56.6915511935], {
-        icon: icon_A18_S219,
-        title: "A18-S219 - ENVIRONMENT",
-        categoria: "ENVIRONMENT"
-    }).bindTooltip("A18-S219 - ENVIRONMENT");
-    marker_A18_S219.addTo(map);
-    marcadores.push(marker_A18_S219);
-
     var icon_A17_S312 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
@@ -200,6 +187,19 @@
     }).bindTooltip("A17-S312 - ENVIRONMENT");
     marker_A17_S312.addTo(map);
     marcadores.push(marker_A17_S312);
+
+    var icon_A18_S219 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A18_S219 = L.marker([-27.59614256512, -56.6915511935], {
+        icon: icon_A18_S219,
+        title: "A18-S219 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A18-S219 - ENVIRONMENT");
+    marker_A18_S219.addTo(map);
+    marcadores.push(marker_A18_S219);
 
     var icon_SPU124 = L.divIcon({
         className: '',
