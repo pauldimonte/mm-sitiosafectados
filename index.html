@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">37</span> |
-    🕒 Última actualización: 2025-05-21 18:27:43
+    🕒 Última actualización: 2025-05-21 18:29:12
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -84,6 +84,19 @@
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_A42_B485 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A42_B485 = L.marker([-35.00188595038, -58.37690505486], {
+        icon: icon_A42_B485,
+        title: "A42-B485 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A42-B485 - ENVIRONMENT");
+    marker_A42_B485.addTo(map);
+    marcadores.push(marker_A42_B485);
+
     var icon_A29_R242 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
@@ -96,19 +109,6 @@
     }).bindTooltip("A29-R242 - ENVIRONMENT");
     marker_A29_R242.addTo(map);
     marcadores.push(marker_A29_R242);
-
-    var icon_A04_S176 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A04_S176 = L.marker([-32.94499083064, -60.6772290869], {
-        icon: icon_A04_S176,
-        title: "A04-S176 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("A04-S176 - OTHERREASON");
-    marker_A04_S176.addTo(map);
-    marcadores.push(marker_A04_S176);
 
     var icon_A18_S249 = L.divIcon({
         className: '',
