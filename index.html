@@ -32,8 +32,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">56</span> |
-    🕒 Última actualización: 2025-05-21 06:08:58
+    🔴 Total de sitios afectados: <span id="contador">55</span> |
+    🕒 Última actualización: 2025-05-21 06:10:01
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -81,19 +81,6 @@
             icon.style.transformOrigin = "center center";
         });
     }
-
-    var icon_A04_S043 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A04_S043 = L.marker([-33.86828700238, -62.09033299853], {
-        icon: icon_A04_S043,
-        title: "A04-S043 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("A04-S043 - OTHERREASON");
-    marker_A04_S043.addTo(map);
-    marcadores.push(marker_A04_S043);
 
     var icon_CI_067 = L.divIcon({
         className: '',
