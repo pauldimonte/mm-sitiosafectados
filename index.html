@@ -24,8 +24,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">58</span> |
-    🕒 Última actualización: 2025-05-21 02:22:47
+    🔴 Total de sitios afectados: <span id="contador">59</span> |
+    🕒 Última actualización: 2025-05-21 02:23:50
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -43,6 +43,18 @@
     var marcadores = [];
 
 
+    var icon_SPU572 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
+        iconSize: [30, 30]
+    });
+    var marker_SPU572 = L.marker([-34.866824, -58.503308], {
+        icon: icon_SPU572,
+        title: "SPU572 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("SPU572 - ENVIRONMENT");
+    marker_SPU572.addTo(map);
+    marcadores.push(marker_SPU572);
+
     var icon_A08_S059 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
@@ -55,18 +67,6 @@
     marker_A08_S059.addTo(map);
     marcadores.push(marker_A08_S059);
 
-    var icon_CM018 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
-        iconSize: [30, 30]
-    });
-    var marker_CM018 = L.marker([-34.60824671784, -58.37381051098], {
-        icon: icon_CM018,
-        title: "CM018 - ENVIRONMENT",
-        categoria: "ENVIRONMENT"
-    }).bindTooltip("CM018 - ENVIRONMENT");
-    marker_CM018.addTo(map);
-    marcadores.push(marker_CM018);
-
     var icon_CM028 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
         iconSize: [30, 30]
@@ -78,6 +78,18 @@
     }).bindTooltip("CM028 - ENVIRONMENT");
     marker_CM028.addTo(map);
     marcadores.push(marker_CM028);
+
+    var icon_CM018 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
+        iconSize: [30, 30]
+    });
+    var marker_CM018 = L.marker([-34.60824671784, -58.37381051098], {
+        icon: icon_CM018,
+        title: "CM018 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("CM018 - ENVIRONMENT");
+    marker_CM018.addTo(map);
+    marcadores.push(marker_CM018);
 
     var icon_CI_090 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
@@ -295,18 +307,6 @@
     marker_SPU1188.addTo(map);
     marcadores.push(marker_SPU1188);
 
-    var icon_OPU698 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
-        iconSize: [30, 30]
-    });
-    var marker_OPU698 = L.marker([-34.50284356841, -58.83179690145], {
-        icon: icon_OPU698,
-        title: "OPU698 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("OPU698 - OTHERREASON");
-    marker_OPU698.addTo(map);
-    marcadores.push(marker_OPU698);
-
     var icon_NPU1154 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
@@ -318,6 +318,18 @@
     }).bindTooltip("NPU1154 - OTHERREASON");
     marker_NPU1154.addTo(map);
     marcadores.push(marker_NPU1154);
+
+    var icon_OPU698 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
+        iconSize: [30, 30]
+    });
+    var marker_OPU698 = L.marker([-34.50284356841, -58.83179690145], {
+        icon: icon_OPU698,
+        title: "OPU698 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("OPU698 - OTHERREASON");
+    marker_OPU698.addTo(map);
+    marcadores.push(marker_OPU698);
 
     var icon_A18_S103 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
