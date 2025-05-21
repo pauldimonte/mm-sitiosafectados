@@ -25,7 +25,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">51</span> |
-    🕒 Última actualización: 2025-05-20 23:31:07
+    🕒 Última actualización: 2025-05-20 23:32:10
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -115,18 +115,6 @@
     marker_CEM011.addTo(map);
     marcadores.push(marker_CEM011);
 
-    var icon_A19_S112 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
-        iconSize: [30, 30]
-    });
-    var marker_A19_S112 = L.marker([-27.04913916645, -55.24238547572], {
-        icon: icon_A19_S112,
-        title: "A19-S112 - ENVIRONMENT",
-        categoria: "ENVIRONMENT"
-    }).bindTooltip("A19-S112 - ENVIRONMENT");
-    marker_A19_S112.addTo(map);
-    marcadores.push(marker_A19_S112);
-
     var icon_A19_S122 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
         iconSize: [30, 30]
@@ -138,6 +126,18 @@
     }).bindTooltip("A19-S122 - OTHERREASON");
     marker_A19_S122.addTo(map);
     marcadores.push(marker_A19_S122);
+
+    var icon_A19_S112 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/10742/10742093.png',
+        iconSize: [30, 30]
+    });
+    var marker_A19_S112 = L.marker([-27.04913916645, -55.24238547572], {
+        icon: icon_A19_S112,
+        title: "A19-S112 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A19-S112 - ENVIRONMENT");
+    marker_A19_S112.addTo(map);
+    marcadores.push(marker_A19_S112);
 
     var icon_CI_569 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
