@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">51</span> |
-    🕒 Última actualización: 2025-05-21 15:34:37
+    🕒 Última actualización: 2025-05-21 15:36:08
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -97,19 +97,6 @@
     marker_NPU133.addTo(map);
     marcadores.push(marker_NPU133);
 
-    var icon_A14_S001 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A14_S001 = L.marker([-28.5139799832, -59.04802436186], {
-        icon: icon_A14_S001,
-        title: "A14-S001 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("A14-S001 - OTHERREASON");
-    marker_A14_S001.addTo(map);
-    marcadores.push(marker_A14_S001);
-
     var icon_A07_S035 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
@@ -135,6 +122,19 @@
     }).bindTooltip("A13-S026 - ENVIRONMENT");
     marker_A13_S026.addTo(map);
     marcadores.push(marker_A13_S026);
+
+    var icon_A14_S001 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A14_S001 = L.marker([-28.5139799832, -59.04802436186], {
+        icon: icon_A14_S001,
+        title: "A14-S001 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A14-S001 - OTHERREASON");
+    marker_A14_S001.addTo(map);
+    marcadores.push(marker_A14_S001);
 
     var icon_A17_S231 = L.divIcon({
         className: '',
