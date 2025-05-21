@@ -32,8 +32,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-05-21 14:22:39
+    🔴 Total de sitios afectados: <span id="contador">53</span> |
+    🕒 Última actualización: 2025-05-21 14:24:03
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -85,7 +85,7 @@
     window.addEventListener('load', ajustarEscalaIconos);
 
     var icon_A07_S150 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -122,19 +122,6 @@
     }).bindTooltip("A29-R240 - OTHERREASON");
     marker_A29_R240.addTo(map);
     marcadores.push(marker_A29_R240);
-
-    var icon_A23_S016 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A23_S016 = L.marker([-22.26998300881, -62.71376423001], {
-        icon: icon_A23_S016,
-        title: "A23-S016 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("A23-S016 - OTHERREASON");
-    marker_A23_S016.addTo(map);
-    marcadores.push(marker_A23_S016);
 
     var icon_A13_S011 = L.divIcon({
         className: '',
