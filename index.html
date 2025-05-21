@@ -32,8 +32,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">50</span> |
-    🕒 Última actualización: 2025-05-21 14:57:31
+    🔴 Total de sitios afectados: <span id="contador">53</span> |
+    🕒 Última actualización: 2025-05-21 14:58:59
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -83,6 +83,45 @@
     }
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_SPU1374 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU1374 = L.marker([-34.804156, -58.400549], {
+        icon: icon_SPU1374,
+        title: "SPU1374 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("SPU1374 - HARDWARE");
+    marker_SPU1374.addTo(map);
+    marcadores.push(marker_SPU1374);
+
+    var icon_SPU1375 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU1375 = L.marker([-34.808238, -58.398709], {
+        icon: icon_SPU1375,
+        title: "SPU1375 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("SPU1375 - HARDWARE");
+    marker_SPU1375.addTo(map);
+    marcadores.push(marker_SPU1375);
+
+    var icon_A17_S231 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A17_S231 = L.marker([-27.42405, -58.711238], {
+        icon: icon_A17_S231,
+        title: "A17-S231 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A17-S231 - ENVIRONMENT");
+    marker_A17_S231.addTo(map);
+    marcadores.push(marker_A17_S231);
 
     var icon_A13_S016 = L.divIcon({
         className: '',
