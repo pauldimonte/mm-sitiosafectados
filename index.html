@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">55</span> |
-    🕒 Última actualización: 2025-05-21 05:58:52
+    🕒 Última actualización: 2025-05-21 05:59:29
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -43,12 +43,44 @@
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
-    var map = L.map('map').setView([-34.5, -58.5], 6);
+// Leer zoom y centro guardados
+    const savedCenter = localStorage.getItem('mapCenter');
+    const savedZoom = localStorage.getItem('mapZoom');
+
+    // Crear mapa con valores guardados o por defecto
+    var map = L.map('map').setView(
+        savedCenter ? JSON.parse(savedCenter) : [-34.5, -58.5],
+        savedZoom ? parseInt(savedZoom) : 6
+    );
+
+    // Guardar el estado al mover o hacer zoom
+    map.on('moveend zoomend', function () {
+        localStorage.setItem('mapCenter', JSON.stringify(map.getCenter()));
+        localStorage.setItem('mapZoom', map.getZoom());
+    });
+
+    // Añadir tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
     var marcadores = [];
+
+    // Función para escalar íconos según zoom
+    function ajustarEscalaIconos() {
+        const zoom = map.getZoom();
+        let scale = 1;
+        if (zoom < 7) scale = 0.5;
+        else if (zoom < 9) scale = 0.6;
+        else if (zoom < 11) scale = 0.7;
+        else if (zoom < 15) scale = 0.8;
+        else scale = 1;
+
+        document.querySelectorAll('.leaflet-marker-icon img').forEach(icon => {
+            icon.style.transform = `scale(${scale})`;
+            icon.style.transformOrigin = "center center";
+        });
+    }
 
     var icon_CI_067 = L.divIcon({
         className: '',
