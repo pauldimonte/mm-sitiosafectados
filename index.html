@@ -25,7 +25,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-05-21 01:12:08
+    🕒 Última actualización: 2025-05-21 01:13:11
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -43,18 +43,6 @@
     var marcadores = [];
 
 
-    var icon_A33_O727 = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
-        iconSize: [30, 30]
-    });
-    var marker_A33_O727 = L.marker([-32.85866441295, -68.84174418667], {
-        icon: icon_A33_O727,
-        title: "A33-O727 - HARDWARE",
-        categoria: "HARDWARE"
-    }).bindTooltip("A33-O727 - HARDWARE");
-    marker_A33_O727.addTo(map);
-    marcadores.push(marker_A33_O727);
-
     var icon_A33_O716 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
         iconSize: [30, 30]
@@ -66,6 +54,18 @@
     }).bindTooltip("A33-O716 - HARDWARE");
     marker_A33_O716.addTo(map);
     marcadores.push(marker_A33_O716);
+
+    var icon_A33_O727 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
+        iconSize: [30, 30]
+    });
+    var marker_A33_O727 = L.marker([-32.85866441295, -68.84174418667], {
+        icon: icon_A33_O727,
+        title: "A33-O727 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("A33-O727 - HARDWARE");
+    marker_A33_O727.addTo(map);
+    marcadores.push(marker_A33_O727);
 
     var icon_CI_057 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/8034/8034100.png',
