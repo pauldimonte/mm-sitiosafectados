@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">72</span> |
-    🕒 Última actualización: 2025-05-21 11:19:22
+    🕒 Última actualización: 2025-05-21 11:20:52
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -84,6 +84,19 @@
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_A17_S172 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A17_S172 = L.marker([-26.53617, -59.35582], {
+        icon: icon_A17_S172,
+        title: "A17-S172 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A17-S172 - OTHERREASON");
+    marker_A17_S172.addTo(map);
+    marcadores.push(marker_A17_S172);
+
     var icon_A07_S366 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
@@ -109,19 +122,6 @@
     }).bindTooltip("A03-S759 - ENVIRONMENT");
     marker_A03_S759.addTo(map);
     marcadores.push(marker_A03_S759);
-
-    var icon_CPU805 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_CPU805 = L.marker([-34.59222463078, -58.3700273705], {
-        icon: icon_CPU805,
-        title: "CPU805 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("CPU805 - OTHERREASON");
-    marker_CPU805.addTo(map);
-    marcadores.push(marker_CPU805);
 
     var icon_OPU640 = L.divIcon({
         className: '',
