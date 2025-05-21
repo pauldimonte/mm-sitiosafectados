@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">45</span> |
-    🕒 Última actualización: 2025-05-21 17:19:28
+    🕒 Última actualización: 2025-05-21 17:20:50
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -83,6 +83,19 @@
     }
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A33_O011 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A33_O011 = L.marker([-33.050278, -68.562222], {
+        icon: icon_A33_O011,
+        title: "A33-O011 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A33-O011 - OTHERREASON");
+    marker_A33_O011.addTo(map);
+    marcadores.push(marker_A33_O011);
 
     var icon_SPU598 = L.divIcon({
         className: '',
@@ -343,19 +356,6 @@
     }).bindTooltip("SPU694 - ENVIRONMENT");
     marker_SPU694.addTo(map);
     marcadores.push(marker_SPU694);
-
-    var icon_CI_569 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_CI_569 = L.marker([-34.5885345058, -58.41045175035], {
-        icon: icon_CI_569,
-        title: "CI_569 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("CI_569 - OTHERREASON");
-    marker_CI_569.addTo(map);
-    marcadores.push(marker_CI_569);
 
     var icon_OPU698 = L.divIcon({
         className: '',
