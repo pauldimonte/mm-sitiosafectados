@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">37</span> |
-    🕒 Última actualización: 2025-05-21 18:22:00
+    🕒 Última actualización: 2025-05-21 18:23:23
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -84,12 +84,25 @@
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_A29_R242 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A29_R242 = L.marker([-40.707035, -64.496523], {
+        icon: icon_A29_R242,
+        title: "A29-R242 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("A29-R242 - ENVIRONMENT");
+    marker_A29_R242.addTo(map);
+    marcadores.push(marker_A29_R242);
+
     var icon_A04_S176 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_A04_S176 = L.marker([-32.94497, -60.67719], {
+    var marker_A04_S176 = L.marker([-32.94499083064, -60.6772290869], {
         icon: icon_A04_S176,
         title: "A04-S176 - OTHERREASON",
         categoria: "OTHERREASON"
@@ -200,19 +213,6 @@
     }).bindTooltip("A19-S079 - OTHERREASON");
     marker_A19_S079.addTo(map);
     marcadores.push(marker_A19_S079);
-
-    var icon_NPU467 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_NPU467 = L.marker([-34.11436271962, -59.06153579007], {
-        icon: icon_NPU467,
-        title: "NPU467 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("NPU467 - OTHERREASON");
-    marker_NPU467.addTo(map);
-    marcadores.push(marker_NPU467);
 
     var icon_SPU2229 = L.divIcon({
         className: '',
