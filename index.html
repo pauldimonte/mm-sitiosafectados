@@ -32,8 +32,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">37</span> |
-    🕒 Última actualización: 2025-05-21 18:49:21
+    🔴 Total de sitios afectados: <span id="contador">38</span> |
+    🕒 Última actualización: 2025-05-21 18:50:50
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -83,6 +83,19 @@
     }
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_OPU046 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_OPU046 = L.marker([-34.541558, -58.712289], {
+        icon: icon_OPU046,
+        title: "OPU046 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("OPU046 - OTHERREASON");
+    marker_OPU046.addTo(map);
+    marcadores.push(marker_OPU046);
 
     var icon_A42_B485 = L.divIcon({
         className: '',
