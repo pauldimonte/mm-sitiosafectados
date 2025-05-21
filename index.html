@@ -24,8 +24,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">55</span> |
-    🕒 Última actualización: 2025-05-21 03:30:38
+    🔴 Total de sitios afectados: <span id="contador">56</span> |
+    🕒 Última actualización: 2025-05-21 03:31:41
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -43,11 +43,23 @@
     var marcadores = [];
 
 
+    var icon_A33_O719 = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
+        iconSize: [30, 30]
+    });
+    var marker_A33_O719 = L.marker([-32.847169, -68.838886], {
+        icon: icon_A33_O719,
+        title: "A33-O719 - HARDWARE",
+        categoria: "HARDWARE"
+    }).bindTooltip("A33-O719 - HARDWARE");
+    marker_A33_O719.addTo(map);
+    marcadores.push(marker_A33_O719);
+
     var icon_A33_O716 = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/12436/12436490.png',
         iconSize: [30, 30]
     });
-    var marker_A33_O716 = L.marker([-32.839507, -68.836764], {
+    var marker_A33_O716 = L.marker([-32.839516113, -68.83684015669], {
         icon: icon_A33_O716,
         title: "A33-O716 - HARDWARE",
         categoria: "HARDWARE"
