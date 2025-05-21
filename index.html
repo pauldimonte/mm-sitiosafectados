@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">55</span> |
-    🕒 Última actualización: 2025-05-21 06:16:22
+    🕒 Última actualización: 2025-05-21 06:17:25
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -81,6 +81,8 @@
             icon.style.transformOrigin = "center center";
         });
     }
+        map.on('zoomend', ajustarEscalaIconos);
+    window.addEventListener('load', ajustarEscalaIconos);
 
     var icon_CI_067 = L.divIcon({
         className: '',
