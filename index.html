@@ -43,8 +43,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">95</span> |
-    🕒 Última actualización: 2025-05-22 10:59:13
+    🔴 Total de sitios afectados: <span id="contador">96</span> |
+    🕒 Última actualización: 2025-05-22 11:01:41
     <div class="filtros-container">
         <div class="filtros-columna">
             <div id="filtros-categorias">
@@ -105,12 +105,26 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_NPU646 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_NPU646 = L.marker([-34.43300686852, -58.91572490517], {
+        icon: icon_NPU646,
+        title: "NPU646 - Sitio Parcialmente Caido - HARDWARE - 2025-05-22 10:59:11",
+        categoria: "Sitio Parcial",
+        alertkey: "HARDWARE"
+    }).bindTooltip("NPU646<br>Sitio Parcialmente Caido<br>HARDWARE<br>2025-05-22 10:59:11");
+    marker_NPU646.addTo(map);
+    marcadores.push(marker_NPU646);
+
     var icon_CPU778 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_CPU778 = L.marker([-34.629694, -58.438726], {
+    var marker_CPU778 = L.marker([-34.62989271432, -58.43875904401], {
         icon: icon_CPU778,
         title: "CPU778 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-22 10:58:01",
         categoria: "Sitio Completo",
@@ -120,7 +134,7 @@
     marcadores.push(marker_CPU778);
 
     var icon_CPU492 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -134,7 +148,7 @@
     marcadores.push(marker_CPU492);
 
     var icon_A11_S463 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -287,6 +301,20 @@
     marker_OPU698.addTo(map);
     marcadores.push(marker_OPU698);
 
+    var icon_NPU1154 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_NPU1154 = L.marker([-34.49899206277, -58.86059235382], {
+        icon: icon_NPU1154,
+        title: "NPU1154 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-22 10:35:52",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("NPU1154<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-22 10:35:52");
+    marker_NPU1154.addTo(map);
+    marcadores.push(marker_NPU1154);
+
     var icon_NPU1157 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
@@ -314,20 +342,6 @@
     }).bindTooltip("NPU1155<br>Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-22 10:35:52");
     marker_NPU1155.addTo(map);
     marcadores.push(marker_NPU1155);
-
-    var icon_NPU1154 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_NPU1154 = L.marker([-34.49899206277, -58.86059235382], {
-        icon: icon_NPU1154,
-        title: "NPU1154 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-22 10:35:52",
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("NPU1154<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-22 10:35:52");
-    marker_NPU1154.addTo(map);
-    marcadores.push(marker_NPU1154);
 
     var icon_A08_S052 = L.divIcon({
         className: '',
