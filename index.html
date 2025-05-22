@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">48</span> |
-    🕒 Última actualización: 2025-05-22 00:29:23
+    🕒 Última actualización: 2025-05-22 00:30:26
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -84,18 +84,18 @@
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
-    var icon_SPU1097 = L.divIcon({
-        className: '',
+    var icon_CI_040 = L.divIcon({
+        className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_SPU1097 = L.marker([-34.76936081355, -58.27480591211], {
-        icon: icon_SPU1097,
-        title: "SPU1097 - OTHERREASON",
+    var marker_CI_040 = L.marker([-34.609135, -58.382667], {
+        icon: icon_CI_040,
+        title: "CI_040 - OTHERREASON",
         categoria: "OTHERREASON"
-    }).bindTooltip("SPU1097 - OTHERREASON");
-    marker_SPU1097.addTo(map);
-    marcadores.push(marker_SPU1097);
+    }).bindTooltip("CI_040 - OTHERREASON");
+    marker_CI_040.addTo(map);
+    marcadores.push(marker_CI_040);
 
     var icon_SPU2249 = L.divIcon({
         className: '',
@@ -109,6 +109,19 @@
     }).bindTooltip("SPU2249 - HARDWARE");
     marker_SPU2249.addTo(map);
     marcadores.push(marker_SPU2249);
+
+    var icon_SPU1097 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU1097 = L.marker([-34.76936081355, -58.27480591211], {
+        icon: icon_SPU1097,
+        title: "SPU1097 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("SPU1097 - OTHERREASON");
+    marker_SPU1097.addTo(map);
+    marcadores.push(marker_SPU1097);
 
     var icon_A22_S199 = L.divIcon({
         className: '',
@@ -161,19 +174,6 @@
     }).bindTooltip("A22-S056 - OTHERREASON");
     marker_A22_S056.addTo(map);
     marcadores.push(marker_A22_S056);
-
-    var icon_SPU785 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_SPU785 = L.marker([-34.81022211269, -58.4909917083], {
-        icon: icon_SPU785,
-        title: "SPU785 - ENVIRONMENT",
-        categoria: "ENVIRONMENT"
-    }).bindTooltip("SPU785 - ENVIRONMENT");
-    marker_SPU785.addTo(map);
-    marcadores.push(marker_SPU785);
 
     var icon_SPU2277 = L.divIcon({
         className: '',
@@ -331,19 +331,6 @@
     marker_NPU133.addTo(map);
     marcadores.push(marker_NPU133);
 
-    var icon_A29_R241 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A29_R241 = L.marker([-41.7079766421, -65.3148832621], {
-        icon: icon_A29_R241,
-        title: "A29-R241 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("A29-R241 - OTHERREASON");
-    marker_A29_R241.addTo(map);
-    marcadores.push(marker_A29_R241);
-
     var icon_A29_R240 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
@@ -356,6 +343,19 @@
     }).bindTooltip("A29-R240 - OTHERREASON");
     marker_A29_R240.addTo(map);
     marcadores.push(marker_A29_R240);
+
+    var icon_A29_R241 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A29_R241 = L.marker([-41.7079766421, -65.3148832621], {
+        icon: icon_A29_R241,
+        title: "A29-R241 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("A29-R241 - OTHERREASON");
+    marker_A29_R241.addTo(map);
+    marcadores.push(marker_A29_R241);
 
     var icon_SPU2229 = L.divIcon({
         className: '',
