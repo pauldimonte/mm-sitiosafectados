@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">57</span> |
-    🕒 Última actualización: 2025-05-22 05:00:52
+    🕒 Última actualización: 2025-05-22 05:01:55
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -162,19 +162,6 @@
     marker_A22_S075.addTo(map);
     marcadores.push(marker_A22_S075);
 
-    var icon_SPU156 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_SPU156 = L.marker([-34.68436907147, -58.48164499263], {
-        icon: icon_SPU156,
-        title: "SPU156 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("SPU156 - OTHERREASON");
-    marker_SPU156.addTo(map);
-    marcadores.push(marker_SPU156);
-
     var icon_CPU505 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
@@ -187,6 +174,19 @@
     }).bindTooltip("CPU505 - ENVIRONMENT");
     marker_CPU505.addTo(map);
     marcadores.push(marker_CPU505);
+
+    var icon_SPU156 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU156 = L.marker([-34.68436907147, -58.48164499263], {
+        icon: icon_SPU156,
+        title: "SPU156 - OTHERREASON",
+        categoria: "OTHERREASON"
+    }).bindTooltip("SPU156 - OTHERREASON");
+    marker_SPU156.addTo(map);
+    marcadores.push(marker_SPU156);
 
     var icon_A08_S155 = L.divIcon({
         className: '',
