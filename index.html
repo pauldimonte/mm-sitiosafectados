@@ -33,7 +33,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">43</span> |
-    🕒 Última actualización: 2025-05-21 22:32:03
+    🕒 Última actualización: 2025-05-21 23:11:27
     <div id="filtros">
         Filtrar por tipo:
 <label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="CORTEFO" checked> CORTEFO</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="ENVIRONMENT" checked> ENVIRONMENT</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="HARDWARE" checked> HARDWARE</label><label class="checkbox-categoria"><input type="checkbox" class="filtro-alerta" value="OTHERREASON" checked> OTHERREASON</label>
@@ -84,12 +84,25 @@
         map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_SPU785 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU785 = L.marker([-34.81022211269, -58.4909917083], {
+        icon: icon_SPU785,
+        title: "SPU785 - ENVIRONMENT",
+        categoria: "ENVIRONMENT"
+    }).bindTooltip("SPU785 - ENVIRONMENT");
+    marker_SPU785.addTo(map);
+    marcadores.push(marker_SPU785);
+
     var icon_SPU783 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_SPU783 = L.marker([-34.804578, -58.469261], {
+    var marker_SPU783 = L.marker([-34.80473433802, -58.46931735223], {
         icon: icon_SPU783,
         title: "SPU783 - OTHERREASON",
         categoria: "OTHERREASON"
@@ -98,7 +111,7 @@
     marcadores.push(marker_SPU783);
 
     var icon_SPU2277 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -109,19 +122,6 @@
     }).bindTooltip("SPU2277 - ENVIRONMENT");
     marker_SPU2277.addTo(map);
     marcadores.push(marker_SPU2277);
-
-    var icon_SI_002 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_SI_002 = L.marker([-34.75805757264, -58.40129446735], {
-        icon: icon_SI_002,
-        title: "SI_002 - OTHERREASON",
-        categoria: "OTHERREASON"
-    }).bindTooltip("SI_002 - OTHERREASON");
-    marker_SI_002.addTo(map);
-    marcadores.push(marker_SI_002);
 
     var icon_OPU654 = L.divIcon({
         className: '',
