@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">63</span> |
-    🕒 Última actualización: 2025-05-23 14:03:24
+    🔴 Total de sitios afectados: <span id="contador">65</span> |
+    🕒 Última actualización: 2025-05-23 14:04:28
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,34 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A42_B485 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A42_B485 = L.marker([-35.00188595038, -58.37690505486], {
+        icon: icon_A42_B485,
+        title: "A42-B485 - Sitio Parcialmente Caido - OTHERREASON - 2025-05-23 14:03:40",
+        categoria: "Sitio Parcial",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A42-B485<br>Sitio Parcialmente Caido<br>OTHERREASON<br>2025-05-23 14:03:40");
+    marker_A42_B485.addTo(map);
+    marcadores.push(marker_A42_B485);
+
+    var icon_A04_S743 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A04_S743 = L.marker([-32.93571804925, -60.65141471231], {
+        icon: icon_A04_S743,
+        title: "A04-S743 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 14:03:24",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A04-S743<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 14:03:24");
+    marker_A04_S743.addTo(map);
+    marcadores.push(marker_A04_S743);
 
     var icon_A08_S020 = L.divIcon({
         className: 'icono-parpadeo',
@@ -224,7 +252,7 @@
     marcadores.push(marker_A23_S016);
 
     var icon_SPU182 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -321,20 +349,6 @@
     marker_OPU600.addTo(map);
     marcadores.push(marker_OPU600);
 
-    var icon_A17_S077 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A17_S077 = L.marker([-26.91972200323, -58.80222199826], {
-        icon: icon_A17_S077,
-        title: "A17-S077 - Intermitente: Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 12:31:22",
-        categoria: "Intermitente",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("A17-S077<br>Intermitente: Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 12:31:22");
-    marker_A17_S077.addTo(map);
-    marcadores.push(marker_A17_S077);
-
     var icon_A13_S037 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
@@ -348,6 +362,20 @@
     }).bindTooltip("A13-S037<br>Celdas Caidas del Sitio<br>OTHERREASON<br>2025-05-23 12:31:22");
     marker_A13_S037.addTo(map);
     marcadores.push(marker_A13_S037);
+
+    var icon_A17_S077 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A17_S077 = L.marker([-26.91972200323, -58.80222199826], {
+        icon: icon_A17_S077,
+        title: "A17-S077 - Intermitente: Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 12:31:22",
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A17-S077<br>Intermitente: Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 12:31:22");
+    marker_A17_S077.addTo(map);
+    marcadores.push(marker_A17_S077);
 
     var icon_A10_S040 = L.divIcon({
         className: '',
