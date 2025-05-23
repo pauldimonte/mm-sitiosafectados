@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">72</span> |
-    🕒 Última actualización: 2025-05-23 08:26:25
+    🔴 Total de sitios afectados: <span id="contador">73</span> |
+    🕒 Última actualización: 2025-05-23 08:27:30
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A34_J054 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A34_J054 = L.marker([-31.470499, -68.725444], {
+        icon: icon_A34_J054,
+        title: "A34-J054 - Celdas Caidas del Sitio - OTHERREASON - 2025-05-23 08:26:57",
+        categoria: "Celdas Caidas",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A34-J054<br>Celdas Caidas del Sitio<br>OTHERREASON<br>2025-05-23 08:26:57");
+    marker_A34_J054.addTo(map);
+    marcadores.push(marker_A34_J054);
 
     var icon_A19_S202 = L.divIcon({
         className: 'icono-parpadeo',
