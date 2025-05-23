@@ -71,7 +71,7 @@
 <body>
  <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">64</span> |
-    🕒 Última actualización: 2025-05-23 12:27:00
+    🕒 Última actualización: 2025-05-23 12:28:05
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A14_S112 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A14_S112 = L.marker([-30.306104, -59.547774], {
+        icon: icon_A14_S112,
+        title: "A14-S112 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-23 12:27:12",
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A14-S112<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-23 12:27:12");
+    marker_A14_S112.addTo(map);
+    marcadores.push(marker_A14_S112);
 
     var icon_A37_F043 = L.divIcon({
         className: 'icono-parpadeo',
@@ -180,20 +194,6 @@
     }).bindTooltip("A08-S031<br>Sitio Parcialmente Caido<br>HARDWARE<br>2025-05-23 12:06:13");
     marker_A08_S031.addTo(map);
     marcadores.push(marker_A08_S031);
-
-    var icon_A14_S112 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A14_S112 = L.marker([-30.30610400271, -59.54777399843], {
-        icon: icon_A14_S112,
-        title: "A14-S112 - Celdas Caidas del Sitio - ENVIRONMENT - 2025-05-23 12:06:13",
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A14-S112<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-23 12:06:13");
-    marker_A14_S112.addTo(map);
-    marcadores.push(marker_A14_S112);
 
     var icon_A19_S006 = L.divIcon({
         className: '',
