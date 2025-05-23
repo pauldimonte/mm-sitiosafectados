@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">62</span> |
-    🕒 Última actualización: 2025-05-23 14:51:30
+    🔴 Total de sitios afectados: <span id="contador">60</span> |
+    🕒 Última actualización: 2025-05-23 14:52:34
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,20 +124,6 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
-
-    var icon_A04_S302 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A04_S302 = L.marker([-32.90922990522, -60.89728004019], {
-        icon: icon_A04_S302,
-        title: "A04-S302 - Celdas Caidas del Sitio - ENVIRONMENT - 2025-05-23 14:48:01",
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A04-S302<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-23 14:48:01");
-    marker_A04_S302.addTo(map);
-    marcadores.push(marker_A04_S302);
 
     var icon_OPU134 = L.divIcon({
         className: '',
@@ -250,20 +236,6 @@
     }).bindTooltip("A23-S016<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-23 13:32:52");
     marker_A23_S016.addTo(map);
     marcadores.push(marker_A23_S016);
-
-    var icon_SPU182 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_SPU182 = L.marker([-34.84221301303, -58.47178787896], {
-        icon: icon_SPU182,
-        title: "SPU182 - Celdas Caidas del Sitio - OTHERREASON - 2025-05-23 14:41:10",
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("SPU182<br>Celdas Caidas del Sitio<br>OTHERREASON<br>2025-05-23 14:41:10");
-    marker_SPU182.addTo(map);
-    marcadores.push(marker_SPU182);
 
     var icon_A22_S017 = L.divIcon({
         className: '',
