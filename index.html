@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">48</span> |
-    🕒 Última actualización: 2025-05-23 20:30:36
+    🔴 Total de sitios afectados: <span id="contador">49</span> |
+    🕒 Última actualización: 2025-05-23 20:32:00
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_SPU115 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU115 = L.marker([-34.707401, -58.401108], {
+        icon: icon_SPU115,
+        title: "SPU115 - Celdas Caidas del Sitio - HARDWARE - 2025-05-23 20:31:02",
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"
+    }).bindTooltip("SPU115<br>Celdas Caidas del Sitio<br>HARDWARE<br>2025-05-23 20:31:02");
+    marker_SPU115.addTo(map);
+    marcadores.push(marker_SPU115);
 
     var icon_OPU698 = L.divIcon({
         className: '',
@@ -238,16 +252,16 @@
     marcadores.push(marker_SPU604);
 
     var icon_A02_S104 = L.divIcon({
-        className: '',
+        className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
     var marker_A02_S104 = L.marker([-32.25069000265, -62.93030900024], {
         icon: icon_A02_S104,
-        title: "A02-S104 - Celdas Caidas del Sitio - HARDWARE - 2025-05-23 20:09:13",
+        title: "A02-S104 - Celdas Caidas del Sitio - HARDWARE - 2025-05-23 20:31:02",
         categoria: "Celdas Caidas",
         alertkey: "HARDWARE"
-    }).bindTooltip("A02-S104<br>Celdas Caidas del Sitio<br>HARDWARE<br>2025-05-23 20:09:13");
+    }).bindTooltip("A02-S104<br>Celdas Caidas del Sitio<br>HARDWARE<br>2025-05-23 20:31:02");
     marker_A02_S104.addTo(map);
     marcadores.push(marker_A02_S104);
 
