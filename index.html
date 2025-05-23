@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">64</span> |
-    🕒 Última actualización: 2025-05-23 12:28:05
+    🔴 Total de sitios afectados: <span id="contador">65</span> |
+    🕒 Última actualización: 2025-05-23 12:29:09
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,12 +125,26 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_A08_S006 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A08_S006 = L.marker([-30.953359, -58.783534], {
+        icon: icon_A08_S006,
+        title: "A08-S006 - Celdas Caidas del Sitio - HARDWARE - 2025-05-23 12:28:34",
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"
+    }).bindTooltip("A08-S006<br>Celdas Caidas del Sitio<br>HARDWARE<br>2025-05-23 12:28:34");
+    marker_A08_S006.addTo(map);
+    marcadores.push(marker_A08_S006);
+
     var icon_A14_S112 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_A14_S112 = L.marker([-30.306104, -59.547774], {
+    var marker_A14_S112 = L.marker([-30.30610400271, -59.54777399843], {
         icon: icon_A14_S112,
         title: "A14-S112 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-23 12:27:12",
         categoria: "Sitio Completo",
@@ -144,7 +158,7 @@
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_A37_F043 = L.marker([-36.032136, -63.605319], {
+    var marker_A37_F043 = L.marker([-36.03213600187, -63.60531900942], {
         icon: icon_A37_F043,
         title: "A37-F043 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 12:26:43",
         categoria: "Sitio Completo",
