@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">63</span> |
-    🕒 Última actualización: 2025-05-23 15:31:01
+    🔴 Total de sitios afectados: <span id="contador">64</span> |
+    🕒 Última actualización: 2025-05-23 15:32:05
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_SPU1024 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU1024 = L.marker([-34.68478, -58.49407], {
+        icon: icon_SPU1024,
+        title: "SPU1024 - Celdas Caidas del Sitio - HARDWARE - 2025-05-23 15:31:41",
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"
+    }).bindTooltip("SPU1024<br>Celdas Caidas del Sitio<br>HARDWARE<br>2025-05-23 15:31:41");
+    marker_SPU1024.addTo(map);
+    marcadores.push(marker_SPU1024);
 
     var icon_A14_S170 = L.divIcon({
         className: 'icono-parpadeo',
