@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">68</span> |
-    🕒 Última actualización: 2025-05-23 09:56:20
+    🔴 Total de sitios afectados: <span id="contador">69</span> |
+    🕒 Última actualización: 2025-05-23 09:57:24
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A23_S006 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A23_S006 = L.marker([-23.257252, -64.245051], {
+        icon: icon_A23_S006,
+        title: "A23-S006 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 09:56:47",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A23-S006<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 09:56:47");
+    marker_A23_S006.addTo(map);
+    marcadores.push(marker_A23_S006);
 
     var icon_A18_S076 = L.divIcon({
         className: 'icono-parpadeo',
