@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">59</span> |
-    🕒 Última actualización: 2025-05-23 17:14:36
+    🔴 Total de sitios afectados: <span id="contador">58</span> |
+    🕒 Última actualización: 2025-05-23 17:15:40
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,20 +125,6 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
-    var icon_A41_B884 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A41_B884 = L.marker([-37.84196131538, -57.97455019258], {
-        icon: icon_A41_B884,
-        title: "A41-B884 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-23 17:11:39",
-        categoria: "Sitio Completo",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A41-B884<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-23 17:11:39");
-    marker_A41_B884.addTo(map);
-    marcadores.push(marker_A41_B884);
-
     var icon_SPU449 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
@@ -153,20 +139,6 @@
     marker_SPU449.addTo(map);
     marcadores.push(marker_SPU449);
 
-    var icon_A02_S002 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A02_S002 = L.marker([-32.10842100266, -63.04227100086], {
-        icon: icon_A02_S002,
-        title: "A02-S002 - Sitio Parcialmente Caido - ENVIRONMENT - 2025-05-23 17:07:16",
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A02-S002<br>Sitio Parcialmente Caido<br>ENVIRONMENT<br>2025-05-23 17:07:16");
-    marker_A02_S002.addTo(map);
-    marcadores.push(marker_A02_S002);
-
     var icon_SPU1639 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
@@ -180,6 +152,20 @@
     }).bindTooltip("SPU1639<br>Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-23 17:07:16");
     marker_SPU1639.addTo(map);
     marcadores.push(marker_SPU1639);
+
+    var icon_A02_S002 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A02_S002 = L.marker([-32.10842100266, -63.04227100086], {
+        icon: icon_A02_S002,
+        title: "A02-S002 - Sitio Parcialmente Caido - ENVIRONMENT - 2025-05-23 17:07:16",
+        categoria: "Sitio Parcial",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A02-S002<br>Sitio Parcialmente Caido<br>ENVIRONMENT<br>2025-05-23 17:07:16");
+    marker_A02_S002.addTo(map);
+    marcadores.push(marker_A02_S002);
 
     var icon_A23_S021 = L.divIcon({
         className: '',
