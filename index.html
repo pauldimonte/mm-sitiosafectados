@@ -43,8 +43,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">57</span> |
-    🕒 Última actualización: 2025-05-22 22:04:05
+    🔴 Total de sitios afectados: <span id="contador">58</span> |
+    🕒 Última actualización: 2025-05-22 22:05:08
     <div class="filtros-container">
         <div class="filtros-columna">
             <div id="filtros-categorias">
@@ -104,6 +104,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_CPU255 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_CPU255 = L.marker([-34.596133, -58.42745], {
+        icon: icon_CPU255,
+        title: "CPU255 - Sitio Completo Incomunicado - CORTEFO - 2025-05-22 22:04:40",
+        categoria: "Sitio Completo",
+        alertkey: "CORTEFO"
+    }).bindTooltip("CPU255<br>Sitio Completo Incomunicado<br>CORTEFO<br>2025-05-22 22:04:40");
+    marker_CPU255.addTo(map);
+    marcadores.push(marker_CPU255);
 
     var icon_A05_S019 = L.divIcon({
         className: 'icono-parpadeo',
