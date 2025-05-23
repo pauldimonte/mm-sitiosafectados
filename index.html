@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">58</span> |
-    🕒 Última actualización: 2025-05-23 07:13:43
+    🔴 Total de sitios afectados: <span id="contador">59</span> |
+    🕒 Última actualización: 2025-05-23 07:14:48
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,19 +125,33 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
-    var icon_A19_S062 = L.divIcon({
+    var icon_SPU134 = L.divIcon({
         className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_A19_S062 = L.marker([-25.63282005548, -54.57549304062], {
-        icon: icon_A19_S062,
-        title: "A19-S062 - Celdas Caidas del Sitio - ENVIRONMENT - 2025-05-23 07:12:51",
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A19-S062<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-23 07:12:51");
-    marker_A19_S062.addTo(map);
-    marcadores.push(marker_A19_S062);
+    var marker_SPU134 = L.marker([-34.877013, -57.918467], {
+        icon: icon_SPU134,
+        title: "SPU134 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 07:14:01",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("SPU134<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 07:14:01");
+    marker_SPU134.addTo(map);
+    marcadores.push(marker_SPU134);
+
+    var icon_SPU153 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU153 = L.marker([-34.845022, -57.891538], {
+        icon: icon_SPU153,
+        title: "SPU153 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 07:14:01",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("SPU153<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 07:14:01");
+    marker_SPU153.addTo(map);
+    marcadores.push(marker_SPU153);
 
     var icon_A19_S170 = L.divIcon({
         className: 'icono-parpadeo',
