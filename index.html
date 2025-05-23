@@ -71,7 +71,7 @@
 <body>
  <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">65</span> |
-    🕒 Última actualización: 2025-05-23 12:56:00
+    🕒 Última actualización: 2025-05-23 12:57:04
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,20 +125,6 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
-    var icon_A23_S198 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A23_S198 = L.marker([-23.122053, -64.319302], {
-        icon: icon_A23_S198,
-        title: "A23-S198 - Sitio Completo Incomunicado - HARDWARE - 2025-05-23 12:55:27",
-        categoria: "Sitio Completo",
-        alertkey: "HARDWARE"
-    }).bindTooltip("A23-S198<br>Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-23 12:55:27");
-    marker_A23_S198.addTo(map);
-    marcadores.push(marker_A23_S198);
-
     var icon_A42_A144 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
@@ -152,6 +138,20 @@
     }).bindTooltip("A42-A144<br>Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-23 12:53:15");
     marker_A42_A144.addTo(map);
     marcadores.push(marker_A42_A144);
+
+    var icon_A23_S198 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A23_S198 = L.marker([-23.12230041726, -64.3199613562], {
+        icon: icon_A23_S198,
+        title: "A23-S198 - Intermitente: Sitio Parcialmente Caido - HARDWARE - 2025-05-23 12:52:08",
+        categoria: "Intermitente",
+        alertkey: "HARDWARE"
+    }).bindTooltip("A23-S198<br>Intermitente: Sitio Parcialmente Caido<br>HARDWARE<br>2025-05-23 12:52:08");
+    marker_A23_S198.addTo(map);
+    marcadores.push(marker_A23_S198);
 
     var icon_A22_S017 = L.divIcon({
         className: 'icono-parpadeo',
@@ -168,7 +168,7 @@
     marcadores.push(marker_A22_S017);
 
     var icon_OPU600 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
