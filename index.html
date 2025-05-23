@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">63</span> |
-    🕒 Última actualización: 2025-05-23 14:27:57
+    🔴 Total de sitios afectados: <span id="contador">64</span> |
+    🕒 Última actualización: 2025-05-23 14:29:01
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A17_S288 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A17_S288 = L.marker([-27.522053, -58.768991], {
+        icon: icon_A17_S288,
+        title: "A17-S288 - Sitio Completo Incomunicado - HARDWARE - 2025-05-23 14:28:31",
+        categoria: "Sitio Completo",
+        alertkey: "HARDWARE"
+    }).bindTooltip("A17-S288<br>Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-23 14:28:31");
+    marker_A17_S288.addTo(map);
+    marcadores.push(marker_A17_S288);
 
     var icon_A19_S142 = L.divIcon({
         className: 'icono-parpadeo',
