@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">65</span> |
-    🕒 Última actualización: 2025-05-23 12:30:14
+    🔴 Total de sitios afectados: <span id="contador">66</span> |
+    🕒 Última actualización: 2025-05-23 12:31:18
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,17 +125,31 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_A10_S040 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A10_S040 = L.marker([-28.45325520549, -65.72400168037], {
+        icon: icon_A10_S040,
+        title: "A10-S040 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 12:30:01",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A10-S040<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 12:30:01");
+    marker_A10_S040.addTo(map);
+    marcadores.push(marker_A10_S040);
+
     var icon_A08_S006 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_A08_S006 = L.marker([-30.953359, -58.783534], {
+    var marker_A08_S006 = L.marker([-30.95320772413, -58.78403108788], {
         icon: icon_A08_S006,
-        title: "A08-S006 - Celdas Caidas del Sitio - HARDWARE - 2025-05-23 12:28:34",
-        categoria: "Celdas Caidas",
+        title: "A08-S006 - Sitio Completo Incomunicado - HARDWARE - 2025-05-23 12:29:58",
+        categoria: "Sitio Completo",
         alertkey: "HARDWARE"
-    }).bindTooltip("A08-S006<br>Celdas Caidas del Sitio<br>HARDWARE<br>2025-05-23 12:28:34");
+    }).bindTooltip("A08-S006<br>Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-23 12:29:58");
     marker_A08_S006.addTo(map);
     marcadores.push(marker_A08_S006);
 
