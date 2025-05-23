@@ -43,8 +43,8 @@
 </head>
 <body>
 <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">56</span> |
-    🕒 Última actualización: 2025-05-22 22:08:20
+    🔴 Total de sitios afectados: <span id="contador">55</span> |
+    🕒 Última actualización: 2025-05-22 22:09:25
     <div class="filtros-container">
         <div class="filtros-columna">
             <div id="filtros-categorias">
@@ -104,20 +104,6 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
-
-    var icon_OPU578 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_OPU578 = L.marker([-34.57559053855, -58.68977794387], {
-        icon: icon_OPU578,
-        title: "OPU578 - Sitio Parcialmente Caido - HARDWARE - 2025-05-22 21:59:07",
-        categoria: "Sitio Parcial",
-        alertkey: "HARDWARE"
-    }).bindTooltip("OPU578<br>Sitio Parcialmente Caido<br>HARDWARE<br>2025-05-22 21:59:07");
-    marker_OPU578.addTo(map);
-    marcadores.push(marker_OPU578);
 
     var icon_SPU352 = L.divIcon({
         className: '',
