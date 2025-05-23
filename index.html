@@ -71,7 +71,7 @@
 <body>
  <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">55</span> |
-    🕒 Última actualización: 2025-05-23 06:53:23
+    🕒 Última actualización: 2025-05-23 06:54:27
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,20 +124,6 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
-
-    var icon_A18_S101 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A18_S101 = L.marker([-27.42983269658, -55.93572637107], {
-        icon: icon_A18_S101,
-        title: "A18-S101 - Sitio Parcialmente Caido - OTHERREASON - 2025-05-23 06:50:34",
-        categoria: "Sitio Parcial",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("A18-S101<br>Sitio Parcialmente Caido<br>OTHERREASON<br>2025-05-23 06:50:34");
-    marker_A18_S101.addTo(map);
-    marcadores.push(marker_A18_S101);
 
     var icon_A14_S012 = L.divIcon({
         className: 'icono-parpadeo',
@@ -362,6 +348,20 @@
     }).bindTooltip("CM006<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-22 18:46:22");
     marker_CM006.addTo(map);
     marcadores.push(marker_CM006);
+
+    var icon_CI_131 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_CI_131 = L.marker([-34.5473460749, -58.49037867684], {
+        icon: icon_CI_131,
+        title: "CI_131 - Sitio Parcialmente Caido - HARDWARE - 2025-05-23 06:53:10",
+        categoria: "Sitio Parcial",
+        alertkey: "HARDWARE"
+    }).bindTooltip("CI_131<br>Sitio Parcialmente Caido<br>HARDWARE<br>2025-05-23 06:53:10");
+    marker_CI_131.addTo(map);
+    marcadores.push(marker_CI_131);
 
     var icon_A42_B485 = L.divIcon({
         className: '',
