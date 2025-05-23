@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">61</span> |
-    🕒 Última actualización: 2025-05-23 15:08:34
+    🔴 Total de sitios afectados: <span id="contador">60</span> |
+    🕒 Última actualización: 2025-05-23 15:09:38
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,19 +125,19 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
-    var icon_A17_S050 = L.divIcon({
+    var icon_A22_S036 = L.divIcon({
         className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_A17_S050 = L.marker([-27.46452788311, -58.82343155795], {
-        icon: icon_A17_S050,
-        title: "A17-S050 - Sitio Parcialmente Caido - ENVIRONMENT - 2025-05-23 15:00:32",
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A17-S050<br>Sitio Parcialmente Caido<br>ENVIRONMENT<br>2025-05-23 15:00:32");
-    marker_A17_S050.addTo(map);
-    marcadores.push(marker_A17_S050);
+    var marker_A22_S036 = L.marker([-26.145103, -58.16494], {
+        icon: icon_A22_S036,
+        title: "A22-S036 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 15:08:55",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A22-S036<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 15:08:55");
+    marker_A22_S036.addTo(map);
+    marcadores.push(marker_A22_S036);
 
     var icon_SPU572 = L.divIcon({
         className: '',
@@ -250,20 +250,6 @@
     }).bindTooltip("A23-S016<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-23 13:32:52");
     marker_A23_S016.addTo(map);
     marcadores.push(marker_A23_S016);
-
-    var icon_SPU182 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_SPU182 = L.marker([-34.84221301303, -58.47178787896], {
-        icon: icon_SPU182,
-        title: "SPU182 - Celdas Caidas del Sitio - OTHERREASON - 2025-05-23 14:56:33",
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("SPU182<br>Celdas Caidas del Sitio<br>OTHERREASON<br>2025-05-23 14:56:33");
-    marker_SPU182.addTo(map);
-    marcadores.push(marker_SPU182);
 
     var icon_A22_S017 = L.divIcon({
         className: '',
