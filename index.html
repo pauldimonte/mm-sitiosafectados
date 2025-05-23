@@ -44,7 +44,7 @@
 <body>
 <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">55</span> |
-    🕒 Última actualización: 2025-05-22 22:52:06
+    🕒 Última actualización: 2025-05-22 22:53:10
     <div class="filtros-container">
         <div class="filtros-columna">
             <div id="filtros-categorias">
@@ -104,6 +104,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_OPU475 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_OPU475 = L.marker([-34.68391032583, -58.63171835651], {
+        icon: icon_OPU475,
+        title: "OPU475 - Sitio Completo Incomunicado - HARDWARE - 2025-05-22 22:52:52",
+        categoria: "Sitio Completo",
+        alertkey: "HARDWARE"
+    }).bindTooltip("OPU475<br>Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-22 22:52:52");
+    marker_OPU475.addTo(map);
+    marcadores.push(marker_OPU475);
 
     var icon_SPU2278 = L.divIcon({
         className: 'icono-parpadeo',
@@ -496,20 +510,6 @@
     }).bindTooltip("OPU656<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-22 07:31:42");
     marker_OPU656.addTo(map);
     marcadores.push(marker_OPU656);
-
-    var icon_OPU475 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_OPU475 = L.marker([-34.68391032583, -58.63171835651], {
-        icon: icon_OPU475,
-        title: "OPU475 - Sitio Parcialmente Caido - OTHERREASON - 2025-05-22 07:31:42",
-        categoria: "Sitio Parcial",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("OPU475<br>Sitio Parcialmente Caido<br>OTHERREASON<br>2025-05-22 07:31:42");
-    marker_OPU475.addTo(map);
-    marcadores.push(marker_OPU475);
 
     var icon_A42_B634 = L.divIcon({
         className: '',
