@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">59</span> |
-    🕒 Última actualización: 2025-05-23 13:53:47
+    🔴 Total de sitios afectados: <span id="contador">61</span> |
+    🕒 Última actualización: 2025-05-23 13:54:51
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,6 +125,20 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_A42_A092 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A42_A092 = L.marker([-34.88149156755, -58.34466924369], {
+        icon: icon_A42_A092,
+        title: "A42-A092 - Intermitente: Sitio Completo Incomunicado - HARDWARE - 2025-05-23 13:52:39",
+        categoria: "Intermitente",
+        alertkey: "HARDWARE"
+    }).bindTooltip("A42-A092<br>Intermitente: Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-23 13:52:39");
+    marker_A42_A092.addTo(map);
+    marcadores.push(marker_A42_A092);
+
     var icon_A18_S226 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
@@ -166,6 +180,20 @@
     }).bindTooltip("A23-S016<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-23 13:32:52");
     marker_A23_S016.addTo(map);
     marcadores.push(marker_A23_S016);
+
+    var icon_SPU182 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU182 = L.marker([-34.84221301303, -58.47178787896], {
+        icon: icon_SPU182,
+        title: "SPU182 - Celdas Caidas del Sitio - OTHERREASON - 2025-05-23 13:53:44",
+        categoria: "Celdas Caidas",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("SPU182<br>Celdas Caidas del Sitio<br>OTHERREASON<br>2025-05-23 13:53:44");
+    marker_SPU182.addTo(map);
+    marcadores.push(marker_SPU182);
 
     var icon_A22_S017 = L.divIcon({
         className: '',
@@ -335,20 +363,6 @@
     marker_A18_S141.addTo(map);
     marcadores.push(marker_A18_S141);
 
-    var icon_A04_S176 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A04_S176 = L.marker([-32.94499083064, -60.6772290869], {
-        icon: icon_A04_S176,
-        title: "A04-S176 - Intermitente: Sitio Completo Incomunicado - CORTEFO - 2025-05-23 11:06:11",
-        categoria: "Intermitente",
-        alertkey: "CORTEFO"
-    }).bindTooltip("A04-S176<br>Intermitente: Sitio Completo Incomunicado<br>CORTEFO<br>2025-05-23 11:06:11");
-    marker_A04_S176.addTo(map);
-    marcadores.push(marker_A04_S176);
-
     var icon_A17_S288 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
@@ -362,6 +376,20 @@
     }).bindTooltip("A17-S288<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-23 11:06:11");
     marker_A17_S288.addTo(map);
     marcadores.push(marker_A17_S288);
+
+    var icon_A04_S176 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A04_S176 = L.marker([-32.94499083064, -60.6772290869], {
+        icon: icon_A04_S176,
+        title: "A04-S176 - Intermitente: Sitio Completo Incomunicado - CORTEFO - 2025-05-23 11:06:11",
+        categoria: "Intermitente",
+        alertkey: "CORTEFO"
+    }).bindTooltip("A04-S176<br>Intermitente: Sitio Completo Incomunicado<br>CORTEFO<br>2025-05-23 11:06:11");
+    marker_A04_S176.addTo(map);
+    marcadores.push(marker_A04_S176);
 
     var icon_NPU239 = L.divIcon({
         className: '',
