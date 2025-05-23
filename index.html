@@ -71,7 +71,7 @@
 <body>
  <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">63</span> |
-    🕒 Última actualización: 2025-05-23 14:32:13
+    🕒 Última actualización: 2025-05-23 14:33:17
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_OPU134 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_OPU134 = L.marker([-34.64371890251, -58.7479832513], {
+        icon: icon_OPU134,
+        title: "OPU134 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-23 14:32:23",
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("OPU134<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-23 14:32:23");
+    marker_OPU134.addTo(map);
+    marcadores.push(marker_OPU134);
 
     var icon_A17_S288 = L.divIcon({
         className: 'icono-parpadeo',
@@ -209,20 +223,6 @@
     marker_A42_A092.addTo(map);
     marcadores.push(marker_A42_A092);
 
-    var icon_A18_S226 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A18_S226 = L.marker([-27.00428999632, -54.47361684716], {
-        icon: icon_A18_S226,
-        title: "A18-S226 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-23 13:39:46",
-        categoria: "Sitio Completo",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A18-S226<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-23 13:39:46");
-    marker_A18_S226.addTo(map);
-    marcadores.push(marker_A18_S226);
-
     var icon_A41_B884 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
@@ -252,7 +252,7 @@
     marcadores.push(marker_A23_S016);
 
     var icon_SPU182 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
