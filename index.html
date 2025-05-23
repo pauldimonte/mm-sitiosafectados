@@ -71,7 +71,7 @@
 <body>
  <div id="barra-info">
     🔴 Total de sitios afectados: <span id="contador">64</span> |
-    🕒 Última actualización: 2025-05-23 13:18:28
+    🕒 Última actualización: 2025-05-23 13:19:32
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -126,7 +126,7 @@
     window.addEventListener('load', ajustarEscalaIconos);
 
     var icon_A04_S913 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -223,20 +223,6 @@
     marker_OPU600.addTo(map);
     marcadores.push(marker_OPU600);
 
-    var icon_A17_S077 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_A17_S077 = L.marker([-26.91972200323, -58.80222199826], {
-        icon: icon_A17_S077,
-        title: "A17-S077 - Intermitente: Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 12:31:22",
-        categoria: "Intermitente",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("A17-S077<br>Intermitente: Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 12:31:22");
-    marker_A17_S077.addTo(map);
-    marcadores.push(marker_A17_S077);
-
     var icon_A13_S037 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
@@ -250,6 +236,20 @@
     }).bindTooltip("A13-S037<br>Celdas Caidas del Sitio<br>OTHERREASON<br>2025-05-23 12:31:22");
     marker_A13_S037.addTo(map);
     marcadores.push(marker_A13_S037);
+
+    var icon_A17_S077 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A17_S077 = L.marker([-26.91972200323, -58.80222199826], {
+        icon: icon_A17_S077,
+        title: "A17-S077 - Intermitente: Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 12:31:22",
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("A17-S077<br>Intermitente: Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 12:31:22");
+    marker_A17_S077.addTo(map);
+    marcadores.push(marker_A17_S077);
 
     var icon_A10_S040 = L.divIcon({
         className: '',
