@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">59</span> |
-    🕒 Última actualización: 2025-05-23 16:42:32
+    🔴 Total de sitios afectados: <span id="contador">60</span> |
+    🕒 Última actualización: 2025-05-23 16:43:37
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -124,6 +124,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_SID_017 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SID_017 = L.marker([-38.873888, -70.11268], {
+        icon: icon_SID_017,
+        title: "SID_017 - Sitio Parcialmente Caido - OTHERREASON - 2025-05-23 16:43:09",
+        categoria: "Sitio Parcial",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("SID_017<br>Sitio Parcialmente Caido<br>OTHERREASON<br>2025-05-23 16:43:09");
+    marker_SID_017.addTo(map);
+    marcadores.push(marker_SID_017);
 
     var icon_A34_J130 = L.divIcon({
         className: '',
