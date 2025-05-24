@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">51</span> |
-    🕒 Última actualización: 2025-05-24 00:32:41
+    🔴 Total de sitios afectados: <span id="contador">50</span> |
+    🕒 Última actualización: 2025-05-24 00:34:02
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -126,7 +126,7 @@
     window.addEventListener('load', ajustarEscalaIconos);
 
     var icon_A18_S016 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -320,20 +320,6 @@
     }).bindTooltip("A19-S004<br>Celdas Caidas del Sitio<br>HARDWARE<br>2025-05-23 19:40:49");
     marker_A19_S004.addTo(map);
     marcadores.push(marker_A19_S004);
-
-    var icon_SPU604 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30]
-    });
-    var marker_SPU604 = L.marker([-34.95807782248, -58.05659688191], {
-        icon: icon_SPU604,
-        title: "SPU604 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-23 19:26:27",
-        categoria: "Sitio Completo",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("SPU604<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-23 19:26:27");
-    marker_SPU604.addTo(map);
-    marcadores.push(marker_SPU604);
 
     var icon_OPU657 = L.divIcon({
         className: '',
