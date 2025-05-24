@@ -145,8 +145,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-05-24 02:51:29
+    🔴 Total de sitios afectados: <span id="contador">55</span> |
+    🕒 Última actualización: 2025-05-24 02:52:54
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -231,6 +231,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A23_S028 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A23_S028 = L.marker([-23.25807600428, -63.74213400498], {
+        icon: icon_A23_S028,
+        title: "A23-S028 - Intermitente: Sitio Parcialmente Caido - ENVIRONMENT - 2025-05-24 02:50:34",
+        categoria: "Intermitente",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A23-S028<br>Intermitente: Sitio Parcialmente Caido<br>ENVIRONMENT<br>2025-05-24 02:50:34");
+    marker_A23_S028.addTo(map);
+    marcadores.push(marker_A23_S028);
 
     var icon_A18_S010 = L.divIcon({
         className: 'icono-parpadeo',
@@ -345,7 +359,7 @@
     marcadores.push(marker_A23_S198);
 
     var icon_A23_S198 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
