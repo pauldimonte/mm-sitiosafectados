@@ -145,8 +145,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-05-24 04:38:52
+    🔴 Total de sitios afectados: <span id="contador">55</span> |
+    🕒 Última actualización: 2025-05-24 04:40:12
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -231,6 +231,20 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
+
+    var icon_A23_S024 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A23_S024 = L.marker([-23.21917256528, -63.84252217411], {
+        icon: icon_A23_S024,
+        title: "A23-S024 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-24 04:39:12",
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A23-S024<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-24 04:39:12");
+    marker_A23_S024.addTo(map);
+    marcadores.push(marker_A23_S024);
 
     var icon_A18_S275 = L.divIcon({
         className: '',
@@ -345,16 +359,16 @@
     marcadores.push(marker_A17_S300);
 
     var icon_A23_S198 = L.divIcon({
-        className: '',
+        className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
     var marker_A23_S198 = L.marker([-23.12230041726, -64.3199613562], {
         icon: icon_A23_S198,
-        title: "A23-S198 - Intermitente: Sitio Completo Incomunicado - HARDWARE - 2025-05-24 04:05:35",
+        title: "A23-S198 - Intermitente: Sitio Completo Incomunicado - HARDWARE - 2025-05-24 04:39:12",
         categoria: "Intermitente",
         alertkey: "HARDWARE"
-    }).bindTooltip("A23-S198<br>Intermitente: Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-24 04:05:35");
+    }).bindTooltip("A23-S198<br>Intermitente: Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-24 04:39:12");
     marker_A23_S198.addTo(map);
     marcadores.push(marker_A23_S198);
 
