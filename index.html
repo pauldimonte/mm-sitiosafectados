@@ -145,8 +145,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">49</span> |
-    🕒 Última actualización: 2025-05-24 01:24:54
+    🔴 Total de sitios afectados: <span id="contador">50</span> |
+    🕒 Última actualización: 2025-05-24 01:26:15
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -233,7 +233,7 @@
     window.addEventListener('load', ajustarEscalaIconos);
 
     var icon_A19_S082 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
@@ -245,6 +245,20 @@
     }).bindTooltip("A19-S082<br>Sitio Parcialmente Caido<br>ENVIRONMENT<br>2025-05-24 01:14:56");
     marker_A19_S082.addTo(map);
     marcadores.push(marker_A19_S082);
+
+    var icon_A23_S024 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A23_S024 = L.marker([-23.21917256528, -63.84252217411], {
+        icon: icon_A23_S024,
+        title: "A23-S024 - Celdas Caidas del Sitio - ENVIRONMENT - 2025-05-24 01:25:08",
+        categoria: "Celdas Caidas",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A23-S024<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-24 01:25:08");
+    marker_A23_S024.addTo(map);
+    marcadores.push(marker_A23_S024);
 
     var icon_A23_S198 = L.divIcon({
         className: '',
