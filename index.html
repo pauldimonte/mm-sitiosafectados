@@ -70,8 +70,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">48</span> |
-    🕒 Última actualización: 2025-05-23 23:16:26
+    🔴 Total de sitios afectados: <span id="contador">49</span> |
+    🕒 Última actualización: 2025-05-23 23:17:48
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -125,12 +125,26 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_A18_S292 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A18_S292 = L.marker([-27.445686, -55.860589], {
+        icon: icon_A18_S292,
+        title: "A18-S292 - Celdas Caidas del Sitio - ENVIRONMENT - 2025-05-23 23:16:44",
+        categoria: "Celdas Caidas",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A18-S292<br>Celdas Caidas del Sitio<br>ENVIRONMENT<br>2025-05-23 23:16:44");
+    marker_A18_S292.addTo(map);
+    marcadores.push(marker_A18_S292);
+
     var icon_A23_S195 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30]
     });
-    var marker_A23_S195 = L.marker([-23.139784, -64.332937], {
+    var marker_A23_S195 = L.marker([-23.13865611941, -64.33296495402], {
         icon: icon_A23_S195,
         title: "A23-S195 - Sitio Completo Incomunicado - HARDWARE - 2025-05-23 23:14:27",
         categoria: "Sitio Completo",
