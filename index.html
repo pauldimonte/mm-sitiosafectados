@@ -145,8 +145,8 @@
 </head>
 <body>
  <div id="barra-info">
-    🔴 Total de sitios afectados: <span id="contador">51</span> |
-    🕒 Última actualización: 2025-05-24 04:08:23
+    🔴 Total de sitios afectados: <span id="contador">53</span> |
+    🕒 Última actualización: 2025-05-24 04:09:47
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -232,6 +232,20 @@
     map.on('zoomend', ajustarEscalaIconos);
     window.addEventListener('load', ajustarEscalaIconos);
 
+    var icon_SPU182 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_SPU182 = L.marker([-34.841831, -58.47186], {
+        icon: icon_SPU182,
+        title: "SPU182 - Celdas Caidas del Sitio - OTHERREASON - 2025-05-24 04:08:52",
+        categoria: "Celdas Caidas",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("SPU182<br>Celdas Caidas del Sitio<br>OTHERREASON<br>2025-05-24 04:08:52");
+    marker_SPU182.addTo(map);
+    marcadores.push(marker_SPU182);
+
     var icon_A22_S091 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
@@ -315,6 +329,20 @@
     }).bindTooltip("A17-S300<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-24 01:41:24");
     marker_A17_S300.addTo(map);
     marcadores.push(marker_A17_S300);
+
+    var icon_A23_S198 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30]
+    });
+    var marker_A23_S198 = L.marker([-23.12230041726, -64.3199613562], {
+        icon: icon_A23_S198,
+        title: "A23-S198 - Intermitente: Sitio Completo Incomunicado - HARDWARE - 2025-05-24 04:05:35",
+        categoria: "Intermitente",
+        alertkey: "HARDWARE"
+    }).bindTooltip("A23-S198<br>Intermitente: Sitio Completo Incomunicado<br>HARDWARE<br>2025-05-24 04:05:35");
+    marker_A23_S198.addTo(map);
+    marcadores.push(marker_A23_S198);
 
     var icon_A23_S198 = L.divIcon({
         className: 'icono-parpadeo',
