@@ -152,7 +152,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">69</span> |
-    🕒 Última actualización: 2025-05-25 08:25:22
+    🕒 Última actualización: 2025-05-25 08:26:45
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -249,36 +249,36 @@
     // No llamamos a window.addEventListener('load', ajustarEscalaIconos) aquí
     // Se llamará después de aplicar filtros en DOMContentLoaded
 
-    var icon_A34_J009_0 = L.divIcon({
+    var icon_A27_U051_0 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
         popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
     });
-    var marker_A34_J009_0 = L.marker([-31.52964719479, -68.54018235673], {
-        icon: icon_A34_J009_0,
+    var marker_A27_U051_0 = L.marker([-42.74391, -65.04306], {
+        icon: icon_A27_U051_0,
+        title: "A27-U051 - Sitio Parcialmente Caido - ENVIRONMENT - 2025-05-25 08:26:16",
+        categoria: "Sitio Parcial",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A27-U051<br>Sitio Parcialmente Caido<br>ENVIRONMENT<br>2025-05-25 08:26:16");
+    marcadores.push(marker_A27_U051_0); 
+    // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
+
+    var icon_A34_J009_1 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
+        popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
+    });
+    var marker_A34_J009_1 = L.marker([-31.52964719479, -68.54018235673], {
+        icon: icon_A34_J009_1,
         title: "A34-J009 - Sitio Completo Incomunicado - ENVIRONMENT - 2025-05-25 08:22:56",
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"
     }).bindTooltip("A34-J009<br>Sitio Completo Incomunicado<br>ENVIRONMENT<br>2025-05-25 08:22:56");
-    marcadores.push(marker_A34_J009_0); 
-    // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
-
-    var icon_A28_R053_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
-        popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
-    });
-    var marker_A28_R053_1 = L.marker([-41.1174972059, -71.4121902236], {
-        icon: icon_A28_R053_1,
-        title: "A28-R053 - Sitio Parcialmente Caido - ENVIRONMENT - 2025-05-25 08:16:22",
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A28-R053<br>Sitio Parcialmente Caido<br>ENVIRONMENT<br>2025-05-25 08:16:22");
-    marcadores.push(marker_A28_R053_1); 
+    marcadores.push(marker_A34_J009_1); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
     var icon_SPU409_2 = L.divIcon({
@@ -313,20 +313,20 @@
     marcadores.push(marker_A28_R054_3); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
-    var icon_A04_S427_4 = L.divIcon({
+    var icon_A08_S012_4 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
         popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
     });
-    var marker_A04_S427_4 = L.marker([-33.0157797858, -60.86342326149], {
-        icon: icon_A04_S427_4,
-        title: "A04-S427 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-25 07:30:37",
-        categoria: "Sitio Completo",
+    var marker_A08_S012_4 = L.marker([-31.52330300241, -58.25806499866], {
+        icon: icon_A08_S012_4,
+        title: "A08-S012 - Sitio Parcialmente Caido - OTHERREASON - 2025-05-25 07:30:37",
+        categoria: "Sitio Parcial",
         alertkey: "OTHERREASON"
-    }).bindTooltip("A04-S427<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-25 07:30:37");
-    marcadores.push(marker_A04_S427_4); 
+    }).bindTooltip("A08-S012<br>Sitio Parcialmente Caido<br>OTHERREASON<br>2025-05-25 07:30:37");
+    marcadores.push(marker_A08_S012_4); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
     var icon_A17_S052_5 = L.divIcon({
@@ -345,20 +345,20 @@
     marcadores.push(marker_A17_S052_5); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
-    var icon_A08_S012_6 = L.divIcon({
+    var icon_A04_S427_6 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
         popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
     });
-    var marker_A08_S012_6 = L.marker([-31.52330300241, -58.25806499866], {
-        icon: icon_A08_S012_6,
-        title: "A08-S012 - Sitio Parcialmente Caido - OTHERREASON - 2025-05-25 07:30:37",
-        categoria: "Sitio Parcial",
+    var marker_A04_S427_6 = L.marker([-33.0157797858, -60.86342326149], {
+        icon: icon_A04_S427_6,
+        title: "A04-S427 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-25 07:30:37",
+        categoria: "Sitio Completo",
         alertkey: "OTHERREASON"
-    }).bindTooltip("A08-S012<br>Sitio Parcialmente Caido<br>OTHERREASON<br>2025-05-25 07:30:37");
-    marcadores.push(marker_A08_S012_6); 
+    }).bindTooltip("A04-S427<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-25 07:30:37");
+    marcadores.push(marker_A04_S427_6); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
     var icon_A08_S031_7 = L.divIcon({
@@ -985,36 +985,36 @@
     marcadores.push(marker_SPU1639_45); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
-    var icon_OPU768_46 = L.divIcon({
+    var icon_OPU319_46 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
         popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
     });
-    var marker_OPU768_46 = L.marker([-34.67472939645, -58.78198299798], {
-        icon: icon_OPU768_46,
-        title: "OPU768 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 15:48:11",
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"
-    }).bindTooltip("OPU768<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 15:48:11");
-    marcadores.push(marker_OPU768_46); 
-    // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
-
-    var icon_OPU319_47 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
-        popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
-    });
-    var marker_OPU319_47 = L.marker([-34.69652434058, -58.77410014113], {
-        icon: icon_OPU319_47,
+    var marker_OPU319_46 = L.marker([-34.69652434058, -58.77410014113], {
+        icon: icon_OPU319_46,
         title: "OPU319 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 15:48:11",
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"
     }).bindTooltip("OPU319<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 15:48:11");
-    marcadores.push(marker_OPU319_47); 
+    marcadores.push(marker_OPU319_46); 
+    // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
+
+    var icon_OPU768_47 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
+        popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
+    });
+    var marker_OPU768_47 = L.marker([-34.67472939645, -58.78198299798], {
+        icon: icon_OPU768_47,
+        title: "OPU768 - Sitio Completo Incomunicado - OTHERREASON - 2025-05-23 15:48:11",
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"
+    }).bindTooltip("OPU768<br>Sitio Completo Incomunicado<br>OTHERREASON<br>2025-05-23 15:48:11");
+    marcadores.push(marker_OPU768_47); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
     var icon_A41_B288_48 = L.divIcon({
