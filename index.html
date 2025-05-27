@@ -152,7 +152,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">150</span> |
-    🕒 Última actualización: 2025-05-27 03:38:36
+    🕒 Última actualización: 2025-05-27 03:39:40
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -253,49 +253,49 @@
     // No llamamos a window.addEventListener('load', ajustarEscalaIconos) aquí
     // Se llamará después de aplicar filtros en DOMContentLoaded
 
-    var icon_A06_S089_0 = L.divIcon({
+    var icon_A04_S666_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
+        popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
+    });
+    var marker_A04_S666_0 = L.marker([-33.82847, -62.2035], {
+        icon: icon_A04_S666_0,
+        categoria: "Sitio Parcial",
+        alertkey: "ENVIRONMENT"
+    }).bindTooltip("A04-S666-- Sitio Parcialmente Caido - ENVIRONMENT- 2025-05-27 03:39:06");
+    marcadores.push(marker_A04_S666_0); 
+    // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
+
+    var icon_A06_S089_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
         popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
     });
-    var marker_A06_S089_0 = L.marker([-32.20931072545, -61.69827441147], {
-        icon: icon_A06_S089_0,
+    var marker_A06_S089_1 = L.marker([-32.20931072545, -61.69827441147], {
+        icon: icon_A06_S089_1,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"
     }).bindTooltip("A06-S089-El Trebol Poste 2- Sitio Completo Incomunicado - HARDWARE- 2025-05-27 03:34:39");
-    marcadores.push(marker_A06_S089_0); 
+    marcadores.push(marker_A06_S089_1); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
-    var icon_A17_S113_1 = L.divIcon({
+    var icon_A17_S113_2 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
         popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
     });
-    var marker_A17_S113_1 = L.marker([-27.94478400296, -57.89823999831], {
-        icon: icon_A17_S113_1,
+    var marker_A17_S113_2 = L.marker([-27.94478400296, -57.89823999831], {
+        icon: icon_A17_S113_2,
         categoria: "Sitio Parcial",
         alertkey: "ENVIRONMENT"
     }).bindTooltip("A17-S113-Palmar Grande- Sitio Parcialmente Caido - ENVIRONMENT- 2025-05-27 03:33:09");
-    marcadores.push(marker_A17_S113_1); 
-    // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
-
-    var icon_A04_S666_2 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], // Centra el icono en la coordenada (opcional, ajustar si es necesario)
-        popupAnchor: [0, -30] // Ajusta la posición del popup (opcional)
-    });
-    var marker_A04_S666_2 = L.marker([-33.82847000239, -62.20349999861], {
-        icon: icon_A04_S666_2,
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"
-    }).bindTooltip("A04-S666-SAN EDUARDO 2- Celdas Caidas del Sitio - ENVIRONMENT- 2025-05-27 03:33:09");
-    marcadores.push(marker_A04_S666_2); 
+    marcadores.push(marker_A17_S113_2); 
     // NO lo añadimos al mapa aquí, aplicarFiltros() se encargará
 
     var icon_NPU297_3 = L.divIcon({
