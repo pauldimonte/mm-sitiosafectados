@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">155</span> |
-    🕒 Última actualización: 2025-05-28 10:22:21
+    🕒 Última actualización: 2025-05-28 10:23:26
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,33 +284,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A18_S195_0 = L.divIcon({
+    var icon_A07_S052_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A07_S052_0 = L.marker([-31.690879, -60.505324], {
+        icon: icon_A07_S052_0,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A07-S052-- Sitio Completo Incomunicado - OTHERREASON- 2025-05-28 10:22:40");
+    marcadores.push(marker_A07_S052_0); 
+
+    var icon_A18_S195_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A18_S195_0 = L.marker([-27.43489992457, -55.94889649004], {
-        icon: icon_A18_S195_0,
+    var marker_A18_S195_1 = L.marker([-27.43489992457, -55.94889649004], {
+        icon: icon_A18_S195_1,
         categoria: "Celdas Caidas",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A18-S195-Posadas Bo. Bicentenario- Celdas Caidas del Sitio - ENVIRONMENT- 2025-05-28 10:21:14");
-    marcadores.push(marker_A18_S195_0); 
-
-    var icon_A19_S105_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A19_S105_1 = L.marker([-25.96540991251, -54.59369483089], {
-        icon: icon_A19_S105_1,
-        categoria: "Sitio Completo",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A19-S105-Wanda Barrios Oeste- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-28 10:21:14");
-    marcadores.push(marker_A19_S105_1); 
+    marcadores.push(marker_A18_S195_1); 
 
     var icon_A18_S064_2 = L.divIcon({
         className: 'icono-parpadeo',
@@ -326,61 +326,61 @@
     }).bindTooltip("A18-S064-Posadas Villa Sarita- Intermitente: Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-28 10:21:14");
     marcadores.push(marker_A18_S064_2); 
 
-    var icon_A14_S074_3 = L.divIcon({
+    var icon_A19_S105_3 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A14_S074_3 = L.marker([-29.14415200278, -58.13560999847], {
-        icon: icon_A14_S074_3,
+    var marker_A19_S105_3 = L.marker([-25.96540991251, -54.59369483089], {
+        icon: icon_A19_S105_3,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A19-S105-Wanda Barrios Oeste- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-28 10:21:14");
+    marcadores.push(marker_A19_S105_3); 
+
+    var icon_A14_S074_4 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A14_S074_4 = L.marker([-29.14415200278, -58.13560999847], {
+        icon: icon_A14_S074_4,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A14-S074-Mercedes Gaucho Gil- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-28 10:16:54");
-    marcadores.push(marker_A14_S074_3); 
+    marcadores.push(marker_A14_S074_4); 
 
-    var icon_A11_S877_4 = L.divIcon({
+    var icon_A11_S877_5 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A11_S877_4 = L.marker([-27.83468725051, -64.27976668603], {
-        icon: icon_A11_S877_4,
+    var marker_A11_S877_5 = L.marker([-27.83468725051, -64.27976668603], {
+        icon: icon_A11_S877_5,
         categoria: "Sitio Completo",
         alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A11-S877-Santiago Circunvalacion 2- Sitio Completo Incomunicado - CORTEFO- 2025-05-28 10:16:02");
-    marcadores.push(marker_A11_S877_4); 
+    marcadores.push(marker_A11_S877_5); 
 
-    var icon_A21_S035_5 = L.divIcon({
+    var icon_A21_S035_6 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A21_S035_5 = L.marker([-24.73027618752, -65.49317430352], {
-        icon: icon_A21_S035_5,
+    var marker_A21_S035_6 = L.marker([-24.73027618752, -65.49317430352], {
+        icon: icon_A21_S035_6,
         categoria: "Sitio Parcial",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A21-S035-San Lorenzo- Sitio Parcialmente Caido - ENVIRONMENT- 2025-05-28 10:14:50");
-    marcadores.push(marker_A21_S035_5); 
-
-    var icon_A19_S105_6 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A19_S105_6 = L.marker([-25.96540991251, -54.59369483089], {
-        icon: icon_A19_S105_6,
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A19-S105-Wanda Barrios Oeste- Celdas Caidas del Sitio - ENVIRONMENT- 2025-05-28 10:12:33");
-    marcadores.push(marker_A19_S105_6); 
+    marcadores.push(marker_A21_S035_6); 
 
     var icon_A04_S720_7 = L.divIcon({
         className: '',
@@ -592,33 +592,33 @@
     }).bindTooltip("A19-S111-Jardin America Av. Antartida A- Sitio Parcialmente Caido - ENVIRONMENT- 2025-05-28 09:24:27");
     marcadores.push(marker_A19_S111_21); 
 
-    var icon_A11_S056_22 = L.divIcon({
+    var icon_A11_S257_22 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A11_S056_22 = L.marker([-26.81489896493, -65.14387910511], {
-        icon: icon_A11_S056_22,
-        categoria: "Intermitente",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A11-S056-Tucuman Alderetes- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-05-28 09:24:12");
-    marcadores.push(marker_A11_S056_22); 
-
-    var icon_A11_S257_23 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A11_S257_23 = L.marker([-26.80958104759, -65.13401031353], {
-        icon: icon_A11_S257_23,
+    var marker_A11_S257_22 = L.marker([-26.80958104759, -65.13401031353], {
+        icon: icon_A11_S257_22,
         categoria: "Intermitente",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A11-S257-TucumÃÂ¡n Alderetes Poste 1- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-05-28 09:24:12");
-    marcadores.push(marker_A11_S257_23); 
+    marcadores.push(marker_A11_S257_22); 
+
+    var icon_A11_S056_23 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A11_S056_23 = L.marker([-26.81489896493, -65.14387910511], {
+        icon: icon_A11_S056_23,
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A11-S056-Tucuman Alderetes- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-05-28 09:24:12");
+    marcadores.push(marker_A11_S056_23); 
 
     var icon_A03_S387_24 = L.divIcon({
         className: '',
@@ -928,33 +928,33 @@
     }).bindTooltip("A19-S039-Fracran- Sitio Parcialmente Caido - OTHERREASON- 2025-05-28 07:30:23");
     marcadores.push(marker_A19_S039_45); 
 
-    var icon_CM046_46 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_CM046_46 = L.marker([-34.60523640426, -58.38518886687], {
-        icon: icon_CM046_46,
-        categoria: "Sitio Completo",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("CM046-Sarmiento y Talcahuano- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-28 06:24:36");
-    marcadores.push(marker_CM046_46); 
-
-    var icon_A33_O359_47 = L.divIcon({
+    var icon_A33_O359_46 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A33_O359_47 = L.marker([-32.9169543213, -68.84139754778], {
-        icon: icon_A33_O359_47,
+    var marker_A33_O359_46 = L.marker([-32.9169543213, -68.84139754778], {
+        icon: icon_A33_O359_46,
         categoria: "Intermitente",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A33-O359-Mendoza Cabral- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-05-28 06:24:36");
-    marcadores.push(marker_A33_O359_47); 
+    marcadores.push(marker_A33_O359_46); 
+
+    var icon_CM046_47 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_CM046_47 = L.marker([-34.60523640426, -58.38518886687], {
+        icon: icon_CM046_47,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("CM046-Sarmiento y Talcahuano- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-28 06:24:36");
+    marcadores.push(marker_CM046_47); 
 
     var icon_A19_S035_48 = L.divIcon({
         className: '',
@@ -1278,33 +1278,33 @@
     }).bindTooltip("OPU957-Nextel Libertad- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-27 22:02:58");
     marcadores.push(marker_OPU957_70); 
 
-    var icon_A14_S104_71 = L.divIcon({
+    var icon_A14_S103_71 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A14_S104_71 = L.marker([-29.17736000284, -58.85959999844], {
-        icon: icon_A14_S104_71,
-        categoria: "Sitio Completo",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A14-S104-Batel- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-27 21:57:03");
-    marcadores.push(marker_A14_S104_71); 
-
-    var icon_A14_S103_72 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A14_S103_72 = L.marker([-29.17375000285, -59.05427799841], {
-        icon: icon_A14_S103_72,
+    var marker_A14_S103_71 = L.marker([-29.17375000285, -59.05427799841], {
+        icon: icon_A14_S103_71,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A14-S103-Pje. Maruchas- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-27 21:57:03");
-    marcadores.push(marker_A14_S103_72); 
+    marcadores.push(marker_A14_S103_71); 
+
+    var icon_A14_S104_72 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A14_S104_72 = L.marker([-29.17736000284, -58.85959999844], {
+        icon: icon_A14_S104_72,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A14-S104-Batel- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-27 21:57:03");
+    marcadores.push(marker_A14_S104_72); 
 
     var icon_A17_S045_73 = L.divIcon({
         className: '',
@@ -1768,33 +1768,33 @@
     }).bindTooltip("A41-B693-Mar de Ajo Sur Poste 7- Sitio Completo Incomunicado - HARDWARE- 2025-05-27 05:53:32");
     marcadores.push(marker_A41_B693_105); 
 
-    var icon_A41_B694_106 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A41_B694_106 = L.marker([-36.75126900148, -56.67428799266], {
-        icon: icon_A41_B694_106,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A41-B694-Mar de Ajo Sur Poste 8- Sitio Completo Incomunicado - OTHERREASON- 2025-05-28 07:31:50");
-    marcadores.push(marker_A41_B694_106); 
-
-    var icon_A41_B691_107 = L.divIcon({
+    var icon_A41_B691_106 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A41_B691_107 = L.marker([-36.73717000148, -56.68058299274], {
-        icon: icon_A41_B691_107,
+    var marker_A41_B691_106 = L.marker([-36.73717000148, -56.68058299274], {
+        icon: icon_A41_B691_106,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A41-B691-Mar de Ajo Sur Poste 5- Sitio Completo Incomunicado - HARDWARE- 2025-05-27 05:52:15");
-    marcadores.push(marker_A41_B691_107); 
+    marcadores.push(marker_A41_B691_106); 
+
+    var icon_A41_B694_107 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A41_B694_107 = L.marker([-36.75126900148, -56.67428799266], {
+        icon: icon_A41_B694_107,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A41-B694-Mar de Ajo Sur Poste 8- Sitio Completo Incomunicado - OTHERREASON- 2025-05-28 07:31:50");
+    marcadores.push(marker_A41_B694_107); 
 
     var icon_A41_B690_108 = L.divIcon({
         className: '',
