@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">59</span> |
-    🕒 Última actualización: 2025-05-29 20:42:35
+    🕒 Última actualización: 2025-05-29 20:43:39
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,47 +284,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A04_S164_0 = L.divIcon({
+    var icon_SPU594_0 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A04_S164_0 = L.marker([-33.01478293041, -60.69299891861], {
-        icon: icon_A04_S164_0,
+    var marker_SPU594_0 = L.marker([-34.893477, -58.546032], {
+        icon: icon_SPU594_0,
+        categoria: "Celdas Caidas",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("SPU594-- Celdas Caidas del Sitio - ENVIRONMENT- 2025-05-29 20:42:58");
+    marcadores.push(marker_SPU594_0); 
+
+    var icon_A04_S164_1 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A04_S164_1 = L.marker([-33.01478293041, -60.69299891861], {
+        icon: icon_A04_S164_1,
         categoria: "Celdas Caidas",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A04-S164-Rosario Club Universitario- Celdas Caidas del Sitio - ENVIRONMENT- 2025-05-29 20:41:09");
-    marcadores.push(marker_A04_S164_0); 
+    marcadores.push(marker_A04_S164_1); 
 
-    var icon_A07_S010_1 = L.divIcon({
+    var icon_A07_S010_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A07_S010_1 = L.marker([-31.09874549917, -60.08450576387], {
-        icon: icon_A07_S010_1,
+    var marker_A07_S010_2 = L.marker([-31.09874549917, -60.08450576387], {
+        icon: icon_A07_S010_2,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A07-S010-Helvecia- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-29 20:21:08");
-    marcadores.push(marker_A07_S010_1); 
-
-    var icon_OPU675_2 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_OPU675_2 = L.marker([-34.51281615146, -58.81460328543], {
-        icon: icon_OPU675_2,
-        categoria: "Sitio Completo",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("OPU675-WICAP 19 JOSE C. PAZ- Sitio Completo Incomunicado - HARDWARE- 2025-05-29 20:38:39");
-    marcadores.push(marker_OPU675_2); 
+    marcadores.push(marker_A07_S010_2); 
 
     var icon_A25_Z021_3 = L.divIcon({
         className: '',
