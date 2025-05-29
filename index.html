@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">65</span> |
-    🕒 Última actualización: 2025-05-29 15:00:22
+    🕒 Última actualización: 2025-05-29 15:01:26
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,47 +284,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A04_S131_0 = L.divIcon({
+    var icon_A17_S223_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A17_S223_0 = L.marker([-27.426823, -58.946353], {
+        icon: icon_A17_S223_0,
+        categoria: "Sitio Parcial",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A17-S223-- Sitio Parcialmente Caido - OTHERREASON- 2025-05-29 15:00:59");
+    marcadores.push(marker_A17_S223_0); 
+
+    var icon_A04_S131_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A04_S131_0 = L.marker([-33.31339771193, -60.60818247873], {
-        icon: icon_A04_S131_0,
+    var marker_A04_S131_1 = L.marker([-33.31339771193, -60.60818247873], {
+        icon: icon_A04_S131_1,
         categoria: "Sitio Parcial",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A04-S131-Coronel Bogado- Sitio Parcialmente Caido - ENVIRONMENT- 2025-05-29 14:46:04");
-    marcadores.push(marker_A04_S131_0); 
+    marcadores.push(marker_A04_S131_1); 
 
-    var icon_A34_J166_1 = L.divIcon({
+    var icon_A34_J166_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A34_J166_1 = L.marker([-31.54605704069, -68.58194842159], {
-        icon: icon_A34_J166_1,
+    var marker_A34_J166_2 = L.marker([-31.54605704069, -68.58194842159], {
+        icon: icon_A34_J166_2,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A34-J166-SAN JUAN MEGLIOLI- Sitio Completo Incomunicado - OTHERREASON- 2025-05-29 14:43:41");
-    marcadores.push(marker_A34_J166_1); 
-
-    var icon_A17_S223_2 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A17_S223_2 = L.marker([-27.42723364535, -58.946029977], {
-        icon: icon_A17_S223_2,
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A17-S223-Resistencia Villa Fabiana- Celdas Caidas del Sitio - OTHERREASON- 2025-05-29 14:20:13");
-    marcadores.push(marker_A17_S223_2); 
+    marcadores.push(marker_A34_J166_2); 
 
     var icon_CPU117_3 = L.divIcon({
         className: '',
