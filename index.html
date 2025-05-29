@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">93</span> |
-    🕒 Última actualización: 2025-05-29 03:14:11
+    🕒 Última actualización: 2025-05-29 03:15:15
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,33 +284,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A08_S038_0 = L.divIcon({
+    var icon_A23_S028_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A23_S028_0 = L.marker([-23.258076, -63.742134], {
+        icon: icon_A23_S028_0,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A23-S028-- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-29 03:14:48");
+    marcadores.push(marker_A23_S028_0); 
+
+    var icon_A08_S038_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A08_S038_0 = L.marker([-31.25839000243, -57.96927999857], {
-        icon: icon_A08_S038_0,
+    var marker_A08_S038_1 = L.marker([-31.25839000243, -57.96927999857], {
+        icon: icon_A08_S038_1,
         categoria: "Celdas Caidas",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A08-S038-Represa Salto Grande- Celdas Caidas del Sitio - HARDWARE- 2025-05-29 03:11:52");
-    marcadores.push(marker_A08_S038_0); 
-
-    var icon_A23_S028_1 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A23_S028_1 = L.marker([-23.25807600428, -63.74213400498], {
-        icon: icon_A23_S028_1,
-        categoria: "Intermitente",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A23-S028-Mision Chaquena- Intermitente: Sitio Parcialmente Caido - ENVIRONMENT- 2025-05-29 02:49:11");
-    marcadores.push(marker_A23_S028_1); 
+    marcadores.push(marker_A08_S038_1); 
 
     var icon_A23_S024_2 = L.divIcon({
         className: '',
