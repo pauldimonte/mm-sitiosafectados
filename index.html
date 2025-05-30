@@ -183,8 +183,8 @@
 <body>
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
-    🔴 Total de sitios afectados: <span id="contador">93</span> |
-    🕒 Última actualización: 2025-05-30 09:15:46
+    🔴 Total de sitios afectados: <span id="contador">94</span> |
+    🕒 Última actualización: 2025-05-30 09:16:49
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -354,33 +354,33 @@
     }).bindTooltip("A22-S011-San Martin 2- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 08:59:17");
     marcadores.push(marker_A22_S011_4); 
 
-    var icon_A22_S012_5 = L.divIcon({
+    var icon_A22_S056_5 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A22_S012_5 = L.marker([-24.75511300371, -59.48298699794], {
-        icon: icon_A22_S012_5,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A22-S012-Villa General Guemes- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 08:59:17");
-    marcadores.push(marker_A22_S012_5); 
-
-    var icon_A22_S056_6 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A22_S056_6 = L.marker([-24.2177780039, -60.19472199775], {
-        icon: icon_A22_S056_6,
+    var marker_A22_S056_5 = L.marker([-24.2177780039, -60.19472199775], {
+        icon: icon_A22_S056_5,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A22-S056-Posta Cambio Salazar- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 08:59:17");
-    marcadores.push(marker_A22_S056_6); 
+    marcadores.push(marker_A22_S056_5); 
+
+    var icon_A22_S012_6 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S012_6 = L.marker([-24.75511300371, -59.48298699794], {
+        icon: icon_A22_S012_6,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S012-Villa General Guemes- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 08:59:17");
+    marcadores.push(marker_A22_S012_6); 
 
     var icon_A42_A084_7 = L.divIcon({
         className: '',
@@ -1572,19 +1572,33 @@
     }).bindTooltip("SPU529-Nextel RUTA 16- Sitio Completo Incomunicado - OTHERREASON- 2025-05-12 03:39:27");
     marcadores.push(marker_SPU529_91); 
 
-    var icon_OPU243_92 = L.divIcon({
+    var icon_A22_S005_92 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S005_92 = L.marker([-26.48542116913, -58.31140201241], {
+        icon: icon_A22_S005_92,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S005-Herradura- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 09:15:44");
+    marcadores.push(marker_A22_S005_92); 
+
+    var icon_OPU243_93 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU243_92 = L.marker([-34.78387646306, -58.62022060103], {
-        icon: icon_OPU243_92,
+    var marker_OPU243_93 = L.marker([-34.78387646306, -58.62022060103], {
+        icon: icon_OPU243_93,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU243-Campanopolis- Sitio Completo Incomunicado - OTHERREASON- 2024-01-09 10:29:30");
-    marcadores.push(marker_OPU243_92); 
+    marcadores.push(marker_OPU243_93); 
 
     function aplicarFiltros() {
         var categoriasSeleccionadas = Array.from(document.querySelectorAll('.filtro-categoria:checked')).map(cb => cb.value);
