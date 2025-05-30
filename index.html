@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">95</span> |
-    🕒 Última actualización: 2025-05-30 12:27:51
+    🕒 Última actualización: 2025-05-30 12:28:55
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,47 +284,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A11_S459_0 = L.divIcon({
+    var icon_A22_S072_0 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A11_S459_0 = L.marker([-26.81573798645, -65.15210141967], {
-        icon: icon_A11_S459_0,
+    var marker_A22_S072_0 = L.marker([-26.1381015325, -58.18503632363], {
+        icon: icon_A22_S072_0,
+        categoria: "Intermitente",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S072-Formosa Bo. San Isidro- Intermitente: Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-30 12:26:49");
+    marcadores.push(marker_A22_S072_0); 
+
+    var icon_A11_S459_1 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A11_S459_1 = L.marker([-26.81573798645, -65.15210141967], {
+        icon: icon_A11_S459_1,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A11-S459-Tucuman Alderetes 3- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-30 12:25:45");
-    marcadores.push(marker_A11_S459_0); 
+    marcadores.push(marker_A11_S459_1); 
 
-    var icon_OPU549_1 = L.divIcon({
+    var icon_OPU549_2 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU549_1 = L.marker([-34.6201399963, -58.70395620297], {
-        icon: icon_OPU549_1,
+    var marker_OPU549_2 = L.marker([-34.6201399963, -58.70395620297], {
+        icon: icon_OPU549_2,
         categoria: "Sitio Parcial",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU549-Wicap 19 Ituzaingo- Sitio Parcialmente Caido - HARDWARE- 2025-05-30 12:26:54");
-    marcadores.push(marker_OPU549_1); 
-
-    var icon_A19_S149_2 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A19_S149_2 = L.marker([-26.42568412952, -54.63791218382], {
-        icon: icon_A19_S149_2,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A19-S149-Eldorado Av. Irigoyen- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 12:17:10");
-    marcadores.push(marker_A19_S149_2); 
+    marcadores.push(marker_OPU549_2); 
 
     var icon_SPU444_3 = L.divIcon({
         className: '',
@@ -620,19 +620,19 @@
     }).bindTooltip("OPU432-Merlo Barrio El Palomo- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 10:52:24");
     marcadores.push(marker_OPU432_23); 
 
-    var icon_OPU798_24 = L.divIcon({
+    var icon_OPU799_24 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU798_24 = L.marker([-34.70928249448, -58.69585778602], {
-        icon: icon_OPU798_24,
+    var marker_OPU799_24 = L.marker([-34.70598033416, -58.68769798583], {
+        icon: icon_OPU799_24,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("OPU798-Libertad Barrio La Magdalena- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 10:52:24");
-    marcadores.push(marker_OPU798_24); 
+    }).bindTooltip("OPU799-Libertad Barrio La Spada- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 10:52:24");
+    marcadores.push(marker_OPU799_24); 
 
     var icon_OPU320_25 = L.divIcon({
         className: '',
@@ -648,19 +648,19 @@
     }).bindTooltip("OPU320-MERLO BARRIO NUEVO- Sitio Completo Incomunicado - HARDWARE- 2025-05-30 10:52:24");
     marcadores.push(marker_OPU320_25); 
 
-    var icon_OPU799_26 = L.divIcon({
+    var icon_OPU798_26 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU799_26 = L.marker([-34.70598033416, -58.68769798583], {
-        icon: icon_OPU799_26,
+    var marker_OPU798_26 = L.marker([-34.70928249448, -58.69585778602], {
+        icon: icon_OPU798_26,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("OPU799-Libertad Barrio La Spada- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 10:52:24");
-    marcadores.push(marker_OPU799_26); 
+    }).bindTooltip("OPU798-Libertad Barrio La Magdalena- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 10:52:24");
+    marcadores.push(marker_OPU798_26); 
 
     var icon_NPU024_27 = L.divIcon({
         className: '',
@@ -1054,33 +1054,33 @@
     }).bindTooltip("A42-A087-GLEW EASY MACRO 006 SUR- Sitio Completo Incomunicado - HARDWARE- 2025-05-29 22:21:29");
     marcadores.push(marker_A42_A087_54); 
 
-    var icon_A41_A291_55 = L.divIcon({
+    var icon_A41_A289_55 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A41_A291_55 = L.marker([-36.34505415094, -56.72684419166], {
-        icon: icon_A41_A291_55,
-        categoria: "Sitio Completo",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A41-A291-SAN CLEMENTE EASY MACRO 1- Sitio Completo Incomunicado - HARDWARE- 2025-05-29 21:57:34");
-    marcadores.push(marker_A41_A291_55); 
-
-    var icon_A41_A289_56 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A41_A289_56 = L.marker([-36.35046272633, -56.7228306779], {
-        icon: icon_A41_A289_56,
+    var marker_A41_A289_55 = L.marker([-36.35046272633, -56.7228306779], {
+        icon: icon_A41_A289_55,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A41-A289-SAN CLEMENTE EASY MACRO 5- Sitio Completo Incomunicado - HARDWARE- 2025-05-29 21:57:34");
-    marcadores.push(marker_A41_A289_56); 
+    marcadores.push(marker_A41_A289_55); 
+
+    var icon_A41_A291_56 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A41_A291_56 = L.marker([-36.34505415094, -56.72684419166], {
+        icon: icon_A41_A291_56,
+        categoria: "Sitio Completo",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A41-A291-SAN CLEMENTE EASY MACRO 1- Sitio Completo Incomunicado - HARDWARE- 2025-05-29 21:57:34");
+    marcadores.push(marker_A41_A291_56); 
 
     var icon_A04_S164_57 = L.divIcon({
         className: '',
