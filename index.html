@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">81</span> |
-    🕒 Última actualización: 2025-05-30 14:48:38
+    🕒 Última actualización: 2025-05-30 14:49:42
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -222,10 +222,6 @@
         <label class="checkbox-alerta">
           <input type="checkbox" class="filtro-alerta styled-checkbox" value="HARDWARE" checked> 
           <span class="checkbox-label">HARDWARE</span>
-        </label>
-        <label class="checkbox-alerta">
-          <input type="checkbox" class="filtro-alerta styled-checkbox" value="LICENSE" checked> 
-          <span class="checkbox-label">LICENSE</span>
         </label>
         <label class="checkbox-alerta">
           <input type="checkbox" class="filtro-alerta styled-checkbox" value="OTHERREASON" checked> 
@@ -288,19 +284,19 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A11_S016_0 = L.divIcon({
+    var icon_A18_S078_0 = L.divIcon({
         className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A11_S016_0 = L.marker([-26.56720000255, -64.54690003472], {
-        icon: icon_A11_S016_0,
-        categoria: "Celdas Caidas",
-        alertkey: "LICENSE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A11-S016-Garmendia- Celdas Caidas del Sitio - LICENSE- 2025-05-30 14:47:46");
-    marcadores.push(marker_A11_S016_0); 
+    var marker_A18_S078_0 = L.marker([-27.633333, -56.906389], {
+        icon: icon_A18_S078_0,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A18-S078-- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-30 14:49:22");
+    marcadores.push(marker_A18_S078_0); 
 
     var icon_A14_S003_1 = L.divIcon({
         className: 'icono-parpadeo',
@@ -554,33 +550,33 @@
     }).bindTooltip("CPU235-Estacion Caballito- Sitio Completo Incomunicado - CORTEFO- 2025-05-30 11:53:44");
     marcadores.push(marker_CPU235_18); 
 
-    var icon_CPU109_19 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_CPU109_19 = L.marker([-34.60453313698, -58.42121288364], {
-        icon: icon_CPU109_19,
-        categoria: "Sitio Completo",
-        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("CPU109-Medrano- Sitio Completo Incomunicado - CORTEFO- 2025-05-30 11:52:35");
-    marcadores.push(marker_CPU109_19); 
-
-    var icon_A34_J131_20 = L.divIcon({
+    var icon_A34_J131_19 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A34_J131_20 = L.marker([-31.50292778043, -68.52932894524], {
-        icon: icon_A34_J131_20,
+    var marker_A34_J131_19 = L.marker([-31.50292778043, -68.52932894524], {
+        icon: icon_A34_J131_19,
         categoria: "Celdas Caidas",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A34-J131-Chimbas Porres- Celdas Caidas del Sitio - OTHERREASON- 2025-05-30 11:52:35");
-    marcadores.push(marker_A34_J131_20); 
+    marcadores.push(marker_A34_J131_19); 
+
+    var icon_CPU109_20 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_CPU109_20 = L.marker([-34.60453313698, -58.42121288364], {
+        icon: icon_CPU109_20,
+        categoria: "Sitio Completo",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("CPU109-Medrano- Sitio Completo Incomunicado - CORTEFO- 2025-05-30 11:52:35");
+    marcadores.push(marker_CPU109_20); 
 
     var icon_SID_018_21 = L.divIcon({
         className: '',
