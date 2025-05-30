@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">70</span> |
-    🕒 Última actualización: 2025-05-29 23:14:40
+    🕒 Última actualización: 2025-05-29 23:15:44
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,47 +284,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A04_S417_0 = L.divIcon({
+    var icon_SPU115_0 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A04_S417_0 = L.marker([-33.14623540469, -60.52257779136], {
-        icon: icon_A04_S417_0,
+    var marker_SPU115_0 = L.marker([-34.707401, -58.401108], {
+        icon: icon_SPU115_0,
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("SPU115-- Celdas Caidas del Sitio - HARDWARE- 2025-05-29 23:14:57");
+    marcadores.push(marker_SPU115_0); 
+
+    var icon_A04_S417_1 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A04_S417_1 = L.marker([-33.14623540469, -60.52257779136], {
+        icon: icon_A04_S417_1,
         categoria: "Celdas Caidas",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A04-S417-ARROYO SECO- Celdas Caidas del Sitio - HARDWARE- 2025-05-29 23:12:11");
-    marcadores.push(marker_A04_S417_0); 
+    marcadores.push(marker_A04_S417_1); 
 
-    var icon_NPU854_1 = L.divIcon({
+    var icon_NPU854_2 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_NPU854_1 = L.marker([-34.44543290797, -58.81640647112], {
-        icon: icon_NPU854_1,
+    var marker_NPU854_2 = L.marker([-34.44543290797, -58.81640647112], {
+        icon: icon_NPU854_2,
         categoria: "Intermitente",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("NPU854-Pilar Poste 19- Intermitente: Sitio Completo Incomunicado - HARDWARE- 2025-05-29 23:11:40");
-    marcadores.push(marker_NPU854_1); 
-
-    var icon_A04_S681_2 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A04_S681_2 = L.marker([-32.9410390016, -60.64900701034], {
-        icon: icon_A04_S681_2,
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A04-S681-Rosario Sede Gobernacion- Celdas Caidas del Sitio - OTHERREASON- 2025-05-29 23:10:51");
-    marcadores.push(marker_A04_S681_2); 
+    marcadores.push(marker_NPU854_2); 
 
     var icon_SPU596_3 = L.divIcon({
         className: '',
