@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">74</span> |
-    🕒 Última actualización: 2025-05-30 07:32:20
+    🕒 Última actualización: 2025-05-30 07:33:24
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,33 +284,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A18_S219_0 = L.divIcon({
+    var icon_CEM021_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_CEM021_0 = L.marker([-34.58879470748, -58.37262917968], {
+        icon: icon_CEM021_0,
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("CEM021-LUMINARIA TERMINAL DE OMNIBUS- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 07:31:23");
+    marcadores.push(marker_CEM021_0); 
+
+    var icon_A18_S219_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A18_S219_0 = L.marker([-27.596046, -56.691635], {
-        icon: icon_A18_S219_0,
+    var marker_A18_S219_1 = L.marker([-27.59614256512, -56.6915511935], {
+        icon: icon_A18_S219_1,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A18-S219-- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-30 07:30:53");
-    marcadores.push(marker_A18_S219_0); 
-
-    var icon_A19_S059_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A19_S059_1 = L.marker([-25.606164, -54.581917], {
-        icon: icon_A19_S059_1,
-        categoria: "Celdas Caidas",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A19-S059-- Celdas Caidas del Sitio - HARDWARE- 2025-05-30 07:30:53");
-    marcadores.push(marker_A19_S059_1); 
+    }).bindTooltip("A18-S219-Ituzaingo Pago Largo- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-30 07:30:53");
+    marcadores.push(marker_A18_S219_1); 
 
     var icon_SPU409_2 = L.divIcon({
         className: 'icono-parpadeo',
@@ -319,11 +319,11 @@
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_SPU409_2 = L.marker([-34.754903, -58.246099], {
+    var marker_SPU409_2 = L.marker([-34.7546654859, -58.24630197168], {
         icon: icon_SPU409_2,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("SPU409-- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 07:30:17");
+    }).bindTooltip("SPU409-EZPELETA 3 DE MARZO- Sitio Completo Incomunicado - OTHERREASON- 2025-05-30 07:30:17");
     marcadores.push(marker_SPU409_2); 
 
     var icon_A14_S036_3 = L.divIcon({
