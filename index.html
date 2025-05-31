@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">50</span> |
-    🕒 Última actualización: 2025-05-31 16:40:10
+    🕒 Última actualización: 2025-05-31 16:41:14
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,33 +284,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A03_S394_0 = L.divIcon({
+    var icon_NPU538_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_NPU538_0 = L.marker([-34.350495, -58.729549], {
+        icon: icon_NPU538_0,
+        categoria: "Sitio Completo",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("NPU538-- Sitio Completo Incomunicado - CORTEFO- 2025-05-31 16:40:10");
+    marcadores.push(marker_NPU538_0); 
+
+    var icon_A03_S394_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A03_S394_0 = L.marker([-31.38212083861, -64.12909581349], {
-        icon: icon_A03_S394_0,
+    var marker_A03_S394_1 = L.marker([-31.38212083861, -64.12909581349], {
+        icon: icon_A03_S394_1,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A03-S394-CORDOBA ARCHONDO- Sitio Completo Incomunicado - ENVIRONMENT- 2025-05-31 16:32:41");
-    marcadores.push(marker_A03_S394_0); 
-
-    var icon_NPU538_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_NPU538_1 = L.marker([-34.35069447015, -58.72982065397], {
-        icon: icon_NPU538_1,
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("NPU538-Puertos del Lago- Celdas Caidas del Sitio - OTHERREASON- 2025-05-31 16:32:41");
-    marcadores.push(marker_NPU538_1); 
+    marcadores.push(marker_A03_S394_1); 
 
     var icon_OPU123_2 = L.divIcon({
         className: '',
