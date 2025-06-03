@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">75</span> |
-    🕒 Última actualización: 2025-06-03 13:03:39
+    🕒 Última actualización: 2025-06-03 13:04:44
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -288,33 +288,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A17_S487_0 = L.divIcon({
+    var icon_A04_S743_0 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A17_S487_0 = L.marker([-27.45943504758, -58.82252517461], {
-        icon: icon_A17_S487_0,
+    var marker_A04_S743_0 = L.marker([-32.93552, -60.651431], {
+        icon: icon_A04_S743_0,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A04-S743-- Sitio Completo Incomunicado - OTHERREASON- 2025-06-03 13:04:18");
+    marcadores.push(marker_A04_S743_0); 
+
+    var icon_A17_S487_1 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A17_S487_1 = L.marker([-27.45943504758, -58.82252517461], {
+        icon: icon_A17_S487_1,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A17-S487-Corrientes MicroLTE 012- Sitio Completo Incomunicado - OTHERREASON- 2025-06-03 13:01:37");
-    marcadores.push(marker_A17_S487_0); 
-
-    var icon_A10_S040_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A10_S040_1 = L.marker([-28.45325520549, -65.72400168037], {
-        icon: icon_A10_S040_1,
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A10-S040-Catamarca Valle Viejo- Celdas Caidas del Sitio - OTHERREASON- 2025-06-03 12:59:14");
-    marcadores.push(marker_A10_S040_1); 
+    marcadores.push(marker_A17_S487_1); 
 
     var icon_A04_S052_2 = L.divIcon({
         className: 'icono-parpadeo',
@@ -330,33 +330,33 @@
     }).bindTooltip("A04-S052-Capitan Bermudez- Celdas Caidas del Sitio - HARDWARE- 2025-06-03 12:57:31");
     marcadores.push(marker_A04_S052_2); 
 
-    var icon_A18_S007_3 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A18_S007_3 = L.marker([-27.02728826322, -54.68584482118], {
-        icon: icon_A18_S007_3,
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A18-S007-Dos De Mayo - Nucleo I- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-03 12:56:09");
-    marcadores.push(marker_A18_S007_3); 
-
-    var icon_A18_S064_4 = L.divIcon({
+    var icon_A18_S064_3 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A18_S064_4 = L.marker([-27.35507511016, -55.89678828302], {
-        icon: icon_A18_S064_4,
+    var marker_A18_S064_3 = L.marker([-27.35507511016, -55.89678828302], {
+        icon: icon_A18_S064_3,
         categoria: "Intermitente",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A18-S064-Posadas Villa Sarita- Intermitente: Sitio Parcialmente Caido - OTHERREASON- 2025-06-03 12:56:09");
-    marcadores.push(marker_A18_S064_4); 
+    marcadores.push(marker_A18_S064_3); 
+
+    var icon_A18_S007_4 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A18_S007_4 = L.marker([-27.02728826322, -54.68584482118], {
+        icon: icon_A18_S007_4,
+        categoria: "Sitio Parcial",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A18-S007-Dos De Mayo - Nucleo I- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-03 12:56:09");
+    marcadores.push(marker_A18_S007_4); 
 
     var icon_A13_S017_5 = L.divIcon({
         className: '',
@@ -862,47 +862,47 @@
     }).bindTooltip("OPU676-WICAP 20 JOSE C. PAZ- Sitio Completo Incomunicado - OTHERREASON- 2025-06-02 22:47:48");
     marcadores.push(marker_OPU676_40); 
 
-    var icon_OPU431_41 = L.divIcon({
+    var icon_OPU429_41 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU431_41 = L.marker([-34.52236344464, -58.77804067622], {
-        icon: icon_OPU431_41,
-        categoria: "Sitio Completo",
-        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("OPU431-Barrio Arricau- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:47:48");
-    marcadores.push(marker_OPU431_41); 
-
-    var icon_OPU151_42 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_OPU151_42 = L.marker([-34.53331374846, -58.74679642375], {
-        icon: icon_OPU151_42,
-        categoria: "Sitio Completo",
-        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("OPU151-Jose C. Paz Sur- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:47:48");
-    marcadores.push(marker_OPU151_42); 
-
-    var icon_OPU429_43 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_OPU429_43 = L.marker([-34.51716584671, -58.77993239019], {
-        icon: icon_OPU429_43,
+    var marker_OPU429_41 = L.marker([-34.51716584671, -58.77993239019], {
+        icon: icon_OPU429_41,
         categoria: "Sitio Completo",
         alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU429-Pinero Sur- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:47:48");
-    marcadores.push(marker_OPU429_43); 
+    marcadores.push(marker_OPU429_41); 
+
+    var icon_OPU431_42 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_OPU431_42 = L.marker([-34.52236344464, -58.77804067622], {
+        icon: icon_OPU431_42,
+        categoria: "Sitio Completo",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("OPU431-Barrio Arricau- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:47:48");
+    marcadores.push(marker_OPU431_42); 
+
+    var icon_OPU151_43 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_OPU151_43 = L.marker([-34.53331374846, -58.74679642375], {
+        icon: icon_OPU151_43,
+        categoria: "Sitio Completo",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("OPU151-Jose C. Paz Sur- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:47:48");
+    marcadores.push(marker_OPU151_43); 
 
     var icon_OPU100_44 = L.divIcon({
         className: '',
@@ -918,33 +918,33 @@
     }).bindTooltip("OPU100-Observatorio- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:47:47");
     marcadores.push(marker_OPU100_44); 
 
-    var icon_OPU2036_45 = L.divIcon({
+    var icon_OPU945_45 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU2036_45 = L.marker([-34.592414883, -58.71615381613], {
-        icon: icon_OPU2036_45,
-        categoria: "Sitio Completo",
-        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("OPU2036-Bella Vista Barrio La Luz- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:46:42");
-    marcadores.push(marker_OPU2036_45); 
-
-    var icon_OPU945_46 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_OPU945_46 = L.marker([-34.61071813417, -58.72040243308], {
-        icon: icon_OPU945_46,
+    var marker_OPU945_45 = L.marker([-34.61071813417, -58.72040243308], {
+        icon: icon_OPU945_45,
         categoria: "Sitio Completo",
         alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU945-NEXTEL PARQUE SANTA MARIA- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:46:42");
-    marcadores.push(marker_OPU945_46); 
+    marcadores.push(marker_OPU945_45); 
+
+    var icon_OPU2036_46 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_OPU2036_46 = L.marker([-34.592414883, -58.71615381613], {
+        icon: icon_OPU2036_46,
+        categoria: "Sitio Completo",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("OPU2036-Bella Vista Barrio La Luz- Sitio Completo Incomunicado - CORTEFO- 2025-06-02 22:46:42");
+    marcadores.push(marker_OPU2036_46); 
 
     var icon_A41_B874_47 = L.divIcon({
         className: '',
