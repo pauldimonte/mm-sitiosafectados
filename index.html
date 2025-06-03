@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">51</span> |
-    🕒 Última actualización: 2025-06-02 21:42:56
+    🕒 Última actualización: 2025-06-02 21:43:59
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -288,61 +288,61 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A19_S017_0 = L.divIcon({
+    var icon_A19_S023_0 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A19_S017_0 = L.marker([-25.93539298956, -53.91658771565], {
-        icon: icon_A19_S017_0,
+    var marker_A19_S023_0 = L.marker([-25.672778, -54.046944], {
+        icon: icon_A19_S023_0,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A19-S023-- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-02 21:43:00");
+    marcadores.push(marker_A19_S023_0); 
+
+    var icon_A19_S017_1 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A19_S017_1 = L.marker([-25.93539298956, -53.91658771565], {
+        icon: icon_A19_S017_1,
         categoria: "Intermitente",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A19-S017-Pinalito Norte- Intermitente: Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-02 21:39:04");
-    marcadores.push(marker_A19_S017_0); 
+    marcadores.push(marker_A19_S017_1); 
 
-    var icon_A07_S140_1 = L.divIcon({
-        className: 'icono-parpadeo',
+    var icon_A07_S140_2 = L.divIcon({
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A07_S140_1 = L.marker([-31.9503800025, -60.13146599847], {
-        icon: icon_A07_S140_1,
+    var marker_A07_S140_2 = L.marker([-31.9503800025, -60.13146599847], {
+        icon: icon_A07_S140_2,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A07-S140-Segui- Sitio Completo Incomunicado - OTHERREASON- 2025-06-02 21:33:50");
-    marcadores.push(marker_A07_S140_1); 
+    marcadores.push(marker_A07_S140_2); 
 
-    var icon_A03_E055_2 = L.divIcon({
+    var icon_A03_E055_3 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A03_E055_2 = L.marker([-31.41161175083, -64.16750831411], {
-        icon: icon_A03_E055_2,
+    var marker_A03_E055_3 = L.marker([-31.41161175083, -64.16750831411], {
+        icon: icon_A03_E055_3,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A03-E055-C?rdoba EM Catamarca- Sitio Completo Incomunicado - HARDWARE- 2025-06-02 21:29:11");
-    marcadores.push(marker_A03_E055_2); 
-
-    var icon_A19_S023_3 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A19_S023_3 = L.marker([-25.67277799181, -54.04694375868], {
-        icon: icon_A19_S023_3,
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A19-S023-Comandante Andresito- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-02 20:58:02");
-    marcadores.push(marker_A19_S023_3); 
+    marcadores.push(marker_A03_E055_3); 
 
     var icon_OPU1903_4 = L.divIcon({
         className: '',
