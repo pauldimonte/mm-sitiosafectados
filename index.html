@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">53</span> |
-    🕒 Última actualización: 2025-06-04 01:55:43
+    🕒 Última actualización: 2025-06-04 01:56:47
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -288,47 +288,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A07_S197_0 = L.divIcon({
+    var icon_A14_S035_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A14_S035_0 = L.marker([-29.717814, -57.203952], {
+        icon: icon_A14_S035_0,
+        categoria: "Sitio Completo",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A14-S035-- Sitio Completo Incomunicado - CORTEFO- 2025-06-04 01:55:55");
+    marcadores.push(marker_A14_S035_0); 
+
+    var icon_A07_S197_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A07_S197_0 = L.marker([-30.75704506139, -59.64639927419], {
-        icon: icon_A07_S197_0,
+    var marker_A07_S197_1 = L.marker([-30.75704506139, -59.64639927419], {
+        icon: icon_A07_S197_1,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A07-S197-La Paz Poste 2- Sitio Completo Incomunicado - HARDWARE- 2025-06-04 01:54:36");
-    marcadores.push(marker_A07_S197_0); 
+    marcadores.push(marker_A07_S197_1); 
 
-    var icon_A07_S196_1 = L.divIcon({
+    var icon_A07_S196_2 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A07_S196_1 = L.marker([-30.74691200265, -59.64158499845], {
-        icon: icon_A07_S196_1,
+    var marker_A07_S196_2 = L.marker([-30.74691200265, -59.64158499845], {
+        icon: icon_A07_S196_2,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A07-S196-La Paz Poste 1- Sitio Completo Incomunicado - HARDWARE- 2025-06-04 01:54:36");
-    marcadores.push(marker_A07_S196_1); 
-
-    var icon_A07_S128_2 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A07_S128_2 = L.marker([-31.86957454736, -60.00865561007], {
-        icon: icon_A07_S128_2,
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A07-S128-Viale Central- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-04 01:54:36");
-    marcadores.push(marker_A07_S128_2); 
+    marcadores.push(marker_A07_S196_2); 
 
     var icon_A08_S061_3 = L.divIcon({
         className: 'icono-parpadeo',
