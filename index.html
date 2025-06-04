@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">58</span> |
-    🕒 Última actualización: 2025-06-04 14:22:06
+    🕒 Última actualización: 2025-06-04 14:23:11
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -293,7 +293,7 @@
     map.on('zoomend', ajustarEscalaIconos);
 
     var icon_A04_S331_0 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
@@ -306,33 +306,33 @@
     }).bindTooltip("A04-S331-Godeken- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-04 14:12:13");
     marcadores.push(marker_A04_S331_0); 
 
-    var icon_A03_S488_1 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A03_S488_1 = L.marker([-31.13818568141, -64.29172852559], {
-        icon: icon_A03_S488_1,
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A03-S488-Salsipuedes Teco- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-04 14:07:53");
-    marcadores.push(marker_A03_S488_1); 
-
-    var icon_CPU218_2 = L.divIcon({
+    var icon_CPU218_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_CPU218_2 = L.marker([-34.65633524623, -58.42908113868], {
-        icon: icon_CPU218_2,
+    var marker_CPU218_1 = L.marker([-34.65633524623, -58.42908113868], {
+        icon: icon_CPU218_1,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("CPU218-CONDOR- Sitio Completo Incomunicado - OTHERREASON- 2025-06-04 14:07:53");
-    marcadores.push(marker_CPU218_2); 
+    marcadores.push(marker_CPU218_1); 
+
+    var icon_A03_S488_2 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A03_S488_2 = L.marker([-31.13818568141, -64.29172852559], {
+        icon: icon_A03_S488_2,
+        categoria: "Sitio Parcial",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A03-S488-Salsipuedes Teco- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-04 14:07:53");
+    marcadores.push(marker_A03_S488_2); 
 
     var icon_SPU318_3 = L.divIcon({
         className: '',
