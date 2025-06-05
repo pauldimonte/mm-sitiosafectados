@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">45</span> |
-    🕒 Última actualización: 2025-06-04 21:17:06
+    🕒 Última actualización: 2025-06-04 21:18:03
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -262,9 +262,8 @@
         localStorage.setItem('mapZoom', map.getZoom());
     });
 
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{x}/{y}', {
-  attribution: 'Tiles &copy; Esri',
-  maxZoom: 19
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
     var marcadores = [];
