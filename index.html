@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">63</span> |
-    🕒 Última actualización: 2025-06-05 17:06:51
+    🕒 Última actualización: 2025-06-05 17:07:55
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -288,33 +288,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_OPU1886_0 = L.divIcon({
+    var icon_A27_U049_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A27_U049_0 = L.marker([-43.25833299412, -65.34720623072], {
+        icon: icon_A27_U049_0,
+        categoria: "Celdas Caidas",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A27-U049-Trelew Parque Industrial- Celdas Caidas del Sitio - OTHERREASON- 2025-06-05 17:06:54");
+    marcadores.push(marker_A27_U049_0); 
+
+    var icon_OPU1886_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU1886_0 = L.marker([-34.54581769093, -58.59040982433], {
-        icon: icon_OPU1886_0,
+    var marker_OPU1886_1 = L.marker([-34.54581769093, -58.59040982433], {
+        icon: icon_OPU1886_1,
         categoria: "Sitio Parcial",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU1886-SAN MARTIN POSTE 69- Sitio Parcialmente Caido - HARDWARE- 2025-06-05 17:00:15");
-    marcadores.push(marker_OPU1886_0); 
-
-    var icon_A39_B856_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A39_B856_1 = L.marker([-36.89699043835, -60.32315564018], {
-        icon: icon_A39_B856_1,
-        categoria: "Celdas Caidas",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A39-B856-OLAVARRIA- Celdas Caidas del Sitio - HARDWARE- 2025-06-05 17:04:40");
-    marcadores.push(marker_A39_B856_1); 
+    marcadores.push(marker_OPU1886_1); 
 
     var icon_A16_S157_2 = L.divIcon({
         className: '',
@@ -330,19 +330,19 @@
     }).bindTooltip("A16-S157-Juan Jose Castelli Bartolome M- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-05 16:52:24");
     marcadores.push(marker_A16_S157_2); 
 
-    var icon_A38_B341_3 = L.divIcon({
+    var icon_CI_058_3 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A38_B341_3 = L.marker([-37.79910500187, -62.39204599925], {
-        icon: icon_A38_B341_3,
+    var marker_CI_058_3 = L.marker([-34.60428450342, -58.4120023676], {
+        icon: icon_CI_058_3,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A38-B341-Saavedra Teco- Sitio Completo Incomunicado - OTHERREASON- 2025-06-05 16:06:54");
-    marcadores.push(marker_A38_B341_3); 
+    }).bindTooltip("CI_058-Linea B - Carlos Gardel- Sitio Completo Incomunicado - OTHERREASON- 2025-06-05 16:06:54");
+    marcadores.push(marker_CI_058_3); 
 
     var icon_OPU954_4 = L.divIcon({
         className: '',
@@ -358,19 +358,19 @@
     }).bindTooltip("OPU954-Nextel Moreno- Sitio Completo Incomunicado - OTHERREASON- 2025-06-05 16:06:54");
     marcadores.push(marker_OPU954_4); 
 
-    var icon_CI_058_5 = L.divIcon({
+    var icon_A38_B341_5 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_CI_058_5 = L.marker([-34.60428450342, -58.4120023676], {
-        icon: icon_CI_058_5,
+    var marker_A38_B341_5 = L.marker([-37.79910500187, -62.39204599925], {
+        icon: icon_A38_B341_5,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("CI_058-Linea B - Carlos Gardel- Sitio Completo Incomunicado - OTHERREASON- 2025-06-05 16:06:54");
-    marcadores.push(marker_CI_058_5); 
+    }).bindTooltip("A38-B341-Saavedra Teco- Sitio Completo Incomunicado - OTHERREASON- 2025-06-05 16:06:54");
+    marcadores.push(marker_A38_B341_5); 
 
     var icon_OPU1920_6 = L.divIcon({
         className: '',
