@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">50</span> |
-    🕒 Última actualización: 2025-06-04 23:31:57
+    🕒 Última actualización: 2025-06-04 23:33:00
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -288,61 +288,61 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A19_S111_0 = L.divIcon({
+    var icon_A22_S039_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S039_0 = L.marker([-25.281421, -57.734352], {
+        icon: icon_A22_S039_0,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S039-- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-04 23:32:00");
+    marcadores.push(marker_A22_S039_0); 
+
+    var icon_A19_S111_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A19_S111_0 = L.marker([-27.0311308456, -55.2339291761], {
-        icon: icon_A19_S111_0,
+    var marker_A19_S111_1 = L.marker([-27.0311308456, -55.2339291761], {
+        icon: icon_A19_S111_1,
         categoria: "Sitio Parcial",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A19-S111-Jardin America Av. Antartida A- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-04 23:15:07");
-    marcadores.push(marker_A19_S111_0); 
+    marcadores.push(marker_A19_S111_1); 
 
-    var icon_SPU059_1 = L.divIcon({
+    var icon_SPU059_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_SPU059_1 = L.marker([-34.77814629789, -58.36410327941], {
-        icon: icon_SPU059_1,
+    var marker_SPU059_2 = L.marker([-34.77814629789, -58.36410327941], {
+        icon: icon_SPU059_2,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("SPU059-JOSE MARMOL- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-04 23:14:22");
-    marcadores.push(marker_SPU059_1); 
+    marcadores.push(marker_SPU059_2); 
 
-    var icon_A18_S108_2 = L.divIcon({
+    var icon_A18_S108_3 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A18_S108_2 = L.marker([-27.60862977697, -55.34317212005], {
-        icon: icon_A18_S108_2,
+    var marker_A18_S108_3 = L.marker([-27.60862977697, -55.34317212005], {
+        icon: icon_A18_S108_3,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A18-S108-Leandro N. Alem Oeste Ruta 4- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-04 23:13:48");
-    marcadores.push(marker_A18_S108_2); 
-
-    var icon_SPU1024_3 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_SPU1024_3 = L.marker([-34.68454556622, -58.49314500461], {
-        icon: icon_SPU1024_3,
-        categoria: "Celdas Caidas",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("SPU1024-ESTACION VILLA MADERO- Celdas Caidas del Sitio - HARDWARE- 2025-06-04 23:30:37");
-    marcadores.push(marker_SPU1024_3); 
+    marcadores.push(marker_A18_S108_3); 
 
     var icon_A18_S025_4 = L.divIcon({
         className: '',
