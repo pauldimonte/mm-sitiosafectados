@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">50</span> |
-    🕒 Última actualización: 2025-06-04 23:08:32
+    🕒 Última actualización: 2025-06-04 23:09:35
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -288,33 +288,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A18_S025_0 = L.divIcon({
+    var icon_SPU1024_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_SPU1024_0 = L.marker([-34.68454556622, -58.49314500461], {
+        icon: icon_SPU1024_0,
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("SPU1024-ESTACION VILLA MADERO- Celdas Caidas del Sitio - HARDWARE- 2025-06-04 23:08:56");
+    marcadores.push(marker_SPU1024_0); 
+
+    var icon_A18_S025_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A18_S025_0 = L.marker([-27.768935, -55.780399], {
-        icon: icon_A18_S025_0,
+    var marker_A18_S025_1 = L.marker([-27.76887525149, -55.78052779817], {
+        icon: icon_A18_S025_1,
         categoria: "Celdas Caidas",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A18-S025-- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-04 23:07:16");
-    marcadores.push(marker_A18_S025_0); 
-
-    var icon_SPU110_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_SPU110_1 = L.marker([-34.72207823785, -58.53412429812], {
-        icon: icon_SPU110_1,
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("SPU110-Ciudad Evita- Celdas Caidas del Sitio - OTHERREASON- 2025-06-04 23:06:46");
-    marcadores.push(marker_SPU110_1); 
+    }).bindTooltip("A18-S025-San Jose- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-04 23:07:16");
+    marcadores.push(marker_A18_S025_1); 
 
     var icon_A19_S126_2 = L.divIcon({
         className: 'icono-parpadeo',
@@ -331,7 +331,7 @@
     marcadores.push(marker_A19_S126_2); 
 
     var icon_SPU5038_3 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
