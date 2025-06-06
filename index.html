@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">85</span> |
-    🕒 Última actualización: 2025-06-06 12:14:20
+    🕒 Última actualización: 2025-06-06 12:15:24
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,19 +284,19 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A19_S030_0 = L.divIcon({
+    var icon_A19_S170_0 = L.divIcon({
         className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A19_S030_0 = L.marker([-26.92608500043, -55.11658693537], {
-        icon: icon_A19_S030_0,
+    var marker_A19_S170_0 = L.marker([-25.625986, -54.579934], {
+        icon: icon_A19_S170_0,
         categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A19-S030-San Gotardo- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-06 12:13:11");
-    marcadores.push(marker_A19_S030_0); 
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A19-S170-- Celdas Caidas del Sitio - HARDWARE- 2025-06-06 12:14:28");
+    marcadores.push(marker_A19_S170_0); 
 
     var icon_A18_S027_1 = L.divIcon({
         className: 'icono-parpadeo',
@@ -326,33 +326,33 @@
     }).bindTooltip("A10-S098-Tinogasta 2- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-06 12:08:17");
     marcadores.push(marker_A10_S098_2); 
 
-    var icon_A03_S270_3 = L.divIcon({
+    var icon_SPU641_3 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A03_S270_3 = L.marker([-31.55888800208, -64.18166602398], {
-        icon: icon_A03_S270_3,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A03-S270-Bower- Sitio Completo Incomunicado - OTHERREASON- 2025-06-06 12:07:09");
-    marcadores.push(marker_A03_S270_3); 
-
-    var icon_SPU641_4 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_SPU641_4 = L.marker([-34.89044142858, -58.00684647903], {
-        icon: icon_SPU641_4,
+    var marker_SPU641_3 = L.marker([-34.89044142858, -58.00684647903], {
+        icon: icon_SPU641_3,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("SPU641-Edelap Gonnet 01- Sitio Completo Incomunicado - OTHERREASON- 2025-06-06 12:07:09");
-    marcadores.push(marker_SPU641_4); 
+    marcadores.push(marker_SPU641_3); 
+
+    var icon_A03_S270_4 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A03_S270_4 = L.marker([-31.55888800208, -64.18166602398], {
+        icon: icon_A03_S270_4,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A03-S270-Bower- Sitio Completo Incomunicado - OTHERREASON- 2025-06-06 12:07:09");
+    marcadores.push(marker_A03_S270_4); 
 
     var icon_A08_S078_5 = L.divIcon({
         className: '',
