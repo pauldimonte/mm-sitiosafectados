@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-06-09 08:19:13
+    🕒 Última actualización: 2025-06-09 08:21:19
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -280,61 +280,61 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A41_A118_0 = L.divIcon({
+    var icon_SPU027_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_SPU027_0 = L.marker([-34.84833839773, -58.4908333301], {
+        icon: icon_SPU027_0,
+        categoria: "Celdas Caidas",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("SPU027-El Jaguel- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-09 08:19:06");
+    marcadores.push(marker_SPU027_0); 
+
+    var icon_A41_A118_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A41_A118_0 = L.marker([-37.25441600154, -56.98588899586], {
-        icon: icon_A41_A118_0,
+    var marker_A41_A118_1 = L.marker([-37.25441600154, -56.98588899586], {
+        icon: icon_A41_A118_1,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A41-A118-V Gesell poste 20- Sitio Completo Incomunicado - HARDWARE- 2025-06-09 07:44:27");
-    marcadores.push(marker_A41_A118_0); 
+    marcadores.push(marker_A41_A118_1); 
 
-    var icon_A10_S027_1 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A10_S027_1 = L.marker([-27.69185164465, -67.61992645607], {
-        icon: icon_A10_S027_1,
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A10-S027-Fiambala- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-09 07:37:57");
-    marcadores.push(marker_A10_S027_1); 
-
-    var icon_CPU107_2 = L.divIcon({
+    var icon_OPU024_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_CPU107_2 = L.marker([-34.60127188434, -58.44093967269], {
-        icon: icon_CPU107_2,
-        categoria: "Sitio Parcial",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("CPU107-Crespo- Sitio Parcialmente Caido - OTHERREASON- 2025-06-09 07:31:28");
-    marcadores.push(marker_CPU107_2); 
-
-    var icon_OPU024_3 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_OPU024_3 = L.marker([-34.64355173819, -58.79652603638], {
-        icon: icon_OPU024_3,
+    var marker_OPU024_2 = L.marker([-34.64355173819, -58.79652603638], {
+        icon: icon_OPU024_2,
         categoria: "Sitio Parcial",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU024-Moreno- Sitio Parcialmente Caido - OTHERREASON- 2025-06-09 07:31:28");
-    marcadores.push(marker_OPU024_3); 
+    marcadores.push(marker_OPU024_2); 
+
+    var icon_CPU107_3 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_CPU107_3 = L.marker([-34.60127188434, -58.44093967269], {
+        icon: icon_CPU107_3,
+        categoria: "Sitio Parcial",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("CPU107-Crespo- Sitio Parcialmente Caido - OTHERREASON- 2025-06-09 07:31:28");
+    marcadores.push(marker_CPU107_3); 
 
     var icon_A37_F087_4 = L.divIcon({
         className: '',
