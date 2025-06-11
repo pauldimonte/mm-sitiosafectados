@@ -184,8 +184,8 @@
 <body>
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
-    🔴 Total de sitios afectados: <span id="contador">78</span> |
-    🕒 Última actualización: 2025-06-11 18:51:37
+    🔴 Total de sitios afectados: <span id="contador">82</span> |
+    🕒 Última actualización: 2025-06-11 18:53:51
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -300,7 +300,7 @@
     map.on('zoomend', ajustarEscalaIconos);
 
     var icon_A27_U123_0 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
@@ -315,7 +315,7 @@
     marcadores.push(marker_A27_U123_0); 
 
     var icon_A26_U122_1 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
@@ -1109,365 +1109,425 @@
     }).bindTooltip("OPU243-Campanopolis- Sitio Completo Incomunicado - OTHERREASON- 2024-01-09 10:29:30");
     marcadores.push(marker_OPU243_53); 
 
-    var icon_filtrado_SIBUBT_2_0 = L.divIcon({
+    var icon_filtrado_BCASAR_2_0 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_SIBUBT_2_0 = L.marker([-34.725455, -58.456461], {
-        icon: icon_filtrado_SIBUBT_2_0,
+    var marker_filtrado_BCASAR_2_0 = L.marker([-35.619623, -61.34562], {
+        icon: icon_filtrado_BCASAR_2_0,
+        categoria: "Relevante",
+        alertkey: "BCASAR_2  NE=33636401",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("BCASAR_2-Carlos Casares Teco- Corte de RED Sitios 1 - BCASAR_2  NE=33636401- 2025-06-11 18:50:54");
+    marcadoresEntorno.push(marker_filtrado_BCASAR_2_0);
+
+    var icon_filtrado_BCASAR_1_1 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_BCASAR_1_1 = L.marker([-35.619623, -61.34562], {
+        icon: icon_filtrado_BCASAR_1_1,
+        categoria: "Relevante",
+        alertkey: "BCASAR_1  NE=33595209",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("BCASAR_1-Carlos Casares Teco- Corte de RED Sitios 1 - BCASAR_1  NE=33595209- 2025-06-11 18:50:54");
+    marcadoresEntorno.push(marker_filtrado_BCASAR_1_1);
+
+    var icon_filtrado_LMKG01_2 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_LMKG01_2 = L.marker([-31.96044199917, -61.17685781984], {
+        icon: icon_filtrado_LMKG01_2,
+        categoria: "Relevante",
+        alertkey: "FRAME=0 EMU ID=0 DIGITAL ID=14 EMU TYPE=H303ESC NAME=11.FALTACAENRECT",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("LMKG01-LOMA ALTA- Corte de RED - Frame=0 EMU ID=0 Digital ID=14 EMU Type=h303esc Name=11.FaltaCAenRECT- 2025-06-11 18:50:42");
+    marcadoresEntorno.push(marker_filtrado_LMKG01_2);
+
+    var icon_filtrado_LMK_3 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_LMK_3 = L.marker([-31.96044199917, -61.17685781984], {
+        icon: icon_filtrado_LMK_3,
+        categoria: "Relevante",
+        alertkey: "FRAME",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("LMK-LOMA ALTA- INCIDENTE: (1 active alarm): Corte de RED - Frame- 2025-06-11 18:50:42");
+    marcadoresEntorno.push(marker_filtrado_LMK_3);
+
+    var icon_filtrado_YSFSST_1_4 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_YSFSST_1_4 = L.marker([-23.624789, -64.95299], {
+        icon: icon_filtrado_YSFSST_1_4,
+        categoria: "Relevante",
+        alertkey: "YSFSST_1  NE=33662137",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("YSFSST_1-San Francisco - SAT TECO- Corte de RED Sitios 1 - YSFSST_1  NE=33662137- 2025-06-11 18:50:24");
+    marcadoresEntorno.push(marker_filtrado_YSFSST_1_4);
+
+    var icon_filtrado_ESJOS3_5 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_ESJOS3_5 = L.marker([-32.210489, -58.240619], {
+        icon: icon_filtrado_ESJOS3_5,
+        categoria: "Relevante",
+        alertkey: "PLMN-PLMN,MRBTS-80155,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-10",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("ESJOS3-San Jose 3- Corte de Red - PLMN-PLMN,MRBTS-80155,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-10- 2025-06-11 18:50:22");
+    marcadoresEntorno.push(marker_filtrado_ESJOS3_5);
+
+    var icon_filtrado_CPICTP_1_6 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_CPICTP_1_6 = L.marker([-34.627623, -58.397357], {
+        icon: icon_filtrado_CPICTP_1_6,
+        categoria: "Relevante",
+        alertkey: "CPICTP_1  NE=33587554",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("CPICTP_1-Pichincha- Mains Phase L2 Failure - CPICTP_1  NE=33587554- 2025-06-11 18:50:20");
+    marcadoresEntorno.push(marker_filtrado_CPICTP_1_6);
+
+    var icon_filtrado_IWANBO_7 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_IWANBO_7 = L.marker([-25.964955, -54.591489], {
+        icon: icon_filtrado_IWANBO_7,
+        categoria: "Relevante",
+        alertkey: "PLMN-PLMN,MRBTS-190105,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-2",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("IWANBO-Wanda Barrios Oeste- Corte de Red - PLMN-PLMN,MRBTS-190105,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-2- 2025-06-11 18:50:17");
+    marcadoresEntorno.push(marker_filtrado_IWANBO_7);
+
+    var icon_filtrado_CPICTP_1_8 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_CPICTP_1_8 = L.marker([-34.627623, -58.397357], {
+        icon: icon_filtrado_CPICTP_1_8,
+        categoria: "Relevante",
+        alertkey: "CPICTP_1  NE=33587565",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("CPICTP_1-Pichincha- Corte de RED Sitios 1 - CPICTP_1  NE=33587565- 2025-06-11 18:50:15");
+    marcadoresEntorno.push(marker_filtrado_CPICTP_1_8);
+
+    var icon_filtrado_BPIPER_2_9 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_BPIPER_2_9 = L.marker([-37.099562, -56.841456], {
+        icon: icon_filtrado_BPIPER_2_9,
+        categoria: "Relevante",
+        alertkey: "BPIPER_2  NE=33649308",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("BPIPER_2-Pinamar Balneario Perico- Mains Phase L3 Failure - BPIPER_2  NE=33649308- 2025-06-11 18:49:29");
+    marcadoresEntorno.push(marker_filtrado_BPIPER_2_9);
+
+    var icon_filtrado_ARBBHAE_SOB0001_AKC_1_AE03_10 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_ARBBHAE_SOB0001_AKC_1_AE03_10 = L.marker([-34.62802082501, -58.5670718682], {
+        icon: icon_filtrado_ARBBHAE_SOB0001_AKC_1_AE03_10,
+        categoria: "Relevante",
+        alertkey: " ARBBHAE_SGA0001_GEN",
+        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
+    }).bindTooltip("ARBBHAE_SOB0001_AKC_1_AE03-HAEDO- Bajo Nivel de Combustible -  ARBBHAE_SGA0001_GEN- 2025-06-11 18:49:03");
+    marcadoresEntorno.push(marker_filtrado_ARBBHAE_SOB0001_AKC_1_AE03_10);
+
+    var icon_filtrado_SIBUBT_2_11 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
+    });
+    var marker_filtrado_SIBUBT_2_11 = L.marker([-34.725455, -58.456461], {
+        icon: icon_filtrado_SIBUBT_2_11,
         categoria: "Relevante",
         alertkey: "SIBUBT_2  NE=33724587",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("SIBUBT_2-INGENIERO BUDGE BARRIO TONGUI- Mains Phase L3 Undervoltage - SIBUBT_2  NE=33724587- 2025-06-11 18:48:20");
-    marcadoresEntorno.push(marker_filtrado_SIBUBT_2_0);
+    marcadoresEntorno.push(marker_filtrado_SIBUBT_2_11);
 
-    var icon_filtrado_SIBUBT_1_1 = L.divIcon({
+    var icon_filtrado_SIBUBT_1_12 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_SIBUBT_1_1 = L.marker([-34.725455, -58.456461], {
-        icon: icon_filtrado_SIBUBT_1_1,
+    var marker_filtrado_SIBUBT_1_12 = L.marker([-34.725455, -58.456461], {
+        icon: icon_filtrado_SIBUBT_1_12,
         categoria: "Relevante",
         alertkey: "SIBUBT_1  NE=33610274",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("SIBUBT_1-INGENIERO BUDGE BARRIO TONGUI- Mains Phase L1 Undervoltage - SIBUBT_1  NE=33610274- 2025-06-11 18:48:15");
-    marcadoresEntorno.push(marker_filtrado_SIBUBT_1_1);
+    marcadoresEntorno.push(marker_filtrado_SIBUBT_1_12);
 
-    var icon_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_2 = L.divIcon({
+    var icon_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_13 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_2 = L.marker([-34.57932505221, -58.48282090503], {
-        icon: icon_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_2,
+    var marker_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_13 = L.marker([-34.57932505221, -58.48282090503], {
+        icon: icon_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_13,
         categoria: "Relevante",
         alertkey: "IOSENTRY.1",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("ARCCAVA_SEA0001_TTA_A1_EXE_1-AVALOS- GE en marcha - iosEntry.1- 2025-06-11 18:47:58");
-    marcadoresEntorno.push(marker_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_2);
+    marcadoresEntorno.push(marker_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_13);
 
-    var icon_filtrado_PFCAR2_9_3 = L.divIcon({
+    var icon_filtrado_PFCAR2_9_14 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_PFCAR2_9_3 = L.marker([-26.189617, -58.183514], {
-        icon: icon_filtrado_PFCAR2_9_3,
+    var marker_filtrado_PFCAR2_9_14 = L.marker([-26.189617, -58.183514], {
+        icon: icon_filtrado_PFCAR2_9_14,
         categoria: "Relevante",
         alertkey: "PLMN-PLMN,MRBTS-229201,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-13",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("PFCAR2_9-CARREFOUR HIPERMERCADO 2- Corte de Red - PLMN-PLMN,MRBTS-229201,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-13- 2025-06-11 18:48:06");
-    marcadoresEntorno.push(marker_filtrado_PFCAR2_9_3);
+    marcadoresEntorno.push(marker_filtrado_PFCAR2_9_14);
 
-    var icon_filtrado_BY211C_4 = L.divIcon({
+    var icon_filtrado_BY211C_15 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_BY211C_4 = L.marker([-29.168767531, -59.27036799748], {
-        icon: icon_filtrado_BY211C_4,
+    var marker_filtrado_BY211C_15 = L.marker([-29.168767531, -59.27036799748], {
+        icon: icon_filtrado_BY211C_15,
         categoria: "Relevante",
         alertkey: "RACK:BY211C:R1",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("BY211C-GOYA A41 VDSL- RECTIFICADOR en Bateria - Rack:BY211C:R1- 2025-06-11 18:47:24");
-    marcadoresEntorno.push(marker_filtrado_BY211C_4);
+    marcadoresEntorno.push(marker_filtrado_BY211C_15);
 
-    var icon_filtrado_SVLANT_2_5 = L.divIcon({
+    var icon_filtrado_SVLANT_2_16 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_SVLANT_2_5 = L.marker([-34.822732, -58.251025], {
-        icon: icon_filtrado_SVLANT_2_5,
+    var marker_filtrado_SVLANT_2_16 = L.marker([-34.822732, -58.251025], {
+        icon: icon_filtrado_SVLANT_2_16,
         categoria: "Relevante",
         alertkey: "SVLANT_2  NE=33654061",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("SVLANT_2-Varela La Antena- Corte de RED Sitios 1 - SVLANT_2  NE=33654061- 2025-06-11 18:47:21");
-    marcadoresEntorno.push(marker_filtrado_SVLANT_2_5);
+    marcadoresEntorno.push(marker_filtrado_SVLANT_2_16);
 
-    var icon_filtrado_XCLIBE_2_6 = L.divIcon({
+    var icon_filtrado_XCLIBE_2_17 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_XCLIBE_2_6 = L.marker([-31.469099, -64.225452], {
-        icon: icon_filtrado_XCLIBE_2_6,
+    var marker_filtrado_XCLIBE_2_17 = L.marker([-31.469099, -64.225452], {
+        icon: icon_filtrado_XCLIBE_2_17,
         categoria: "Relevante",
         alertkey: "XCLIBE_2  NE=33592716",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("XCLIBE_2-Cordoba Villa Libertador- Mains Phase L1 Failure - XCLIBE_2  NE=33592716- 2025-06-11 18:47:21");
-    marcadoresEntorno.push(marker_filtrado_XCLIBE_2_6);
+    marcadoresEntorno.push(marker_filtrado_XCLIBE_2_17);
 
-    var icon_filtrado_WGYSRB_9_7 = L.divIcon({
+    var icon_filtrado_WGYSRB_9_18 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_WGYSRB_9_7 = L.marker([-29.133823, -59.260985], {
-        icon: icon_filtrado_WGYSRB_9_7,
+    var marker_filtrado_WGYSRB_9_18 = L.marker([-29.133823, -59.260985], {
+        icon: icon_filtrado_WGYSRB_9_18,
         categoria: "Relevante",
         alertkey: "PLMN-PLMN,MRBTS-149137,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-19",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("WGYSRB_9-Goya Costa Surubi- Corte de Red - PLMN-PLMN,MRBTS-149137,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-19- 2025-06-11 18:47:08");
-    marcadoresEntorno.push(marker_filtrado_WGYSRB_9_7);
+    marcadoresEntorno.push(marker_filtrado_WGYSRB_9_18);
 
-    var icon_filtrado_DH4_A14_S137_8 = L.divIcon({
+    var icon_filtrado_DH4_A14_S137_19 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_DH4_A14_S137_8 = L.marker([-29.13373729374, -59.26059222714], {
-        icon: icon_filtrado_DH4_A14_S137_8,
+    var marker_filtrado_DH4_A14_S137_19 = L.marker([-29.13373729374, -59.26059222714], {
+        icon: icon_filtrado_DH4_A14_S137_19,
         categoria: "Relevante",
         alertkey: "PLMN-PLMN,MRBTS-149137,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-19",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("DH4-A14-S137-Goya Costa Surubi- Falla de Entorno en Edificio: (0 active alarms): Corte de RED - PLMN-PLMN,MRBTS-149137,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-19- 2025-06-11 18:47:08");
-    marcadoresEntorno.push(marker_filtrado_DH4_A14_S137_8);
+    marcadoresEntorno.push(marker_filtrado_DH4_A14_S137_19);
 
-    var icon_filtrado_SSMBTP_1_9 = L.divIcon({
+    var icon_filtrado_SSMBTP_1_20 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_SSMBTP_1_9 = L.marker([-34.820395, -58.400693], {
-        icon: icon_filtrado_SSMBTP_1_9,
+    var marker_filtrado_SSMBTP_1_20 = L.marker([-34.820395, -58.400693], {
+        icon: icon_filtrado_SSMBTP_1_20,
         categoria: "Relevante",
         alertkey: "SSMBTP_1  NE=33614699",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("SSMBTP_1-Club San Martin De Burzaco- Corte de RED Sitios 1 - SSMBTP_1  NE=33614699- 2025-06-11 18:46:56");
-    marcadoresEntorno.push(marker_filtrado_SSMBTP_1_9);
+    marcadoresEntorno.push(marker_filtrado_SSMBTP_1_20);
 
-    var icon_filtrado_ORCBEM_1_10 = L.divIcon({
+    var icon_filtrado_ORCBEM_1_21 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_ORCBEM_1_10 = L.marker([-34.699684, -58.62263], {
-        icon: icon_filtrado_ORCBEM_1_10,
+    var marker_filtrado_ORCBEM_1_21 = L.marker([-34.699684, -58.62263], {
+        icon: icon_filtrado_ORCBEM_1_21,
         categoria: "Relevante",
         alertkey: "ORCBEM_1  NE=33615232",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("ORCBEM_1-Rafael Castillo Barrio Emilio- Mains Phase L1 Undervoltage - ORCBEM_1  NE=33615232- 2025-06-11 18:46:48");
-    marcadoresEntorno.push(marker_filtrado_ORCBEM_1_10);
+    marcadoresEntorno.push(marker_filtrado_ORCBEM_1_21);
 
-    var icon_filtrado_PNNECK_3_11 = L.divIcon({
+    var icon_filtrado_PNNECK_3_22 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_PNNECK_3_11 = L.marker([-25.214786, -58.125015], {
-        icon: icon_filtrado_PNNECK_3_11,
+    var marker_filtrado_PNNECK_3_22 = L.marker([-25.214786, -58.125015], {
+        icon: icon_filtrado_PNNECK_3_22,
         categoria: "Relevante",
         alertkey: "PLMN-PLMN,MRBTS-223043,EQM_R-2,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-3",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("PNNECK_3-Laguna Naick - Neck- Corte de Red - PLMN-PLMN,MRBTS-223043,EQM_R-2,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-3- 2025-06-11 18:46:25");
-    marcadoresEntorno.push(marker_filtrado_PNNECK_3_11);
+    marcadoresEntorno.push(marker_filtrado_PNNECK_3_22);
 
-    var icon_filtrado_BE5_A22_S043_12 = L.divIcon({
+    var icon_filtrado_BE5_A22_S043_23 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_BE5_A22_S043_12 = L.marker([-25.21477200348, -58.12509999815], {
-        icon: icon_filtrado_BE5_A22_S043_12,
+    var marker_filtrado_BE5_A22_S043_23 = L.marker([-25.21477200348, -58.12509999815], {
+        icon: icon_filtrado_BE5_A22_S043_23,
         categoria: "Relevante",
         alertkey: "PLMN-PLMN,MRBTS-223043,EQM_R-2,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-3",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("BE5-A22-S043-Laguna Naick - Neck- Falla de Entorno en Edificio: (1 active alarm): Corte de RED - PLMN-PLMN,MRBTS-223043,EQM_R-2,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-3- 2025-06-11 18:46:25");
-    marcadoresEntorno.push(marker_filtrado_BE5_A22_S043_12);
+    marcadoresEntorno.push(marker_filtrado_BE5_A22_S043_23);
 
-    var icon_filtrado_XCRENA_2_13 = L.divIcon({
+    var icon_filtrado_XCRENA_2_24 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_XCRENA_2_13 = L.marker([-31.464575, -64.235039], {
-        icon: icon_filtrado_XCRENA_2_13,
+    var marker_filtrado_XCRENA_2_24 = L.marker([-31.464575, -64.235039], {
+        icon: icon_filtrado_XCRENA_2_24,
         categoria: "Relevante",
         alertkey: "XCRENA_2  NE=33597324",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("XCRENA_2-Cordoba Renault- Mains Phase L3 Failure - XCRENA_2  NE=33597324- 2025-06-11 18:45:51");
-    marcadoresEntorno.push(marker_filtrado_XCRENA_2_13);
+    marcadoresEntorno.push(marker_filtrado_XCRENA_2_24);
 
-    var icon_filtrado_DCHMES_1_14 = L.divIcon({
+    var icon_filtrado_DCHMES_1_25 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_DCHMES_1_14 = L.marker([-33.405555, -66.804719], {
-        icon: icon_filtrado_DCHMES_1_14,
+    var marker_filtrado_DCHMES_1_25 = L.marker([-33.405555, -66.804719], {
+        icon: icon_filtrado_DCHMES_1_25,
         categoria: "Relevante",
         alertkey: "DCHMES_1  NE=33584270",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("DCHMES_1-Chosmes- Mains Phase L2 Undervoltage - DCHMES_1  NE=33584270- 2025-06-11 18:45:33");
-    marcadoresEntorno.push(marker_filtrado_DCHMES_1_14);
+    marcadoresEntorno.push(marker_filtrado_DCHMES_1_25);
 
-    var icon_filtrado_XUNQUI_1_15 = L.divIcon({
+    var icon_filtrado_XUNQUI_1_26 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_XUNQUI_1_15 = L.marker([-31.214682, -64.327656], {
-        icon: icon_filtrado_XUNQUI_1_15,
+    var marker_filtrado_XUNQUI_1_26 = L.marker([-31.214682, -64.327656], {
+        icon: icon_filtrado_XUNQUI_1_26,
         categoria: "Relevante",
         alertkey: "XUNQUI_1  NE=33562343",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("XUNQUI_1-Unquillo Claro- Corte de RED Sitios 1 - XUNQUI_1  NE=33562343- 2025-06-11 18:45:07");
-    marcadoresEntorno.push(marker_filtrado_XUNQUI_1_15);
+    marcadoresEntorno.push(marker_filtrado_XUNQUI_1_26);
 
-    var icon_filtrado_XICOLO_1_16 = L.divIcon({
+    var icon_filtrado_XICOLO_1_27 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     });
-    var marker_filtrado_XICOLO_1_16 = L.marker([-30.099682, -63.931845], {
-        icon: icon_filtrado_XICOLO_1_16,
+    var marker_filtrado_XICOLO_1_27 = L.marker([-30.099682, -63.931845], {
+        icon: icon_filtrado_XICOLO_1_27,
         categoria: "Relevante",
         alertkey: "XICOLO_1  NE=33562572",
         tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
     }).bindTooltip("XICOLO_1-Cerro Colorado- Mains Phase L2 Failure - XICOLO_1  NE=33562572- 2025-06-11 18:44:46");
-    marcadoresEntorno.push(marker_filtrado_XICOLO_1_16);
-
-    var icon_filtrado_ARBBLUJ_SOB0001_AKC_1_AB03_17 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    });
-    var marker_filtrado_ARBBLUJ_SOB0001_AKC_1_AB03_17 = L.marker([-34.56268382099, -59.09984971455], {
-        icon: icon_filtrado_ARBBLUJ_SOB0001_AKC_1_AB03_17,
-        categoria: "Relevante",
-        alertkey: " ARBBLUJ_SGA0001_GEN",
-        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
-    }).bindTooltip("ARBBLUJ_SOB0001_AKC_1_AB03-LUJAN- Bajo Nivel de Combustible -  ARBBLUJ_SGA0001_GEN- 2025-06-11 18:44:05");
-    marcadoresEntorno.push(marker_filtrado_ARBBLUJ_SOB0001_AKC_1_AB03_17);
-
-    var icon_filtrado_ARBBRMJ_SRG0001_AKC_1_0305_30_18 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    });
-    var marker_filtrado_ARBBRMJ_SRG0001_AKC_1_0305_30_18 = L.marker([-34.64238906214, -58.57358405321], {
-        icon: icon_filtrado_ARBBRMJ_SRG0001_AKC_1_0305_30_18,
-        categoria: "Relevante",
-        alertkey: " ARBBRMJ_SGA0001_GEN",
-        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
-    }).bindTooltip("ARBBRMJ_SRG0001_AKC_1_0305_30-RAMOS MEJIA- Bajo Nivel de Combustible -  ARBBRMJ_SGA0001_GEN- 2025-06-11 18:43:22");
-    marcadoresEntorno.push(marker_filtrado_ARBBRMJ_SRG0001_AKC_1_0305_30_18);
-
-    var icon_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_19 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    });
-    var marker_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_19 = L.marker([-34.57932505221, -58.48282090503], {
-        icon: icon_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_19,
-        categoria: "Relevante",
-        alertkey: "IOSENTRY.1",
-        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
-    }).bindTooltip("ARCCAVA_SEA0001_TTA_A1_EXE_1-AVALOS- GE en marcha - iosEntry.1- 2025-06-11 18:44:59");
-    marcadoresEntorno.push(marker_filtrado_ARCCAVA_SEA0001_TTA_A1_EXE_1_19);
-
-    var icon_filtrado_PFNFRM_20 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    });
-    var marker_filtrado_PFNFRM_20 = L.marker([-26.197695, -58.245308], {
-        icon: icon_filtrado_PFNFRM_20,
-        categoria: "Relevante",
-        alertkey: "PLMN-PLMN,MRBTS-220165,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-9",
-        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
-    }).bindTooltip("PFNFRM-Formosa Bo. Nueva Formosa- Corte de Red - PLMN-PLMN,MRBTS-220165,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-9- 2025-06-11 18:44:11");
-    marcadoresEntorno.push(marker_filtrado_PFNFRM_20);
-
-    var icon_filtrado_FOR_A22_S165_21 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    });
-    var marker_filtrado_FOR_A22_S165_21 = L.marker([-26.19753355179, -58.24473772907], {
-        icon: icon_filtrado_FOR_A22_S165_21,
-        categoria: "Relevante",
-        alertkey: "PLMN-PLMN,MRBTS-220165,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-6",
-        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
-    }).bindTooltip("FOR-A22-S165-Formosa Bo. Nueva Formosa- Falla de Entorno en Edificio: (0 active alarms): Alta Temperatura en Sala de Racks - PLMN-PLMN,MRBTS-220165,EQM_R-1,APEQM_R-1,CABINET_R-1,SMOD_R-1,EAC_R-6- 2025-06-11 18:44:11");
-    marcadoresEntorno.push(marker_filtrado_FOR_A22_S165_21);
-
-    var icon_filtrado_SEEVTN_1_22 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    });
-    var marker_filtrado_SEEVTN_1_22 = L.marker([-34.759155, -58.498873], {
-        icon: icon_filtrado_SEEVTN_1_22,
-        categoria: "Relevante",
-        alertkey: "SEEVTN_1  NE=33658074",
-        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
-    }).bindTooltip("SEEVTN_1-VILLA TRANSRADIO NORTE- Corte de RED Sitios 1 - SEEVTN_1  NE=33658074- 2025-06-11 18:40:50");
-    marcadoresEntorno.push(marker_filtrado_SEEVTN_1_22);
-
-    var icon_filtrado_CWILTP_1_23 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    });
-    var marker_filtrado_CWILTP_1_23 = L.marker([-34.603727, -58.373837], {
-        icon: icon_filtrado_CWILTP_1_23,
-        categoria: "Relevante",
-        alertkey: "CWILTP_1  NE=33596459",
-        tipo: "entorno" // Indicar que es un marcador de entorno (filtrado)
-    }).bindTooltip("CWILTP_1-WILLIS ARGENTINA- Mains Phase L3 Failure - CWILTP_1  NE=33596459- 2025-06-11 18:40:46");
-    marcadoresEntorno.push(marker_filtrado_CWILTP_1_23);
+    marcadoresEntorno.push(marker_filtrado_XICOLO_1_27);
 
     function aplicarFiltros() {
         // Obtener las categorías y alertas seleccionadas
