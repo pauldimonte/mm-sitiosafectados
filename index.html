@@ -185,7 +185,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">79</span> |
-    🕒 Última actualización: 2025-06-11 18:39:47
+    🕒 Última actualización: 2025-06-11 18:43:31
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -237,7 +237,7 @@
         <strong>Entorno:</strong>
         
     <label class="checkbox-entorno">
-      <input type="checkbox" class="filtro-entorno styled-checkbox" value="ENTORNO_ALL" id="filtro-entorno-all">
+      <input type="checkbox" class="filtro-entorno styled-checkbox" value="ENTORNO_ALL" id="filtro-entorno-all" checked>
       <span class="checkbox-label">ENTORNO_ALL</span>
     </label>
     
@@ -1548,12 +1548,10 @@
         ajustarEscalaIconos();
     }
 
-    // Event listeners para todos los checkboxes
-    document.querySelectorAll('.filtro-categoria, .filtro-alerta').forEach(function(checkbox) {
+    // Event listeners para todos los checkboxes - CORREGIDO
+    document.querySelectorAll('.filtro-categoria, .filtro-alerta, .filtro-entorno').forEach(function(checkbox) {
         checkbox.addEventListener('change', aplicarFiltros);
     });
-
-    document.getElementById('filtro-entorno-all').addEventListener('change', aplicarFiltros);
 
     // Search functionality
     const searchInput = document.getElementById('search-input');
@@ -1595,15 +1593,12 @@
         }
     });
 
-    // Aplicar filtros al cargar la página
-    document.addEventListener('DOMContentLoaded', function() {
-        aplicarFiltros(); 
-    });
-
-    // También aplicar filtros cuando el mapa esté listo
+    // APLICAR FILTROS DESPUÉS DE QUE TODOS LOS MARCADORES ESTÉN CREADOS
+    // Usar un timeout más largo para asegurar que todo esté listo
     setTimeout(function() {
         aplicarFiltros();
-    }, 100);
+        console.log('Filtros aplicados. Marcadores principales:', marcadores.length, 'Marcadores entorno:', marcadoresEntorno.length);
+    }, 500);
 </script>
 </body>
 </html>
