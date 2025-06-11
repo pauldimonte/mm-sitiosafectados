@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">53</span> |
-    🕒 Última actualización: 2025-06-10 22:06:29
+    🕒 Última actualización: 2025-06-10 22:09:35
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,33 +284,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A03_S560_0 = L.divIcon({
+    var icon_SPU1331_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_SPU1331_0 = L.marker([-34.7627144227, -58.42155140542], {
+        icon: icon_SPU1331_0,
+        categoria: "Sitio Completo",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("SPU1331-Lomas de Zamora Poste 21- Sitio Completo Incomunicado - HARDWARE- 2025-06-10 22:06:44");
+    marcadores.push(marker_SPU1331_0); 
+
+    var icon_A03_S560_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A03_S560_0 = L.marker([-31.4393632278, -64.14958459906], {
-        icon: icon_A03_S560_0,
+    var marker_A03_S560_1 = L.marker([-31.4393632278, -64.14958459906], {
+        icon: icon_A03_S560_1,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A03-S560-Cordoba Hiper Libertad Poste 8- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-10 21:50:31");
-    marcadores.push(marker_A03_S560_0); 
-
-    var icon_SPU876_1 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_SPU876_1 = L.marker([-34.75842776303, -58.28718778599], {
-        icon: icon_SPU876_1,
-        categoria: "Sitio Completo",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("SPU876-Quilmes Barrio Elsieland- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-10 21:44:03");
-    marcadores.push(marker_SPU876_1); 
+    marcadores.push(marker_A03_S560_1); 
 
     var icon_A22_S228_2 = L.divIcon({
         className: '',
