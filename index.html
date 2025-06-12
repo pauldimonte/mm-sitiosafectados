@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">45</span> |
-    🕒 Última actualización: 2025-06-12 01:19:36
+    🕒 Última actualización: 2025-06-12 01:21:41
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -288,47 +288,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A11_S024_0 = L.divIcon({
+    var icon_A42_B398_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A42_B398_0 = L.marker([-34.957283, -58.655422], {
+        icon: icon_A42_B398_0,
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A42-B398-- Celdas Caidas del Sitio - HARDWARE- 2025-06-12 01:20:56");
+    marcadores.push(marker_A42_B398_0); 
+
+    var icon_A11_S024_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A11_S024_0 = L.marker([-26.95497100075, -65.04384007648], {
-        icon: icon_A11_S024_0,
+    var marker_A11_S024_1 = L.marker([-26.95497100075, -65.04384007648], {
+        icon: icon_A11_S024_1,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A11-S024-Ranchillos- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 00:44:58");
-    marcadores.push(marker_A11_S024_0); 
+    marcadores.push(marker_A11_S024_1); 
 
-    var icon_A14_S060_1 = L.divIcon({
+    var icon_A14_S060_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A14_S060_1 = L.marker([-30.00995440115, -59.52194381867], {
-        icon: icon_A14_S060_1,
+    var marker_A14_S060_2 = L.marker([-30.00995440115, -59.52194381867], {
+        icon: icon_A14_S060_2,
         categoria: "Sitio Parcial",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A14-S060-Esquina Acc. Norte Poste 3- Sitio Parcialmente Caido - HARDWARE- 2025-06-12 00:14:57");
-    marcadores.push(marker_A14_S060_1); 
-
-    var icon_A03_E119_2 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A03_E119_2 = L.marker([-31.44949969014, -64.24157118776], {
-        icon: icon_A03_E119_2,
-        categoria: "Sitio Completo",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A03-E119-C?rdoba EM Favaloro 3- Sitio Completo Incomunicado - HARDWARE- 2025-06-11 23:53:49");
-    marcadores.push(marker_A03_E119_2); 
+    marcadores.push(marker_A14_S060_2); 
 
     var icon_A24_V039_3 = L.divIcon({
         className: '',
