@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">41</span> |
-    🕒 Última actualización: 2025-06-13 20:08:08
+    🕒 Última actualización: 2025-06-13 20:26:04
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,33 +284,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_OPU132_0 = L.divIcon({
+    var icon_SPU143_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_SPU143_0 = L.marker([-34.83122788616, -58.49166690144], {
+        icon: icon_SPU143_0,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("SPU143-Estacion El Jaguel- Sitio Completo Incomunicado - OTHERREASON- 2025-06-13 20:21:24");
+    marcadores.push(marker_SPU143_0); 
+
+    var icon_OPU132_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU132_0 = L.marker([-34.6427726301, -58.82203358877], {
-        icon: icon_OPU132_0,
+    var marker_OPU132_1 = L.marker([-34.6427726301, -58.82203358877], {
+        icon: icon_OPU132_1,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU132-Estacion La Reja- Sitio Completo Incomunicado - OTHERREASON- 2025-06-13 19:50:02");
-    marcadores.push(marker_OPU132_0); 
-
-    var icon_A04_S614_1 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A04_S614_1 = L.marker([-32.7613606193, -60.73756818949], {
-        icon: icon_A04_S614_1,
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A04-S614-San Lorenzo 6- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-13 19:51:35");
-    marcadores.push(marker_A04_S614_1); 
+    marcadores.push(marker_OPU132_1); 
 
     var icon_A17_S133_2 = L.divIcon({
         className: '',
