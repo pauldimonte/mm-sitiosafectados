@@ -183,8 +183,8 @@
 <body>
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
-    🔴 Total de sitios afectados: <span id="contador">57</span> |
-    🕒 Última actualización: 2025-06-13 01:47:00
+    🔴 Total de sitios afectados: <span id="contador">58</span> |
+    🕒 Última actualización: 2025-06-13 01:49:49
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -317,7 +317,7 @@
     marcadores.push(marker_A26_U121_1); 
 
     var icon_A42_B752_2 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
@@ -1072,19 +1072,33 @@
     }).bindTooltip("SPU529-Nextel RUTA 16- Sitio Completo Incomunicado - OTHERREASON- 2025-05-12 03:39:27");
     marcadores.push(marker_SPU529_55); 
 
-    var icon_OPU243_56 = L.divIcon({
+    var icon_A27_U124_56 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A27_U124_56 = L.marker([-44.00132248923, -65.93897652431], {
+        icon: icon_A27_U124_56,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A27-U124-Florentino Ameghino- Sitio Completo Incomunicado - OTHERREASON- 2025-06-13 01:48:56");
+    marcadores.push(marker_A27_U124_56); 
+
+    var icon_OPU243_57 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU243_56 = L.marker([-34.78387646306, -58.62022060103], {
-        icon: icon_OPU243_56,
+    var marker_OPU243_57 = L.marker([-34.78387646306, -58.62022060103], {
+        icon: icon_OPU243_57,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU243-Campanopolis- Sitio Completo Incomunicado - OTHERREASON- 2024-01-09 10:29:30");
-    marcadores.push(marker_OPU243_56); 
+    marcadores.push(marker_OPU243_57); 
 
     function aplicarFiltros() {
         var categoriasSeleccionadas = Array.from(document.querySelectorAll('.filtro-categoria:checked')).map(cb => cb.value);
