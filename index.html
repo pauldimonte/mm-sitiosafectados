@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-06-12 23:10:50
+    🕒 Última actualización: 2025-06-12 23:12:15
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -230,6 +230,10 @@
         <label class="checkbox-alerta">
           <input type="checkbox" class="filtro-alerta styled-checkbox" value="OTHERREASON" checked> 
           <span class="checkbox-label">OTHERREASON</span>
+        </label>
+        <label class="checkbox-alerta">
+          <input type="checkbox" class="filtro-alerta styled-checkbox" value="TRANSPORT" checked> 
+          <span class="checkbox-label">TRANSPORT</span>
         </label>
       </div>
     </div>
@@ -290,7 +294,7 @@
 
     var icon_A38_B326_0 = L.divIcon({
         className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
@@ -298,8 +302,8 @@
     var marker_A38_B326_0 = L.marker([-38.87882330824, -62.07568647028], {
         icon: icon_A38_B326_0,
         categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A38-B326-Punta Alta- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 23:07:40");
+        alertkey: "TRANSPORT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A38-B326-Punta Alta- Sitio Completo Incomunicado - TRANSPORT- 2025-06-12 23:07:40");
     marcadores.push(marker_A38_B326_0); 
 
     var icon_A38_B462_1 = L.divIcon({
@@ -652,33 +656,33 @@
     }).bindTooltip("NPU1577-BENAVIDEZ CAMINO EL CLARO- Sitio Completo Incomunicado - HARDWARE- 2025-06-12 11:45:13");
     marcadores.push(marker_NPU1577_25); 
 
-    var icon_NPU138_26 = L.divIcon({
+    var icon_NPU142_26 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_NPU138_26 = L.marker([-34.42208530849, -58.69648374062], {
-        icon: icon_NPU138_26,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("NPU138-Arroyo El Claro- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 11:43:55");
-    marcadores.push(marker_NPU138_26); 
-
-    var icon_NPU142_27 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_NPU142_27 = L.marker([-34.43003593111, -58.70492449943], {
-        icon: icon_NPU142_27,
+    var marker_NPU142_26 = L.marker([-34.43003593111, -58.70492449943], {
+        icon: icon_NPU142_26,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("NPU142-Ford 2- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 11:43:55");
-    marcadores.push(marker_NPU142_27); 
+    marcadores.push(marker_NPU142_26); 
+
+    var icon_NPU138_27 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_NPU138_27 = L.marker([-34.42208530849, -58.69648374062], {
+        icon: icon_NPU138_27,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("NPU138-Arroyo El Claro- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 11:43:55");
+    marcadores.push(marker_NPU138_27); 
 
     var icon_NPU137_28 = L.divIcon({
         className: '',
