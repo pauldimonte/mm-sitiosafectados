@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">40</span> |
-    🕒 Última actualización: 2025-06-13 19:32:26
+    🕒 Última actualización: 2025-06-13 19:35:58
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -193,10 +193,6 @@
         <label class="checkbox-categoria">
           <input type="checkbox" class="filtro-categoria styled-checkbox" value="Celdas Caidas" checked>
           <span class="checkbox-label">Celdas Caidas</span>
-        </label>
-        <label class="checkbox-categoria">
-          <input type="checkbox" class="filtro-categoria styled-checkbox" value="Intermitente" checked>
-          <span class="checkbox-label">Intermitente</span>
         </label>
         <label class="checkbox-categoria">
           <input type="checkbox" class="filtro-categoria styled-checkbox" value="Sitio Completo" checked>
@@ -284,61 +280,61 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_NPU5094_0 = L.divIcon({
+    var icon_A17_S133_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A17_S133_0 = L.marker([-27.48024932369, -58.83427464697], {
+        icon: icon_A17_S133_0,
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A17-S133-Corrientes Necochea- Celdas Caidas del Sitio - HARDWARE- 2025-06-13 19:32:50");
+    marcadores.push(marker_A17_S133_0); 
+
+    var icon_NPU5094_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_NPU5094_0 = L.marker([-34.45109902854, -58.54550115979], {
-        icon: icon_NPU5094_0,
+    var marker_NPU5094_1 = L.marker([-34.45109902854, -58.54550115979], {
+        icon: icon_NPU5094_1,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("NPU5094-Victoria1- Sitio Completo Incomunicado - HARDWARE- 2025-06-13 18:45:34");
-    marcadores.push(marker_NPU5094_0); 
+    marcadores.push(marker_NPU5094_1); 
 
-    var icon_OPU183_1 = L.divIcon({
+    var icon_OPU183_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU183_1 = L.marker([-34.5885213456, -58.64633951337], {
-        icon: icon_OPU183_1,
+    var marker_OPU183_2 = L.marker([-34.5885213456, -58.64633951337], {
+        icon: icon_OPU183_2,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU183-Club Curupayti- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-13 18:42:20");
-    marcadores.push(marker_OPU183_1); 
+    marcadores.push(marker_OPU183_2); 
 
-    var icon_A07_S277_2 = L.divIcon({
+    var icon_A07_S277_3 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A07_S277_2 = L.marker([-31.65491113262, -60.70965509893], {
-        icon: icon_A07_S277_2,
+    var marker_A07_S277_3 = L.marker([-31.65491113262, -60.70965509893], {
+        icon: icon_A07_S277_3,
         categoria: "Sitio Completo",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A07-S277-Santa Fe 13- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-13 18:39:08");
-    marcadores.push(marker_A07_S277_2); 
-
-    var icon_A05_S028_3 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A05_S028_3 = L.marker([-32.68407242651, -58.88933629794], {
-        icon: icon_A05_S028_3,
-        categoria: "Intermitente",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A05-S028-Urdinarrain Central- Intermitente: Sitio Parcialmente Caido - HARDWARE- 2025-06-13 18:33:58");
-    marcadores.push(marker_A05_S028_3); 
+    marcadores.push(marker_A07_S277_3); 
 
     var icon_A25_Z021_4 = L.divIcon({
         className: '',
