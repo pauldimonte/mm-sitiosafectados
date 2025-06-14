@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-06-14 03:32:04
+    🕒 Última actualización: 2025-06-14 03:35:13
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -211,6 +211,10 @@
       <div id="filtros-alertas">
         <strong>AlertKeys:</strong>
         
+        <label class="checkbox-alerta">
+          <input type="checkbox" class="filtro-alerta styled-checkbox" value="CORTEFO" checked> 
+          <span class="checkbox-label">CORTEFO</span>
+        </label>
         <label class="checkbox-alerta">
           <input type="checkbox" class="filtro-alerta styled-checkbox" value="ENVIRONMENT" checked> 
           <span class="checkbox-label">ENVIRONMENT</span>
@@ -282,16 +286,16 @@
 
     var icon_A17_S280_0 = L.divIcon({
         className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
     var marker_A17_S280_0 = L.marker([-27.51105673332, -58.83090864391], {
         icon: icon_A17_S280_0,
-        categoria: "Celdas Caidas",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A17-S280-Corrientes COM Claro- Celdas Caidas del Sitio - OTHERREASON- 2025-06-14 03:26:51");
+        categoria: "Intermitente",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A17-S280-Corrientes COM Claro- Intermitente: Sitio Completo Incomunicado - CORTEFO- 2025-06-14 03:34:38");
     marcadores.push(marker_A17_S280_0); 
 
     var icon_A07_S118_1 = L.divIcon({
