@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">54</span> |
-    🕒 Última actualización: 2025-06-14 03:24:37
+    🕒 Última actualización: 2025-06-14 03:27:46
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -211,10 +211,6 @@
       <div id="filtros-alertas">
         <strong>AlertKeys:</strong>
         
-        <label class="checkbox-alerta">
-          <input type="checkbox" class="filtro-alerta styled-checkbox" value="CORTEFO" checked> 
-          <span class="checkbox-label">CORTEFO</span>
-        </label>
         <label class="checkbox-alerta">
           <input type="checkbox" class="filtro-alerta styled-checkbox" value="ENVIRONMENT" checked> 
           <span class="checkbox-label">ENVIRONMENT</span>
@@ -285,17 +281,17 @@
     map.on('zoomend', ajustarEscalaIconos);
 
     var icon_A17_S280_0 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A17_S280_0 = L.marker([-27.51105673332, -58.83090864391], {
+    var marker_A17_S280_0 = L.marker([-27.511063, -58.830919], {
         icon: icon_A17_S280_0,
-        categoria: "Sitio Completo",
-        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A17-S280-Corrientes COM Claro- Sitio Completo Incomunicado - CORTEFO- 2025-06-14 02:56:57");
+        categoria: "Celdas Caidas",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A17-S280-- Celdas Caidas del Sitio - OTHERREASON- 2025-06-14 03:26:51");
     marcadores.push(marker_A17_S280_0); 
 
     var icon_A07_S118_1 = L.divIcon({
@@ -844,33 +840,33 @@
     }).bindTooltip("SPU936-AMBA FLORENCIO VARELA 2020 - 0- Celdas Caidas del Sitio - OTHERREASON- 2025-06-13 07:31:42");
     marcadores.push(marker_SPU936_39); 
 
-    var icon_NPU142_40 = L.divIcon({
+    var icon_NPU137_40 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_NPU142_40 = L.marker([-34.43003593111, -58.70492449943], {
-        icon: icon_NPU142_40,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("NPU142-Ford 2- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 11:43:55");
-    marcadores.push(marker_NPU142_40); 
-
-    var icon_NPU137_41 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_NPU137_41 = L.marker([-34.43097410988, -58.69045767664], {
-        icon: icon_NPU137_41,
+    var marker_NPU137_40 = L.marker([-34.43097410988, -58.69045767664], {
+        icon: icon_NPU137_40,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("NPU137-El Encuentro- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 11:43:55");
-    marcadores.push(marker_NPU137_41); 
+    marcadores.push(marker_NPU137_40); 
+
+    var icon_NPU142_41 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_NPU142_41 = L.marker([-34.43003593111, -58.70492449943], {
+        icon: icon_NPU142_41,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("NPU142-Ford 2- Sitio Completo Incomunicado - OTHERREASON- 2025-06-12 11:43:55");
+    marcadores.push(marker_NPU142_41); 
 
     var icon_A14_S060_42 = L.divIcon({
         className: '',
@@ -915,8 +911,8 @@
     marcadores.push(marker_OPU857_44); 
 
     var icon_A17_S360_45 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
@@ -924,8 +920,8 @@
     var marker_A17_S360_45 = L.marker([-27.47713738789, -58.85527483364], {
         icon: icon_A17_S360_45,
         categoria: "Sitio Completo",
-        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A17-S360-Corrientes MicroLTE 010- Sitio Completo Incomunicado - CORTEFO- 2025-06-10 13:05:45");
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A17-S360-Corrientes MicroLTE 010- Sitio Completo Incomunicado - OTHERREASON- 2025-06-14 03:26:51");
     marcadores.push(marker_A17_S360_45); 
 
     var icon_CPU828_46 = L.divIcon({
