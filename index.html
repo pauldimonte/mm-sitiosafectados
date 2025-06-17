@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">76</span> |
-    🕒 Última actualización: 2025-06-17 03:33:17
+    🕒 Última actualización: 2025-06-17 03:36:25
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -280,47 +280,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A18_S027_0 = L.divIcon({
+    var icon_A14_S038_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A14_S038_0 = L.marker([-28.758327, -59.011971], {
+        icon: icon_A14_S038_0,
+        categoria: "Celdas Caidas",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A14-S038-- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-17 03:36:00");
+    marcadores.push(marker_A14_S038_0); 
+
+    var icon_A18_S027_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A18_S027_0 = L.marker([-27.98111100145, -55.52166696251], {
-        icon: icon_A18_S027_0,
+    var marker_A18_S027_1 = L.marker([-27.98111100145, -55.52166696251], {
+        icon: icon_A18_S027_1,
         categoria: "Sitio Parcial",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A18-S027-Concepcion De La Sierra- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-17 03:13:37");
-    marcadores.push(marker_A18_S027_0); 
+    marcadores.push(marker_A18_S027_1); 
 
-    var icon_OPU538_1 = L.divIcon({
+    var icon_OPU538_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU538_1 = L.marker([-34.60575984633, -58.69792351304], {
-        icon: icon_OPU538_1,
+    var marker_OPU538_2 = L.marker([-34.60575984633, -58.69792351304], {
+        icon: icon_OPU538_2,
         categoria: "Sitio Parcial",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU538-Wicap 2 Ituzaingo- Sitio Parcialmente Caido - HARDWARE- 2025-06-17 03:04:39");
-    marcadores.push(marker_OPU538_1); 
-
-    var icon_SPU122_2 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_SPU122_2 = L.marker([-34.79471435171, -58.46087353191], {
-        icon: icon_SPU122_2,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("SPU122-Luis Guillon- Sitio Completo Incomunicado - OTHERREASON- 2025-06-17 02:52:35");
-    marcadores.push(marker_SPU122_2); 
+    marcadores.push(marker_OPU538_2); 
 
     var icon_A14_S023_3 = L.divIcon({
         className: '',
@@ -616,33 +616,33 @@
     }).bindTooltip("A18-S042-Posadas Distrito Militar- Sitio Parcialmente Caido - HARDWARE- 2025-06-16 17:07:21");
     marcadores.push(marker_A18_S042_23); 
 
-    var icon_OPU596_24 = L.divIcon({
+    var icon_OPU603_24 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU596_24 = L.marker([-34.58311283387, -58.85400359151], {
-        icon: icon_OPU596_24,
-        categoria: "Sitio Parcial",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("OPU596-Wicap 01 Country San Diego- Sitio Parcialmente Caido - HARDWARE- 2025-06-16 16:58:45");
-    marcadores.push(marker_OPU596_24); 
-
-    var icon_OPU603_25 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_OPU603_25 = L.marker([-34.59931509153, -58.84750172638], {
-        icon: icon_OPU603_25,
+    var marker_OPU603_24 = L.marker([-34.59931509153, -58.84750172638], {
+        icon: icon_OPU603_24,
         categoria: "Sitio Parcial",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU603-Wicap 09 Country San Diego- Sitio Parcialmente Caido - HARDWARE- 2025-06-16 16:58:45");
-    marcadores.push(marker_OPU603_25); 
+    marcadores.push(marker_OPU603_24); 
+
+    var icon_OPU596_25 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_OPU596_25 = L.marker([-34.58311283387, -58.85400359151], {
+        icon: icon_OPU596_25,
+        categoria: "Sitio Parcial",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("OPU596-Wicap 01 Country San Diego- Sitio Parcialmente Caido - HARDWARE- 2025-06-16 16:58:45");
+    marcadores.push(marker_OPU596_25); 
 
     var icon_A04_S662_26 = L.divIcon({
         className: '',
