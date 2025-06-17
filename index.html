@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">71</span> |
-    🕒 Última actualización: 2025-06-17 08:43:13
+    🕒 Última actualización: 2025-06-17 08:46:21
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,47 +284,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A04_S015_0 = L.divIcon({
+    var icon_A41_B544_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A41_B544_0 = L.marker([-37.33988920201, -57.02975920471], {
+        icon: icon_A41_B544_0,
+        categoria: "Sitio Parcial",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A41-B544-Mar Azul Centro- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-17 08:43:25");
+    marcadores.push(marker_A41_B544_0); 
+
+    var icon_A04_S015_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A04_S015_0 = L.marker([-34.36945000231, -62.1277799986], {
-        icon: icon_A04_S015_0,
+    var marker_A04_S015_1 = L.marker([-34.36945000231, -62.1277799986], {
+        icon: icon_A04_S015_1,
         categoria: "Celdas Caidas",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A04-S015-Diego De Alvear- Celdas Caidas del Sitio - HARDWARE- 2025-06-17 08:38:12");
-    marcadores.push(marker_A04_S015_0); 
+    marcadores.push(marker_A04_S015_1); 
 
-    var icon_A41_A778_1 = L.divIcon({
+    var icon_A41_A778_2 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A41_A778_1 = L.marker([-37.32573926893, -57.02049603403], {
-        icon: icon_A41_A778_1,
+    var marker_A41_A778_2 = L.marker([-37.32573926893, -57.02049603403], {
+        icon: icon_A41_A778_2,
         categoria: "Sitio Completo",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A41-A778-MAR DE LAS PAMPAS EM1- Sitio Completo Incomunicado - HARDWARE- 2025-06-17 08:37:57");
-    marcadores.push(marker_A41_A778_1); 
-
-    var icon_A41_B400_2 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A41_B400_2 = L.marker([-37.32708800155, -57.05477999635], {
-        icon: icon_A41_B400_2,
-        categoria: "Sitio Completo",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A41-B400-Mar Azul- Sitio Completo Incomunicado - OTHERREASON- 2025-06-17 08:36:51");
-    marcadores.push(marker_A41_B400_2); 
+    marcadores.push(marker_A41_A778_2); 
 
     var icon_A41_A780_3 = L.divIcon({
         className: 'icono-parpadeo',
@@ -354,47 +354,47 @@
     }).bindTooltip("A41-A779-Mar de las Pampas EM2- Sitio Completo Incomunicado - HARDWARE- 2025-06-17 08:36:51");
     marcadores.push(marker_A41_A779_4); 
 
-    var icon_A17_S087_5 = L.divIcon({
+    var icon_A41_B400_5 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A41_B400_5 = L.marker([-37.32708800155, -57.05477999635], {
+        icon: icon_A41_B400_5,
+        categoria: "Sitio Completo",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A41-B400-Mar Azul- Sitio Completo Incomunicado - OTHERREASON- 2025-06-17 08:36:51");
+    marcadores.push(marker_A41_B400_5); 
+
+    var icon_A17_S087_6 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A17_S087_5 = L.marker([-27.4517425033, -59.00237623832], {
-        icon: icon_A17_S087_5,
+    var marker_A17_S087_6 = L.marker([-27.4517425033, -59.00237623832], {
+        icon: icon_A17_S087_6,
         categoria: "Celdas Caidas",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A17-S087-Resistencia Hernandarias- Celdas Caidas del Sitio - HARDWARE- 2025-06-17 08:18:30");
-    marcadores.push(marker_A17_S087_5); 
+    marcadores.push(marker_A17_S087_6); 
 
-    var icon_A19_S109_6 = L.divIcon({
+    var icon_A19_S109_7 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A19_S109_6 = L.marker([-26.62717999236, -54.11779976783], {
-        icon: icon_A19_S109_6,
+    var marker_A19_S109_7 = L.marker([-26.62717999236, -54.11779976783], {
+        icon: icon_A19_S109_7,
         categoria: "Celdas Caidas",
         alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A19-S109-San Pedro Estacion Terminal- Celdas Caidas del Sitio - HARDWARE- 2025-06-17 08:13:15");
-    marcadores.push(marker_A19_S109_6); 
-
-    var icon_A18_S156_7 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A18_S156_7 = L.marker([-27.40965734412, -55.97604079119], {
-        icon: icon_A18_S156_7,
-        categoria: "Celdas Caidas",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A18-S156-Posadas Hipodromo- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-17 08:40:49");
-    marcadores.push(marker_A18_S156_7); 
+    marcadores.push(marker_A19_S109_7); 
 
     var icon_A14_S041_8 = L.divIcon({
         className: '',
