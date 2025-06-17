@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">77</span> |
-    🕒 Última actualización: 2025-06-17 02:22:22
+    🕒 Última actualización: 2025-06-17 02:25:29
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -280,33 +280,33 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A18_S048_0 = L.divIcon({
+    var icon_A42_B013_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A42_B013_0 = L.marker([-35.16386697537, -59.08255371827], {
+        icon: icon_A42_B013_0,
+        categoria: "Sitio Completo",
+        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A42-B013-Lobos Norte- Sitio Completo Incomunicado - ENVIRONMENT- 2025-06-17 02:21:59");
+    marcadores.push(marker_A42_B013_0); 
+
+    var icon_A18_S048_1 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A18_S048_0 = L.marker([-27.50271050858, -55.11214425275], {
-        icon: icon_A18_S048_0,
+    var marker_A18_S048_1 = L.marker([-27.50271050858, -55.11214425275], {
+        icon: icon_A18_S048_1,
         categoria: "Celdas Caidas",
         alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A18-S048-Obera Parque De Las Naciones- Celdas Caidas del Sitio - ENVIRONMENT- 2025-06-17 02:08:46");
-    marcadores.push(marker_A18_S048_0); 
-
-    var icon_A42_B013_1 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A42_B013_1 = L.marker([-35.16386697537, -59.08255371827], {
-        icon: icon_A42_B013_1,
-        categoria: "Sitio Parcial",
-        alertkey: "ENVIRONMENT"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A42-B013-Lobos Norte- Sitio Parcialmente Caido - ENVIRONMENT- 2025-06-17 01:53:26");
-    marcadores.push(marker_A42_B013_1); 
+    marcadores.push(marker_A18_S048_1); 
 
     var icon_A18_S242_2 = L.divIcon({
         className: '',
