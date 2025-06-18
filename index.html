@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">74</span> |
-    🕒 Última actualización: 2025-06-18 06:38:48
+    🕒 Última actualización: 2025-06-18 06:40:51
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,47 +284,47 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_A19_S059_0 = L.divIcon({
+    var icon_OPU538_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_OPU538_0 = L.marker([-34.605662, -58.697857], {
+        icon: icon_OPU538_0,
+        categoria: "Celdas Caidas",
+        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("OPU538-- Celdas Caidas del Sitio - HARDWARE- 2025-06-18 06:40:00");
+    marcadores.push(marker_OPU538_0); 
+
+    var icon_A19_S059_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A19_S059_0 = L.marker([-25.60606747952, -54.58204365446], {
-        icon: icon_A19_S059_0,
+    var marker_A19_S059_1 = L.marker([-25.60606747952, -54.58204365446], {
+        icon: icon_A19_S059_1,
         categoria: "Celdas Caidas",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A19-S059-Puerto Iguazu Barrios Oeste- Celdas Caidas del Sitio - OTHERREASON- 2025-06-18 06:31:05");
-    marcadores.push(marker_A19_S059_0); 
+    marcadores.push(marker_A19_S059_1); 
 
-    var icon_OPU229_1 = L.divIcon({
+    var icon_OPU229_2 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_OPU229_1 = L.marker([-34.68108676019, -58.57023010075], {
-        icon: icon_OPU229_1,
+    var marker_OPU229_2 = L.marker([-34.68108676019, -58.57023010075], {
+        icon: icon_OPU229_2,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("OPU229-San Justo Oeste- Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 06:20:19");
-    marcadores.push(marker_OPU229_1); 
-
-    var icon_A17_S360_2 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A17_S360_2 = L.marker([-27.47713738789, -58.85527483364], {
-        icon: icon_A17_S360_2,
-        categoria: "Sitio Completo",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A17-S360-Corrientes MicroLTE 010- Sitio Completo Incomunicado - HARDWARE- 2025-06-18 06:19:10");
-    marcadores.push(marker_A17_S360_2); 
+    marcadores.push(marker_OPU229_2); 
 
     var icon_NPU1153_3 = L.divIcon({
         className: '',
@@ -480,89 +480,89 @@
     }).bindTooltip("SPU2291-El Gaucho 5- Sitio Completo Incomunicado - HARDWARE- 2025-06-18 02:16:56");
     marcadores.push(marker_SPU2291_13); 
 
-    var icon_A22_S340_14 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A22_S340_14 = L.marker([-26.25339215803, -58.25909176063], {
-        icon: icon_A22_S340_14,
-        categoria: "Intermitente",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A22-S340-Formosa Villa del Carmen- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 02:34:21");
-    marcadores.push(marker_A22_S340_14); 
-
-    var icon_A22_S204_15 = L.divIcon({
+    var icon_A22_S204_14 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A22_S204_15 = L.marker([-26.20781878, -58.22923529514], {
-        icon: icon_A22_S204_15,
+    var marker_A22_S204_14 = L.marker([-26.20781878, -58.22923529514], {
+        icon: icon_A22_S204_14,
         categoria: "Intermitente",
         alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A22-S204-Formosa Aeropuerto II- Intermitente: Sitio Completo Incomunicado - CORTEFO- 2025-06-18 02:35:39");
-    marcadores.push(marker_A22_S204_15); 
+    marcadores.push(marker_A22_S204_14); 
 
-    var icon_A22_S187_16 = L.divIcon({
+    var icon_A22_S187_15 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A22_S187_16 = L.marker([-26.16159322632, -58.21128175345], {
-        icon: icon_A22_S187_16,
+    var marker_A22_S187_15 = L.marker([-26.16159322632, -58.21128175345], {
+        icon: icon_A22_S187_15,
         categoria: "Intermitente",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A22-S187-Formosa Bo. San Antonio- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 02:34:21");
-    marcadores.push(marker_A22_S187_16); 
+    marcadores.push(marker_A22_S187_15); 
 
-    var icon_A22_S145_17 = L.divIcon({
+    var icon_A22_S340_16 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A22_S145_17 = L.marker([-26.22002500331, -58.28283099824], {
-        icon: icon_A22_S145_17,
+    var marker_A22_S340_16 = L.marker([-26.25339215803, -58.25909176063], {
+        icon: icon_A22_S340_16,
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S340-Formosa Villa del Carmen- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 02:34:21");
+    marcadores.push(marker_A22_S340_16); 
+
+    var icon_A22_S155_17 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S155_17 = L.marker([-26.19887672168, -58.19496836622], {
+        icon: icon_A22_S155_17,
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S155-Formosa Ayacucho- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 02:35:39");
+    marcadores.push(marker_A22_S155_17); 
+
+    var icon_A22_S086_18 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S086_18 = L.marker([-26.19683849682, -58.20304746034], {
+        icon: icon_A22_S086_18,
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S086-Formosas Av. Pueyrredon- Intermitente: Sitio Parcialmente Caido - OTHERREASON- 2025-06-18 02:34:20");
+    marcadores.push(marker_A22_S086_18); 
+
+    var icon_A22_S145_19 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S145_19 = L.marker([-26.22002500331, -58.28283099824], {
+        icon: icon_A22_S145_19,
         categoria: "Intermitente",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A22-S145-VILLA TRINIDAD- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 02:34:20");
-    marcadores.push(marker_A22_S145_17); 
-
-    var icon_A22_S097_18 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A22_S097_18 = L.marker([-26.16929210716, -58.21815215241], {
-        icon: icon_A22_S097_18,
-        categoria: "Intermitente",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A22-S097-Formosa Los Pioneros- Intermitente: Sitio Parcialmente Caido - OTHERREASON- 2025-06-18 02:34:20");
-    marcadores.push(marker_A22_S097_18); 
-
-    var icon_A22_S147_19 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A22_S147_19 = L.marker([-26.1828035387, -58.22033038474], {
-        icon: icon_A22_S147_19,
-        categoria: "Intermitente",
-        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A22-S147-Formosa Winter- Intermitente: Sitio Completo Incomunicado - CORTEFO- 2025-06-18 02:35:39");
-    marcadores.push(marker_A22_S147_19); 
+    marcadores.push(marker_A22_S145_19); 
 
     var icon_A22_S165_20 = L.divIcon({
         className: '',
@@ -578,47 +578,47 @@
     }).bindTooltip("A22-S165-Formosa Bo. Nueva Formosa- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 01:58:33");
     marcadores.push(marker_A22_S165_20); 
 
-    var icon_A22_S155_21 = L.divIcon({
+    var icon_A22_S157_21 = L.divIcon({
         className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_A22_S155_21 = L.marker([-26.19887672168, -58.19496836622], {
-        icon: icon_A22_S155_21,
-        categoria: "Intermitente",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A22-S155-Formosa Ayacucho- Intermitente: Sitio Completo Incomunicado - OTHERREASON- 2025-06-18 02:35:39");
-    marcadores.push(marker_A22_S155_21); 
-
-    var icon_A22_S086_22 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A22_S086_22 = L.marker([-26.19683849682, -58.20304746034], {
-        icon: icon_A22_S086_22,
-        categoria: "Intermitente",
-        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A22-S086-Formosas Av. Pueyrredon- Intermitente: Sitio Parcialmente Caido - OTHERREASON- 2025-06-18 02:34:20");
-    marcadores.push(marker_A22_S086_22); 
-
-    var icon_A22_S157_23 = L.divIcon({
-        className: '',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A22_S157_23 = L.marker([-26.18933301051, -58.22899818564], {
-        icon: icon_A22_S157_23,
+    var marker_A22_S157_21 = L.marker([-26.18933301051, -58.22899818564], {
+        icon: icon_A22_S157_21,
         categoria: "Intermitente",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
     }).bindTooltip("A22-S157-Formosa Vicente Posadas- Intermitente: Sitio Parcialmente Caido - OTHERREASON- 2025-06-18 02:34:21");
-    marcadores.push(marker_A22_S157_23); 
+    marcadores.push(marker_A22_S157_21); 
+
+    var icon_A22_S147_22 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S147_22 = L.marker([-26.1828035387, -58.22033038474], {
+        icon: icon_A22_S147_22,
+        categoria: "Intermitente",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S147-Formosa Winter- Intermitente: Sitio Completo Incomunicado - CORTEFO- 2025-06-18 02:35:39");
+    marcadores.push(marker_A22_S147_22); 
+
+    var icon_A22_S097_23 = L.divIcon({
+        className: '',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A22_S097_23 = L.marker([-26.16929210716, -58.21815215241], {
+        icon: icon_A22_S097_23,
+        categoria: "Intermitente",
+        alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A22-S097-Formosa Los Pioneros- Intermitente: Sitio Parcialmente Caido - OTHERREASON- 2025-06-18 02:34:20");
+    marcadores.push(marker_A22_S097_23); 
 
     var icon_A04_S077_24 = L.divIcon({
         className: '',
