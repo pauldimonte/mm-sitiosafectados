@@ -184,7 +184,7 @@
  <div id="barra-info">
     <button id="logout-button" title="Cerrar Sesión"><i class="fas fa-sign-out-alt"></i> Salir</button>
     🔴 Total de sitios afectados: <span id="contador">67</span> |
-    🕒 Última actualización: 2025-06-19 02:21:29
+    🕒 Última actualización: 2025-06-19 02:24:44
 
     <div id="filtros-container">
       <div id="filtros-categorias">
@@ -284,36 +284,36 @@
     }
     map.on('zoomend', ajustarEscalaIconos);
 
-    var icon_CI_168_0 = L.divIcon({
+    var icon_A02_S023_0 = L.divIcon({
+        className: 'icono-parpadeo',
+        html: '<img src="https://cdn-icons-png.flaticon.com/512/3914/3914779.png" style="width:30px;height:30px;">',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30], 
+        popupAnchor: [0, -30] 
+    });
+    var marker_A02_S023_0 = L.marker([-32.66162570959, -62.29958586723], {
+        icon: icon_A02_S023_0,
+        categoria: "Intermitente",
+        alertkey: "CORTEFO"  // Usar la versión en mayúsculas para la lógica de filtro
+    }).bindTooltip("A02-S023-Leones- Intermitente: Sitio Completo Incomunicado - CORTEFO- 2025-06-19 02:20:39");
+    marcadores.push(marker_A02_S023_0); 
+
+    var icon_CI_168_1 = L.divIcon({
         className: 'icono-parpadeo',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/8034/8034100.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
         popupAnchor: [0, -30] 
     });
-    var marker_CI_168_0 = L.marker([-34.6352, -58.3991], {
-        icon: icon_CI_168_0,
+    var marker_CI_168_1 = L.marker([-34.63539428294, -58.39925002312], {
+        icon: icon_CI_168_1,
         categoria: "Sitio Completo",
         alertkey: "OTHERREASON"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("CI_168-- Sitio Completo Incomunicado - OTHERREASON- 2025-06-19 02:20:39");
-    marcadores.push(marker_CI_168_0); 
-
-    var icon_A18_S113_1 = L.divIcon({
-        className: 'icono-parpadeo',
-        html: '<img src="https://cdn-icons-png.flaticon.com/512/12436/12436490.png" style="width:30px;height:30px;">',
-        iconSize: [30, 30],
-        iconAnchor: [15, 30], 
-        popupAnchor: [0, -30] 
-    });
-    var marker_A18_S113_1 = L.marker([-27.38985847329, -55.89830764051], {
-        icon: icon_A18_S113_1,
-        categoria: "Sitio Completo",
-        alertkey: "HARDWARE"  // Usar la versión en mayúsculas para la lógica de filtro
-    }).bindTooltip("A18-S113-IPURUG Poste 1- Sitio Completo Incomunicado - HARDWARE- 2025-06-19 02:19:21");
-    marcadores.push(marker_A18_S113_1); 
+    }).bindTooltip("CI_168-Linea H - Caseros- Sitio Completo Incomunicado - OTHERREASON- 2025-06-19 02:20:39");
+    marcadores.push(marker_CI_168_1); 
 
     var icon_A04_S561_2 = L.divIcon({
-        className: 'icono-parpadeo',
+        className: '',
         html: '<img src="https://cdn-icons-png.flaticon.com/512/10742/10742093.png" style="width:30px;height:30px;">',
         iconSize: [30, 30],
         iconAnchor: [15, 30], 
